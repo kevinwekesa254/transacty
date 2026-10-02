@@ -1,0 +1,9 @@
+/* Cohere webfonts.
+   NOTE: the proprietary families (CohereText, Unica77 Cohere Web, CohereMono)
+   are not bundled. The closest free substitutes are loaded from Google Fonts:
+     - CohereText (display)        -> Space Grotesk
+     - Unica77 Cohere Web (body)   -> Hanken Grotesk
+     - CohereMono (technical)      -> Space Mono
+   Replace the @import and the family names in typography.css when real files
+   are provided. */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
