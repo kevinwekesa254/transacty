@@ -386,10 +386,9 @@
           <div onClick="{{ p.onClick }}" class="prodCard" style="cursor:pointer;background:#fff;border:1px solid var(--hairline);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s ease,transform .2s ease;" onMouseEnter="{{ __h18 }}" onMouseLeave="{{ __h19 }}">
             <div style="aspect-ratio:5/4;overflow:hidden;position:relative;background:var(--stone);">
               <img src="{{ p.img }}" alt="{{ p.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
-              <span style="position:absolute;top:12px;left:12px;font-family:var(--font-mono);font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:#fff;background:rgba(15,7,0,.6);backdrop-filter:blur(4px);padding:5px 10px;border-radius:20px;">{{ p.tag }}</span>
             </div>
             <div style="padding:22px;display:flex;flex-direction:column;gap:13px;flex:1;">
-              <span style="font-family:var(--font-display);font-size:23px;letter-spacing:-.5px;color:var(--ink);">{{ p.name }}</span>
+              <h3 style="margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;font-weight:400;"><span style="font-family:var(--font-display);font-size:23px;letter-spacing:-.5px;color:var(--ink);">{{ p.name }}</span><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--slate);">— {{ p.tag }}</span></h3>
               <p style="font-size:15px;line-height:1.4;color:var(--ink);margin:0;font-weight:500;">{{ p.headline }}</p>
               <div style="height:1px;background:var(--hairline);"></div>
               <div style="display:flex;flex-direction:column;gap:9px;flex:1;">
@@ -648,11 +647,11 @@
 
   <!-- TAB: PRICING -->
   <sc-if value="{{ tabPricing }}" hint-placeholder-val="{{ false }}">
-  <div class="ycup" style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);">
+  <div class="ycup" style="max-width:1340px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,4vw,40px);">
     <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(28px,4vw,44px);letter-spacing:-1px;margin:0;color:var(--ink);">{{ pd.pricingTitle }}</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:40px;align-items:start;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:14px;margin-top:40px;align-items:stretch;">
       <sc-for list="{{ pd.pricing }}" as="c" hint-placeholder-count="4">
-        <div style="border:{{ c.borderW }} solid {{ c.border }};border-radius:18px;padding:28px;background:#fff;display:flex;flex-direction:column;gap:16px;position:relative;">
+        <div style="border:{{ c.borderW }} solid {{ c.border }};border-radius:18px;padding:24px 22px;background:#fff;display:flex;flex-direction:column;gap:16px;position:relative;">
           <sc-if value="{{ c.popular }}" hint-placeholder-val="{{ false }}">
             <span style="position:absolute;top:-12px;left:28px;background:var(--lime);color:#fff;font-family:var(--font-mono);font-size:10px;letter-spacing:.8px;text-transform:uppercase;padding:5px 12px;border-radius:20px;">★ Most Popular</span>
           </sc-if>
@@ -836,10 +835,10 @@
   </div>
   <!-- product pricing cards -->
   <sc-if value="{{ pricingShowCards }}" hint-placeholder-val="{{ true }}">
-  <div class="ycup" style="max-width:1180px;margin:0 auto;padding:clamp(40px,6vw,72px) clamp(20px,5vw,48px);">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;align-items:start;">
+  <div class="ycup" style="max-width:1340px;margin:0 auto;padding:clamp(40px,6vw,72px) clamp(20px,4vw,40px);">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:14px;align-items:stretch;">
       <sc-for list="{{ activePricing }}" as="c" hint-placeholder-count="4">
-        <div style="border:{{ c.borderW }} solid {{ c.border }};border-radius:18px;padding:28px;background:#fff;display:flex;flex-direction:column;gap:16px;position:relative;">
+        <div style="border:{{ c.borderW }} solid {{ c.border }};border-radius:18px;padding:24px 22px;background:#fff;display:flex;flex-direction:column;gap:16px;position:relative;">
           <sc-if value="{{ c.popular }}" hint-placeholder-val="{{ false }}">
             <span style="position:absolute;top:-12px;left:28px;background:var(--lime);color:#fff;font-family:var(--font-mono);font-size:10px;letter-spacing:.8px;text-transform:uppercase;padding:5px 12px;border-radius:20px;">★ Most Popular</span>
           </sc-if>
@@ -1005,7 +1004,7 @@
 
   <!-- ===== COMPARE ===== -->
   <sc-if value="{{ isHwTabCompare }}" hint-placeholder-val="{{ false }}">
-  <section class="ycup" style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,72px) clamp(20px,5vw,48px) 0;">
+  <section id="hwCompare" class="ycup" style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,72px) clamp(20px,5vw,48px) 0;">
     <h2 style="font-family:var(--font-display);font-weight:700;font-size:clamp(26px,3.4vw,34px);letter-spacing:-.6px;margin:0 0 8px;color:var(--ink);">Compare devices</h2>
     <p style="font-size:15px;color:var(--slate);margin:0 0 24px;">Select the devices you want to compare side by side.</p>
     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;">
@@ -1130,7 +1129,7 @@
         <h2 style="font-family:var(--font-display);font-weight:700;font-size:clamp(24px,3.2vw,34px);line-height:1.12;letter-spacing:-.8px;margin:0;color:var(--ink);max-width:18ch;">Not sure which device fits your counter?</h2>
         <p style="font-size:14px;line-height:1.6;color:var(--slate);margin:16px 0 26px;max-width:44ch;">Every device pairs with the software you already use. Compare them side by side, or tell us about your business and we'll recommend the right setup.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap;">
-          <button onClick="{{ setHwTabCompare }}" style="background:var(--near-black);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:15px;padding:13px 26px;border-radius:32px;">Compare devices →</button>
+          <button onClick="{{ goHwCompare }}" style="background:var(--near-black);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:15px;padding:13px 26px;border-radius:32px;">Compare devices →</button>
           <button onClick="{{ shopProductFinder }}" style="background:transparent;color:var(--ink);border:1px solid var(--hairline);cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:15px;padding:13px 26px;border-radius:32px;">Talk to us →</button>
         </div>
       </div>
@@ -1656,11 +1655,11 @@
       <sc-if value="{{ contactForm }}" hint-placeholder-val="{{ true }}">
       <form onSubmit="{{ submitContact }}" style="display:flex;flex-direction:column;gap:18px;">
         <div class="fRow" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-          <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Full name</span><input required style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h42 }}" onBlur="{{ __h43 }}" /></label>
-          <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Business name</span><input required style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h44 }}" onBlur="{{ __h45 }}" /></label>
+          <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Full name</span><input required="required" style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h42 }}" onBlur="{{ __h43 }}" /></label>
+          <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Business name</span><input required="required" style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h44 }}" onBlur="{{ __h45 }}" /></label>
         </div>
         <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Business type</span>
-          <select required style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;background:#fff;">
+          <select required="required" style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;background:#fff;">
             <sc-for list="{{ bizTypeOptions }}" as="o" hint-placeholder-count="11"><option>{{ o }}</option></sc-for>
           </select>
         </label>
@@ -1669,8 +1668,8 @@
           <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">State</span><input style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h48 }}" onBlur="{{ __h49 }}" /></label>
         </div>
         <div class="fRow" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-          <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Phone</span><input required placeholder="+94" style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h50 }}" onBlur="{{ __h51 }}" /></label>
-          <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Email</span><input required type="email" style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h52 }}" onBlur="{{ __h53 }}" /></label>
+          <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Phone</span><input required="required" placeholder="+971" style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h50 }}" onBlur="{{ __h51 }}" /></label>
+          <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Email</span><input required="required" type="email" style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h52 }}" onBlur="{{ __h53 }}" /></label>
         </div>
         <label style="display:flex;flex-direction:column;gap:7px;"><span style="font-size:13px;color:var(--ink);font-weight:500;">Number of outlets</span><input style="border:1px solid var(--hairline);border-radius:8px;padding:12px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);outline:none;" onFocus="{{ __h54 }}" onBlur="{{ __h55 }}" /></label>
         <div>
@@ -1754,16 +1753,16 @@
       <p style="font-size:14px;color:var(--slate);margin:0 0 22px;">Our Sales team will contact you within 24 hours with pricing and availability.</p>
       <form onSubmit="{{ submitEnquire }}" style="display:flex;flex-direction:column;gap:14px;">
         <div class="fRow" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-          <input required placeholder="Name" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h58 }}" onBlur="{{ __h59 }}" />
-          <input required placeholder="Business name" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h60 }}" onBlur="{{ __h61 }}" />
+          <input required="required" placeholder="Name" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h58 }}" onBlur="{{ __h59 }}" />
+          <input required="required" placeholder="Business name" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h60 }}" onBlur="{{ __h61 }}" />
         </div>
         <div class="fRow" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
           <input placeholder="Business type" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h62 }}" onBlur="{{ __h63 }}" />
           <input placeholder="City" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h64 }}" onBlur="{{ __h65 }}" />
         </div>
         <div class="fRow" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-          <input required placeholder="Phone (+91)" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h66 }}" onBlur="{{ __h67 }}" />
-          <input required type="email" placeholder="Email" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h68 }}" onBlur="{{ __h69 }}" />
+          <input required="required" placeholder="Phone (+971)" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h66 }}" onBlur="{{ __h67 }}" />
+          <input required="required" type="email" placeholder="Email" style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;" onFocus="{{ __h68 }}" onBlur="{{ __h69 }}" />
         </div>
         <div class="fRow" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
           <input value="{{ enquireDevice }}" readonly style="border:1px solid var(--hairline);border-radius:8px;padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;background:var(--stone);color:var(--slate);" />
@@ -1908,7 +1907,8 @@ const __IMG = {
   "assets/img/qr_soundbox.jpg": "assets/img/qr_soundbox.jpg",
   "assets/img/restaurant_order.jpg": "assets/img/restaurant_order.jpg",
   "assets/img/shop_counter.jpg": "assets/img/shop_counter.jpg",
-  "assets/img/card_secure.jpg": "assets/img/card_secure.jpg"
+  "assets/img/card_secure.jpg": "assets/img/card_secure.jpg",
+  "assets/img/restaurant_pay.jpg": "assets/img/restaurant_pay.jpg"
 };
 
 class Component extends DCLogic {
@@ -2051,7 +2051,7 @@ class Component extends DCLogic {
       secHwHeadline:{en:'The right device for every counter.',ar:'الجهاز المناسب لكل نقطة بيع.'},
       opCaptionDefault:{en:'Quick checkouts, VAT billing, and live stock — all from one screen.',ar:'دفع سريع، فواتير ضريبية، ومخزون مباشر — كلها من شاشة واحدة.'},
       step1t:{en:'Pick your plan',ar:'اختر خطتك'},
-      step1b:{en:'Choose Freemium or a Premium tier. No credit card needed to start.',ar:'اختر الخطة المجانية أو إحدى الخطط المميزة. لا حاجة لبطاقة ائتمان للبدء.'},
+      step1b:{en:'Choose freemium or a premium tier. No credit card needed to start.',ar:'اختر الخطة المجانية أو إحدى الخطط المميزة. لا حاجة لبطاقة ائتمان للبدء.'},
       step2t:{en:'Get set up in 48 hours',ar:'جاهز خلال 48 ساعة'},
       step2b:{en:'We configure your device, import your products, and train your staff.',ar:'نقوم بإعداد جهازك، واستيراد منتجاتك، وتدريب فريقك.'},
       step3t:{en:'Sell. Manage. Grow.',ar:'بِع. أدِر. انمُ.'},
@@ -2114,10 +2114,8 @@ class Component extends DCLogic {
       services:_i8('maintenance'), enterprise:_i8('organization'), receipt:_i8('receipt'),
       inventory:_i8('warehouse'), loyalty:_i8('loyalty-card')
     };
-    const TINT = [
-      {bg:'#f3e8d6', st:'#857565'}, {bg:'#ecebe8', st:'#464644'}, {bg:'#eceeef', st:'#566167'},
-      {bg:'#f6ecd9', st:'#8a6d4a'}, {bg:'#e9ecee', st:'#566167'}, {bg:'#eee6da', st:'#0F0700'},
-    ];
+    // one tile colour for every menu icon, so products, add-ons and business types read as one set
+    const TINT = [ {bg:'#f3e8d6', st:'#5c4a38'} ];
     const _prodPages = ['youshop','youresto','youqr','youpay'];
     const _megaActiveIdx = (S.megaActive==null) ? Math.max(0, _prodPages.indexOf(S.page)) : S.megaActive;
     const _prodIco = ['shop','resto','qr','pay'];
@@ -2426,10 +2424,12 @@ class Component extends DCLogic {
         ['Y5000 — Desktop Terminal'],
         'Let your data run the shop with you.'),
     };
+    const _bi = (n) => 'assets/img/'+n;
     const bizImg = {
-      grocery:'', restaurant:'', cafe:'', pharmacy:'', fashion:'', electronics:'', supermarket:'', cloudkitchen:'',
-      retail:'', fnb:'', hospitality:'', health:'', services:'', chains:'',
-      billing:'', inventory:'', loyalty:'', payments:'', multioutlet:'', reports:'',
+      grocery:_bi('grocery_checkout.jpg'), restaurant:_bi('restaurant_order.jpg'), cafe:_bi('cafe_counter.jpg'), pharmacy:_bi('biz_pharmacy.jpg'),
+      fashion:_bi('boutique_pos.jpg'), electronics:_bi('biz_electronics.jpg'), supermarket:_bi('uae_supermarket.jpg'), cloudkitchen:_bi('biz_kitchen.jpg'),
+      retail:_bi('biz_retail.jpg'), fnb:_bi('biz_fnb.jpg'), hospitality:_bi('biz_hotel.jpg'), health:_bi('biz_spa.jpg'), services:_bi('biz_barber.jpg'), chains:_bi('biz_chain.jpg'),
+      billing:_bi('biz_billing.jpg'), inventory:_bi('biz_inventory.jpg'), loyalty:_bi('biz_loyalty.jpg'), payments:_bi('biz_payments.jpg'), multioutlet:_bi('biz_mall.jpg'), reports:_bi('biz_reports.jpg'),
     };
     const _bizSlug = (S.page==='bizdetail' && bizDetailData[S.productTab]) ? S.productTab : 'grocery';
     const _bizDocRaw = bizDetailData[_bizSlug];
@@ -2446,10 +2446,10 @@ class Component extends DCLogic {
 
     // home data
     const proofStats = [
-      { big:'100+', label:'Merchants across the UAE' },
-      { big:'AED 0', label:'To start — free forever' },
-      { big:'VAT-ready', label:'From day one' },
-      { big:'48 hrs', label:'Set-up time' },
+      { big:'100+', label:'merchants across the UAE' },
+      { big:'AED 0', label:'to start — free forever' },
+      { big:'VAT-ready', label:'from day one' },
+      { big:'48 hrs', label:'setup time' },
     ];
     const homeProducts = [
       { name:'youShop', tag:'Retail POS', img:__IMG['assets/img/boutique_pos.jpg'], headline:'Your shop, fully under control. In one dashboard.', cta:'Explore youShop',
@@ -2459,7 +2459,7 @@ class Component extends DCLogic {
       { name:'youQR', tag:'QR Commerce', img:__IMG['assets/img/qr_scan.jpg'], headline:'One QR code. Your menu. Under 60 seconds.', cta:'Explore youQR',
         benefits:['No app needed','Auto-fires to kitchen','Aani QR, wallet, card accepted'], onClick:()=>this.go('youqr') },
       { name:'youPay', tag:'Payments', img:__IMG['assets/img/card_tap_counter.jpg'], headline:'Aani QR, card, wallet. One dashboard.', cta:'Explore youPay',
-        benefits:['Aani / Apple Pay / Google Pay / Samsung Pay','Instant settlement reports','Auto-reconciliation'], onClick:()=>this.go('youpay') },
+        benefits:['Aani, Apple Pay, Google Pay & Samsung Pay','Instant settlement reports','Auto-reconciliation'], onClick:()=>this.go('youpay') },
     ];
     const steps = [
       { n:'1', title:t.step1t, body:t.step1b },
@@ -2570,11 +2570,11 @@ class Component extends DCLogic {
     const MS = (cat,rows) => ({ cat, rows: rows.map((r,i)=>({ ...r, rowBg: i%2?'#fcf9f4':'#ffffff' })) });
 
     // ===== pricing card builder =====
-    const bC={btnBg:'var(--lime)',btnFg:'#0F0700',btnBorder:'none'};
+    const bC={btnBg:'var(--lime)',btnFg:'#fff',btnBorder:'1px solid var(--lime)'};
     const bD={btnBg:'var(--near-black)',btnFg:'#fff',btnBorder:'none'};
-    const bO={btnBg:'transparent',btnFg:'var(--ink)',btnBorder:'1px solid var(--hairline)'};
+    const bO={btnBg:'transparent',btnFg:'var(--ink)',btnBorder:'1px solid var(--ink)'};
     const goStart=()=>this.go('smb'); const goSales=()=>this.go('contact');
-    const PC=(name,tier,price,popular,features,cta,btn,onClick)=>({name,tier,price,popular,features,cta,...btn,onClick,borderW:popular?'2px':'1px',border:popular?'var(--lime)':'var(--hairline)'});
+    const PC=(name,tier,price,popular,features,cta,btn,onClick)=>({name,tier,price,popular,features,cta,...(popular?bC:bO),onClick,borderW:popular?'2px':'1px',border:popular?'var(--lime)':'var(--hairline)'});
 
     const pricingNotes = [
       'All add-ons sold modularly — activate on any tier including Freemium. Activation in 24–48 hours.',
@@ -2862,7 +2862,7 @@ class Component extends DCLogic {
       {name:'Mastercard',sub:'Global cards',icon:I.card()},
       {name:'China UnionPay',sub:'Global card network',icon:I.card()},
       {name:'Amex',sub:'American Express',icon:I.card()},
-      {name:'Mobile Wallets',sub:'Apple Pay / Google Pay / Samsung Pay',icon:I.wallet()},
+      {name:'Mobile Wallets',sub:'Apple Pay, Google Pay & Samsung Pay',icon:I.wallet()},
       {name:'Pay-by-Link',sub:'Share a payment link',icon:I.link()},
       {name:'Stored Value / SVA',sub:'Top-up and spend',icon:I.coins()},
       {name:'Split Payment',sub:'Multiple tenders, one bill',icon:I.split()},
@@ -3053,6 +3053,7 @@ class Component extends DCLogic {
     const hasCompareSelection = compareCount>0, hasNoCompareSelection = compareCount===0;
     const setHwTab = () => this.setState({ hwTab:'hardware' });
     const setHwTabCompare = () => this.setState({ hwTab:'compare' });
+    const goHwCompare = () => { this.setState({ hwTab:'compare' }); setTimeout(() => { const el = document.getElementById('hwCompare'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 90, behavior:'smooth' }); }, 60); };
     const isHwTabHardware = S.hwTab==='hardware', isHwTabCompare = S.hwTab==='compare';
     const hwTabHardwareColor = isHwTabHardware?'var(--ink)':'var(--slate)', hwTabHardwareWeight = isHwTabHardware?600:400, hwTabHardwareBorder = isHwTabHardware?'var(--coral)':'transparent';
     const hwTabCompareColor = isHwTabCompare?'var(--ink)':'var(--slate)', hwTabCompareWeight = isHwTabCompare?600:400, hwTabCompareBorder = isHwTabCompare?'var(--coral)':'transparent';
@@ -3316,7 +3317,7 @@ class Component extends DCLogic {
       shopHeroDevices, joinFeatures, shopProductFinder,
       hwCards, compareChips, compareSelected, compareCount, compareCountLabel,
       hasCompareSelection, hasNoCompareSelection,
-      setHwTab, setHwTabCompare, isHwTabHardware, isHwTabCompare,
+      setHwTab, setHwTabCompare, goHwCompare, isHwTabHardware, isHwTabCompare,
       hwTabHardwareColor, hwTabHardwareWeight, hwTabHardwareBorder,
       hwTabCompareColor, hwTabCompareWeight, hwTabCompareBorder,
       pairCols, pairingMatrix, procurementTerms, hwHubReviews,
@@ -3327,13 +3328,13 @@ class Component extends DCLogic {
       aboutStats, aboutProducts,
       // contact
       contactCols: desktop2 ? '1.6fr 1fr' : '1fr', contactForm: !S.contactSent, contactSent: S.contactSent,
-      submitContact: (e)=>{ e.preventDefault(); this.setState({contactSent:true}); window.scrollTo({top:0,behavior:'smooth'}); },
+      submitContact: (e)=>{ e.preventDefault(); const fm=e.currentTarget||e.target; if(fm&&fm.checkValidity&&!fm.checkValidity()){ fm.reportValidity(); return; } this.setState({contactSent:true}); window.scrollTo({top:0,behavior:'smooth'}); },
       bizTypeOptions, productInterest, contactCards,
       // enquire modal
       enquireOpen: S.enquire.open, enquireDevice: S.enquire.device, enquireSent: S.enquire.sent, enquireFormShow: !S.enquire.sent,
       closeEnquire: ()=>this.setState({enquire:{open:false,device:'',sent:false}}),
       stop: (e)=>e.stopPropagation(),
-      submitEnquire: (e)=>{ e.preventDefault(); this.setState(s=>({enquire:{...s.enquire,sent:true}})); },
+      submitEnquire: (e)=>{ e.preventDefault(); const fm=e.currentTarget||e.target; if(fm&&fm.checkValidity&&!fm.checkValidity()){ fm.reportValidity(); return; } this.setState(s=>({enquire:{...s.enquire,sent:true}})); },
     };
     const __HND = {
       __h0: (event)=>{ const self = event.currentTarget; event.currentTarget.style.opacity=.85; },
