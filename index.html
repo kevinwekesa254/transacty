@@ -322,7 +322,7 @@
           <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(38px,6vw,74px);line-height:1.03;letter-spacing:-2px;margin:20px 0 0;max-width:13ch;text-wrap:balance;">{{ t.heroHeadline }}</h1>
           <p style="font-size:clamp(16px,1.9vw,20px);line-height:1.55;color:rgba(255,255,255,.78);max-width:52ch;margin:24px 0 0;">{{ t.heroSub }}</p>
           <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px;">
-            <button onClick="{{ go_smb }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:16px 30px;border-radius:32px;white-space:nowrap;transition:opacity .15s ease;" onMouseEnter="{{ __h8 }}" onMouseLeave="{{ __h9 }}">{{ t.heroCtaStart }}</button>
+            <button onClick="{{ go_contact }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:16px 30px;border-radius:32px;white-space:nowrap;transition:opacity .15s ease;" onMouseEnter="{{ __h8 }}" onMouseLeave="{{ __h9 }}">{{ t.heroCtaStart }}</button>
             <button onClick="{{ scrollProducts }}" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:16px 30px;border-radius:32px;white-space:nowrap;transition:border-color .15s ease;" onMouseEnter="{{ __h10 }}" onMouseLeave="{{ __h11 }}">{{ t.heroCtaHow }}</button>
           </div>
         </div>
@@ -356,21 +356,52 @@
       <div onClick="{{ go_smb }}" style="cursor:pointer;border:1px solid var(--hairline);border-radius:16px;padding:34px;display:flex;flex-direction:column;gap:16px;background:#fff;transition:border-color .2s ease,transform .2s ease;" onMouseEnter="{{ __h12 }}" onMouseLeave="{{ __h13 }}">
         <img src="assets/img/shop_counter.jpg" alt="Customer paying at a small shop counter" style="width:100%;height:170px;object-fit:cover;border-radius:14px;display:block;">
         <h3 style="font-family:var(--font-display);font-weight:400;font-size:26px;letter-spacing:-.5px;margin:0;color:var(--ink);">Just starting out?</h3>
-        <p style="font-size:15px;line-height:1.6;color:var(--slate);margin:0;flex:1;">One shop, one counter. Our free plan gets you billing, inventory, and Aani QR payments — no monthly fee.</p>
-        <span style="color:var(--coral);font-weight:500;font-size:15px;">Start Free →</span>
+        <p style="font-size:15px;line-height:1.6;color:var(--slate);margin:0;flex:1;">One shop, one counter. youShop Standard gets you POS, live stock, loyalty and VAT — from AED 19 a store, a month.</p>
+        <span style="color:var(--coral);font-weight:500;font-size:15px;">See Standard →</span>
       </div>
       <div onClick="{{ go_pricing }}" style="cursor:pointer;border:1px solid var(--hairline);border-radius:16px;padding:34px;display:flex;flex-direction:column;gap:16px;background:#fff;transition:border-color .2s ease,transform .2s ease;" onMouseEnter="{{ __h14 }}" onMouseLeave="{{ __h15 }}">
         <img src="assets/img/grocery_checkout.jpg" alt="Cashier ringing up groceries at a supermarket checkout" style="width:100%;height:170px;object-fit:cover;border-radius:14px;display:block;">
         <h3 style="font-family:var(--font-display);font-weight:400;font-size:26px;letter-spacing:-.5px;margin:0;color:var(--ink);">Ready to grow?</h3>
-        <p style="font-size:15px;line-height:1.6;color:var(--slate);margin:0;flex:1;">2 to 8 outlets. You need proper stock control, customer loyalty, VAT reports, and real analytics. We've built it.</p>
-        <span style="color:var(--coral);font-weight:500;font-size:15px;">See Premium Plans →</span>
+        <p style="font-size:15px;line-height:1.6;color:var(--slate);margin:0;flex:1;">3 to 8 outlets. Power adds more users, HR & payroll, books and WebShop — AED 49 a store, a month.</p>
+        <span style="color:var(--coral);font-weight:500;font-size:15px;">See Power →</span>
       </div>
       <div onClick="{{ go_enterprise }}" style="cursor:pointer;border:1px solid var(--hairline);border-radius:16px;padding:34px;display:flex;flex-direction:column;gap:16px;background:#fff;transition:border-color .2s ease,transform .2s ease;" onMouseEnter="{{ __h16 }}" onMouseLeave="{{ __h17 }}">
         <img src="assets/img/uae_supermarket.jpg" alt="Modern UAE supermarket with multiple checkout lanes" style="width:100%;height:170px;object-fit:cover;border-radius:14px;display:block;">
         <h3 style="font-family:var(--font-display);font-weight:400;font-size:26px;letter-spacing:-.5px;margin:0;color:var(--ink);">Running a chain?</h3>
-        <p style="font-size:15px;line-height:1.6;color:var(--slate);margin:0;flex:1;">9+ outlets, franchises, custom integrations. Centralised control. Brand-level loyalty. Talk to us.</p>
+        <p style="font-size:15px;line-height:1.6;color:var(--slate);margin:0;flex:1;">9+ outlets, franchises and multi-brand groups. SSO, ERP integration and a 24/7 SLA — already built in.</p>
         <span style="color:var(--coral);font-weight:500;font-size:15px;">Talk to Enterprise Sales →</span>
       </div>
+    </div>
+  </section>
+
+  <!-- THE PROBLEM (deck) -->
+  <section style="background:#fff;border-top:1px solid var(--hairline);">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,104px) clamp(20px,5vw,48px);">
+      <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">The problem we solve</span>
+      <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(30px,4.5vw,48px);letter-spacing:-1px;margin:12px 0 0;color:var(--ink);">Eight logins. Eight bills. <span style="color:var(--slate);font-style:italic;">Zero sleep.</span></h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:36px;align-items:stretch;">
+        <div style="border:1px solid var(--hairline);border-radius:18px;padding:clamp(22px,3vw,30px);background:#fff;display:flex;flex-direction:column;">
+          <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--slate);">What most merchants pay today · the Frankenstein stack</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));column-gap:22px;margin-top:14px;">
+            <sc-for list="{{ stackCosts }}" as="sc" hint-placeholder-count="8">
+              <div style="display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px dashed var(--hairline);font-size:14px;"><span style="color:var(--slate);">{{ sc.n }}</span><span style="color:var(--ink);font-weight:600;white-space:nowrap;">{{ sc.p }}</span></div>
+            </sc-for>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:auto;padding-top:22px;"><span style="font-size:15px;color:var(--slate);">Total today</span><span style="font-family:var(--font-display);font-size:clamp(30px,4vw,40px);letter-spacing:-1px;color:var(--ink);">AED 554<span style="font-size:14px;color:var(--slate);"> /mo</span></span></div>
+        </div>
+        <div style="border-radius:18px;padding:clamp(22px,3vw,30px);background:var(--navy-dark);--coral:var(--lime);color:#fff;display:flex;flex-direction:column;">
+          <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.6);">What you replace it with</div>
+          <div style="font-family:var(--font-display);font-size:clamp(34px,4.6vw,48px);letter-spacing:-1px;margin-top:10px;">Transacty</div>
+          <p style="font-size:16px;line-height:1.55;color:rgba(255,255,255,.78);margin:10px 0 18px;">One app. One login. One monthly bill. Every module talks to every other module.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <sc-for list="{{ stackModules }}" as="mo" hint-placeholder-count="8">
+              <span style="font-size:13px;border:1px solid rgba(255,255,255,.22);border-radius:30px;padding:6px 13px;color:#fff;">{{ mo }}</span>
+            </sc-for>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:auto;padding-top:26px;"><span style="font-size:15px;color:rgba(255,255,255,.7);">Plans from</span><span style="font-family:var(--font-display);font-size:clamp(30px,4vw,40px);letter-spacing:-1px;">AED 19</span></div>
+        </div>
+      </div>
+      <p style="font-size:16px;line-height:1.55;color:var(--slate);margin:24px 0 0;border:1px solid var(--hairline);border-radius:14px;padding:18px 22px;">Most UAE merchants pay for eight tools — and lose an hour a day gluing them together with WhatsApp and Excel.</p>
     </div>
   </section>
 
@@ -413,9 +444,9 @@
       </div>
       <div>
         <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">How it works</span>
-        <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(30px,4.5vw,48px);letter-spacing:-1px;margin:12px 0 0;color:var(--ink);max-width:16ch;">Live in your shop in 48 hours.</h2>
+        <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(30px,4.5vw,48px);letter-spacing:-1px;margin:12px 0 0;color:var(--ink);max-width:16ch;">Book the demo. Go live before lunch.</h2>
         <div style="display:flex;flex-direction:column;margin-top:30px;border-top:1px solid var(--hairline);">
-          <sc-for list="{{ steps }}" as="s" hint-placeholder-count="3">
+          <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
             <div style="padding:26px 0;border-bottom:1px solid var(--hairline);display:flex;gap:22px;align-items:flex-start;">
               <div style="font-family:var(--font-mono);font-size:13px;color:var(--coral);letter-spacing:1px;flex-shrink:0;width:60px;padding-top:4px;">STEP {{ s.n }}</div>
               <div>
@@ -501,6 +532,41 @@
     </div>
   </section>
 
+  <!-- WHY TRANSACTY (deck) -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,104px) clamp(20px,5vw,48px);">
+    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Why Transacty · head to head, UAE</span>
+    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(28px,4.2vw,46px);letter-spacing:-1px;margin:12px 0 0;color:var(--ink);max-width:24ch;">The big local players do payments well. <span style="color:var(--slate);font-style:italic;">Everything else is eight vendors.</span></h2>
+    <div style="margin-top:32px;border:1px solid var(--hairline);border-radius:14px;overflow:hidden;overflow-x:auto;">
+      <div style="min-width:640px;">
+        <div style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;background:var(--stone);">
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--slate);">What the merchant gets</div>
+          <div style="padding:16px 14px;text-align:center;background:var(--navy-dark);color:#fff;font-family:var(--font-display);font-size:17px;">Transacty</div>
+          <div style="padding:16px 14px;text-align:center;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--slate);">Geidea</div>
+          <div style="padding:16px 14px;text-align:center;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--slate);">Network Int'l</div>
+        </div>
+        <sc-for list="{{ compareRows }}" as="cr" hint-placeholder-count="7">
+          <div style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;border-top:1px solid var(--hairline);background:{{ cr.rowBg }};">
+            <div style="padding:14px 18px;font-size:14px;color:var(--ink);font-weight:500;">{{ cr.f }} <span style="color:var(--slate);font-weight:400;">{{ cr.d }}</span></div>
+            <div style="padding:14px;text-align:center;font-size:14px;font-weight:600;color:var(--ink);background:rgba(243,232,214,.55);">{{ cr.t }}</div>
+            <div style="padding:14px;text-align:center;font-size:14px;color:var(--slate);">{{ cr.g }}</div>
+            <div style="padding:14px;text-align:center;font-size:14px;color:var(--slate);">{{ cr.n }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <p style="font-family:var(--font-mono);font-size:11px;line-height:1.6;color:var(--slate);margin:14px 0 0;">Based on publicly available product info as of Sep 2026 (website comparison). Geidea and Network International are trademarks of their respective owners — used for comparative reference only.</p>
+    <h3 style="font-family:var(--font-display);font-weight:400;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.6px;margin:clamp(48px,7vw,72px) 0 0;color:var(--ink);">Keep what works. <span style="color:var(--slate);font-style:italic;">Replace everything else.</span></h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:24px;">
+      <sc-for list="{{ objections }}" as="ob" hint-placeholder-count="3">
+        <div style="border:1px solid var(--hairline);border-radius:16px;padding:26px;background:#fff;">
+          <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--slate);background:var(--stone);border-radius:20px;padding:5px 11px;">You might be thinking</span>
+          <div style="font-family:var(--font-display);font-size:20px;letter-spacing:-.3px;line-height:1.3;color:var(--ink);margin:16px 0 10px;">{{ ob.q }}</div>
+          <p style="font-size:15px;line-height:1.6;color:var(--slate);margin:0;"><b style="color:var(--ink);font-weight:600;">{{ ob.lead }}</b> {{ ob.b }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
   <!-- TESTIMONIALS (glass marquee) -->
   <section style="overflow:hidden;background:linear-gradient(180deg,#f3e8d6 0%,#ffffff 100%);padding:clamp(64px,9vw,104px) 0;">
     <div style="max-width:1180px;margin:0 auto 40px;padding:0 clamp(20px,5vw,48px);display:flex;flex-direction:column;gap:10px;">
@@ -536,15 +602,15 @@
     <div style="position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--lime);"></div>
     <div style="max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,110px) clamp(20px,5vw,48px);text-align:center;">
       <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5vw,56px);letter-spacing:-1.2px;margin:0;text-wrap:balance;">Ready to see it live in your shop?</h2>
-      <p style="font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.74);max-width:54ch;margin:22px auto 0;line-height:1.5;">Book a free 30-minute demo. We'll show you exactly what your business needs.</p>
-      <button onClick="{{ go_contact }}" style="margin-top:36px;background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:17px;padding:17px 34px;border-radius:32px;transition:opacity .15s ease;" onMouseEnter="{{ __h26 }}" onMouseLeave="{{ __h27 }}">Book My Free Demo</button>
+      <p style="font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.74);max-width:54ch;margin:22px auto 0;line-height:1.5;">Book a 15-minute demo on your own data — your menu, SKUs or outlet list. Then go live before lunch.</p>
+      <button onClick="{{ go_contact }}" style="margin-top:36px;background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:17px;padding:17px 34px;border-radius:32px;transition:opacity .15s ease;" onMouseEnter="{{ __h26 }}" onMouseLeave="{{ __h27 }}">Book My Demo</button>
     </div>
   </section>
 
 </div>
 </sc-if>
 
-<!-- ============ PRODUCT PAGE (youShop / youResto / youQR) ============ -->
+<!-- ============ PRODUCT PAGE (youShop / youResto / Self-Service) ============ -->
 <sc-if value="{{ isProduct }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="{{ pd.name }}" class="ycup">
   <!-- hero -->
@@ -608,7 +674,7 @@
     <p style="font-size:17px;line-height:1.6;color:var(--slate);margin:16px 0 0;max-width:62ch;">{{ pd.featSub }}</p>
     <!-- tier summary pills -->
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:36px 0 8px;">
-      <sc-for list="{{ pd.tierSummary }}" as="ts" hint-placeholder-count="4">
+      <sc-for list="{{ pd.tierSummary }}" as="ts" hint-placeholder-count="3">
         <div style="border:1px solid {{ ts.border }};border-radius:12px;padding:20px;background:{{ ts.bg }};">
           <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-family:var(--font-display);font-size:20px;letter-spacing:-.4px;color:{{ ts.fg }};">{{ ts.name }}</span><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.6px;text-transform:uppercase;color:{{ ts.tagColor }};">{{ ts.tag }}</span></div>
           <div style="font-size:13px;line-height:1.5;color:{{ ts.subColor }};margin-top:10px;">{{ ts.scope }}</div>
@@ -618,7 +684,7 @@
     <!-- matrix -->
     <div style="margin-top:32px;border:1px solid var(--hairline);border-radius:14px;overflow:hidden;overflow-x:auto;">
       <div style="min-width:760px;">
-        <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;position:sticky;top:0;">
+        <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;position:sticky;top:0;">
           <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);">Feature</div>
           <sc-for list="{{ pd.tierNames }}" as="tn" hint-placeholder-count="4">
             <div style="padding:16px 14px;font-family:var(--font-display);font-size:15px;color:#fff;border-left:1px solid rgba(255,255,255,.1);">{{ tn }}</div>
@@ -628,7 +694,7 @@
           <div>
             <div style="padding:14px 18px;background:var(--stone);font-family:var(--font-mono);font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--navy-dark);border-top:1px solid var(--hairline);">{{ sec.cat }}</div>
             <sc-for list="{{ sec.rows }}" as="r" hint-placeholder-count="3">
-              <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;border-top:1px solid var(--hairline);background:{{ r.rowBg }};">
+              <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;border-top:1px solid var(--hairline);background:{{ r.rowBg }};">
                 <div style="padding:14px 18px;">
                   <div style="font-size:14px;color:var(--ink);font-weight:500;">{{ r.feat }}</div>
                   <div style="font-size:12px;color:var(--slate);margin-top:3px;line-height:1.4;">{{ r.desc }}</div>
@@ -683,7 +749,7 @@
   <sc-if value="{{ tabHardware }}" hint-placeholder-val="{{ false }}">
   <div class="ycup" style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);">
     <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(28px,4vw,44px);letter-spacing:-1px;margin:0;color:var(--ink);">{{ pd.hwTitle }}</h2>
-    <p style="font-size:17px;line-height:1.6;color:var(--slate);margin:16px 0 0;max-width:60ch;">Pre-certified, pre-integrated, activated in 48 hours by your local Transacty partner.</p>
+    <p style="font-size:17px;line-height:1.6;color:var(--slate);margin:16px 0 0;max-width:60ch;">One-time, you own it. Kits arrive charged and pre-activated — live in 60 minutes.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:36px;">
       <sc-for list="{{ pd.hardware }}" as="d" hint-placeholder-count="4">
         <div style="border:1px solid var(--hairline);border-radius:22px;overflow:hidden;background:#fff;">
@@ -699,7 +765,7 @@
           <div style="padding:22px;">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;"><span style="font-family:var(--font-display);font-size:21px;letter-spacing:-.4px;color:var(--ink);">{{ d.name }}</span><span style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;color:var(--slate);">{{ d.type }}</span></div>
             <div style="font-size:13px;color:var(--slate);line-height:1.5;margin:12px 0;">{{ d.specShort }}</div>
-            <div style="font-size:14px;color:var(--ink);font-weight:500;margin-bottom:14px;">AED — Contact Sales for pricing</div>
+            <div style="font-size:14px;color:var(--ink);font-weight:500;margin-bottom:14px;">{{ d.price }} <span style="color:var(--slate);font-weight:400;">· one-time</span></div>
             <button onClick="{{ go_shop }}" style="background:var(--near-black);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:13px;padding:10px 18px;border-radius:32px;">Enquire →</button>
           </div>
         </div>
@@ -712,7 +778,7 @@
   <sc-if value="{{ tabAddons }}" hint-placeholder-val="{{ false }}">
   <div class="ycup" style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);">
     <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(28px,4vw,44px);letter-spacing:-1px;margin:0;color:var(--ink);">Extend {{ pd.name }} with add-ons.</h2>
-    <p style="font-size:17px;line-height:1.6;color:var(--slate);margin:16px 0 0;max-width:60ch;">Every add-on activates in 24–48 hours, on any tier. No integration work.</p>
+    <p style="font-size:17px;line-height:1.6;color:var(--slate);margin:16px 0 0;max-width:60ch;">Turn on more when you're ready — on any package. No re-integration, no new data pipes.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:36px;">
       <sc-for list="{{ pd.addons }}" as="a" hint-placeholder-count="6">
         <div onClick="{{ go_addons }}" style="cursor:pointer;border:1px solid var(--hairline);border-radius:14px;padding:22px;transition:border-color .2s ease;" onMouseEnter="{{ __h28 }}" onMouseLeave="{{ __h29 }}">
@@ -747,7 +813,7 @@
         <div>
           <span style="font-family:var(--font-mono);font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">youPay · PAYMENT ORCHESTRATION</span>
           <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1.05;letter-spacing:-1.6px;margin:20px 0 0;max-width:18ch;text-wrap:balance;">Aani QR, card, wallet, QR. Every payment, one dashboard.</h1>
-          <p style="font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.78);max-width:62ch;margin:22px 0 0;">youPay is the payment engine behind all Transacty products. Accept every major UAE payment method. Settle once. Reconcile automatically.</p>
+          <p style="font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.78);max-width:62ch;margin:22px 0 0;">youPay is the payment engine behind all Transacty products. Card, wallet, QR, Pay-by-Link and stored value — one settlement, T+2 to any UAE IBAN, reconciled automatically.</p>
           <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;">
             <button onClick="{{ go_contact }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">Request a Demo</button>
           </div>
@@ -776,10 +842,10 @@
   </section>
   <!-- matrix -->
   <section style="max-width:1180px;margin:0 auto;padding:0 clamp(16px,5vw,48px) clamp(48px,7vw,72px);">
-    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:0 0 28px;color:var(--ink);">What's included, tier by tier.</h2>
+    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:0 0 28px;color:var(--ink);">Rates and settlement, package by package.</h2>
     <div style="border:1px solid var(--hairline);border-radius:14px;overflow:hidden;overflow-x:auto;">
       <div style="min-width:760px;">
-        <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;">
+        <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;">
           <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);">Capability</div>
           <sc-for list="{{ payTierNames }}" as="tn" hint-placeholder-count="4">
             <div style="padding:16px 14px;font-family:var(--font-display);font-size:15px;color:#fff;border-left:1px solid rgba(255,255,255,.1);">{{ tn }}</div>
@@ -789,7 +855,7 @@
           <div>
             <div style="padding:14px 18px;background:var(--stone);font-family:var(--font-mono);font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--navy-dark);border-top:1px solid var(--hairline);">{{ sec.cat }}</div>
             <sc-for list="{{ sec.rows }}" as="r" hint-placeholder-count="3">
-              <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;border-top:1px solid var(--hairline);background:{{ r.rowBg }};">
+              <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;border-top:1px solid var(--hairline);background:{{ r.rowBg }};">
                 <div style="padding:14px 18px;"><div style="font-size:14px;color:var(--ink);font-weight:500;">{{ r.feat }}</div><div style="font-size:12px;color:var(--slate);margin-top:3px;line-height:1.4;">{{ r.desc }}</div></div>
                 <sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="4">
                   <div style="padding:14px 14px;border-left:1px solid var(--hairline);font-size:13px;line-height:1.45;color:{{ c.color }};">{{ c.v }}</div>
@@ -807,7 +873,7 @@
       <div style="position:absolute;right:-80px;top:-80px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(86,97,103,.20),transparent 65%);"></div>
       <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">For institutions</span>
       <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,42px);letter-spacing:-.8px;margin:14px 0 0;max-width:20ch;">youPay also powers acquirers and payment networks.</h2>
-      <p style="font-size:17px;line-height:1.6;color:rgba(255,255,255,.78);max-width:60ch;margin:18px 0 0;">Banks, NBFCs, payment networks, and telcos use youPay as a white-label payment orchestration layer across their merchant portfolio. If you're an institution looking to power payments for your merchants — let's talk.</p>
+      <p style="font-size:17px;line-height:1.6;color:rgba(255,255,255,.78);max-width:60ch;margin:18px 0 0;">Banks, PSPs, payment networks, and telcos use youPay as a white-label payment orchestration layer across their merchant portfolio. If you're an institution looking to power payments for your merchants — let's talk.</p>
       <button onClick="{{ go_contact }}" style="margin-top:28px;background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">Speak to Our Partnerships Team →</button>
     </div>
   </section>
@@ -821,8 +887,8 @@
     <div style="position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--lime);"></div>
     <div style="max-width:1100px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,48px) clamp(40px,6vw,64px);">
       <span style="font-family:var(--font-mono);font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">PRICING</span>
-      <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1.05;letter-spacing:-1.6px;margin:20px 0 0;max-width:16ch;">Start at AED 0. Pay only when you need more.</h1>
-      <p style="font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.78);max-width:60ch;margin:22px 0 0;">Every Transacty product follows the same tier logic. Freemium is free forever. Add-ons activate in 24–48 hours on any tier.</p>
+      <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1.05;letter-spacing:-1.6px;margin:20px 0 0;max-width:16ch;">All in. In AED. No surprises.</h1>
+      <p style="font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.78);max-width:60ch;margin:22px 0 0;">Pick the package for how you sell. Software per store, per month, billed annually. Hardware one-time. Move up any time — one licence covers every till in the store.</p>
     </div>
   </section>
   <!-- product toggle -->
@@ -854,7 +920,7 @@
         </div>
       </sc-for>
     </div>
-    <p style="font-size:14px;color:var(--slate);margin-top:24px;">Enterprise (custom, unlimited) — contact us for chains, franchise groups, and white-label requirements.</p>
+    <p style="font-size:14px;color:var(--slate);margin-top:24px;">All prices per store, per month, billed annually, excluding 5% VAT. Enterprise is custom — chains, franchises, multi-brand groups, SSO and a 24/7 SLA.</p>
   </div>
   </sc-if>
   <!-- add-ons pricing grid -->
@@ -880,26 +946,59 @@
   </sc-if>
   <!-- hardware bundle pricing -->
   <section style="max-width:1180px;margin:0 auto;padding:clamp(24px,4vw,40px) clamp(20px,5vw,48px) clamp(40px,6vw,64px);">
-    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Hardware bundles</span>
-    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.7px;margin:12px 0 8px;color:var(--ink);">Devices bundled with software, free for 12 months.</h2>
-    <p style="font-size:15px;color:var(--slate);margin:0 0 24px;max-width:70ch;">Every hardware bundle includes its matched software tier free for the first year. Year 2 renews at the standard list rate.</p>
+    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Hardware · one-time, you own it</span>
+    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.7px;margin:12px 0 8px;color:var(--ink);">Kits arrive charged, activated, ready to sell.</h2>
+    <p style="font-size:15px;color:var(--slate);margin:0 0 24px;max-width:70ch;">Prices exclude 5% VAT · next-day UAE delivery · pre-activated · PCI PTS 5.x SRED · EMV L1+L2 · OTA fleet-managed.</p>
     <div style="border:1px solid var(--hairline);border-radius:14px;overflow:hidden;overflow-x:auto;">
       <div style="min-width:720px;">
-        <div style="display:grid;grid-template-columns:1.3fr 1.3fr 1fr 1fr 1.3fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;">
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);">Bundle</div>
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Form factor</div>
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">youShop price</div>
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">youResto price</div>
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Bundled software · 1yr free</div>
+        <div style="display:grid;grid-template-columns:1fr 1.4fr 1fr 1.6fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;">
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);">Device</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Best for</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Price · one-time</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">In the box</div>
         </div>
-        <sc-for list="{{ hwBundleRows }}" as="row" hint-placeholder-count="3">
-          <div style="display:grid;grid-template-columns:1.3fr 1.3fr 1fr 1fr 1.3fr;border-top:1px solid var(--hairline);background:{{ row.rowBg }};">
+        <sc-for list="{{ hwBundleRows }}" as="row" hint-placeholder-count="6">
+          <div style="display:grid;grid-template-columns:1fr 1.4fr 1fr 1.6fr;border-top:1px solid var(--hairline);background:{{ row.rowBg }};">
             <div style="padding:16px 18px;font-family:var(--font-display);font-size:16px;color:var(--ink);">{{ row.bundle }}</div>
             <div style="padding:16px 18px;font-size:13px;color:var(--slate);line-height:1.5;border-left:1px solid var(--hairline);">{{ row.form }}</div>
-            <div style="padding:16px 18px;font-size:14px;color:var(--ink);font-weight:600;border-left:1px solid var(--hairline);">{{ row.ysPrice }}</div>
-            <div style="padding:16px 18px;font-size:14px;color:var(--ink);font-weight:600;border-left:1px solid var(--hairline);">{{ row.yrPrice }}</div>
-            <div style="padding:16px 18px;font-size:13px;color:var(--navy-dark);line-height:1.5;border-left:1px solid var(--hairline);">{{ row.software }}</div>
+            <div style="padding:16px 18px;font-size:14px;color:var(--ink);font-weight:600;border-left:1px solid var(--hairline);">{{ row.price }}</div>
+            <div style="padding:16px 18px;font-size:13px;color:var(--navy-dark);line-height:1.5;border-left:1px solid var(--hairline);">{{ row.incl }}</div>
           </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+  <!-- which package fits you + payment rates (deck) -->
+  <section style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,48px) clamp(40px,6vw,64px);">
+    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Which package fits you</span>
+    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.7px;margin:12px 0 24px;color:var(--ink);">Find your setup. <span style="color:var(--slate);font-style:italic;">Start in an hour.</span></h2>
+    <div style="border:1px solid var(--hairline);border-radius:14px;overflow:hidden;overflow-x:auto;">
+      <div style="min-width:760px;">
+        <div style="display:grid;grid-template-columns:1.4fr 1.2fr 1.3fr 1.3fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;">
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);">Your business</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Package</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Hardware</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Popular add-ons</div>
+        </div>
+        <sc-for list="{{ fitRows }}" as="fr" hint-placeholder-count="5">
+          <div style="display:grid;grid-template-columns:1.4fr 1.2fr 1.3fr 1.3fr;border-top:1px solid var(--hairline);background:{{ fr.rowBg }};">
+            <div style="padding:16px 18px;"><div style="font-size:15px;color:var(--ink);font-weight:600;">{{ fr.biz }}</div><div style="font-size:13px;color:var(--slate);margin-top:2px;">{{ fr.sub }}</div></div>
+            <div style="padding:16px 18px;font-size:14px;color:var(--ink);font-weight:500;border-left:1px solid var(--hairline);">{{ fr.pkg }}</div>
+            <div style="padding:16px 18px;font-size:14px;color:var(--ink);border-left:1px solid var(--hairline);">{{ fr.hw }}</div>
+            <div style="padding:16px 18px;font-size:14px;color:var(--slate);border-left:1px solid var(--hairline);">{{ fr.add }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="margin-top:clamp(40px,6vw,56px);background:var(--navy-dark);--coral:var(--lime);color:#fff;border-radius:20px;padding:clamp(26px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px 40px;align-items:start;">
+      <div>
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.6);">Payment rates · per transaction</span>
+        <h3 style="font-family:var(--font-display);font-weight:400;font-size:clamp(22px,3vw,30px);letter-spacing:-.5px;margin:12px 0 10px;">Compare the total, not the rate.</h3>
+        <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.7);margin:0;">MDR is charged on top of software. A card terminal is required for card payments. Volume discounts on Enterprise. All prices exclude 5% VAT. Money settles T+2 to any UAE IBAN.</p>
+      </div>
+      <div>
+        <sc-for list="{{ payRates }}" as="pr" hint-placeholder-count="3">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14);"><span style="font-size:15px;color:rgba(255,255,255,.85);">{{ pr.n }}</span><span style="font-family:var(--font-display);font-size:clamp(22px,3vw,30px);letter-spacing:-.5px;white-space:nowrap;">{{ pr.r }}</span></div>
         </sc-for>
       </div>
     </div>
@@ -941,7 +1040,7 @@
     <div style="max-width:1080px;margin:0 auto;text-align:center;">
       <h1 style="font-family:var(--font-display);font-weight:700;font-size:clamp(25px,3.3vw,37px);letter-spacing:-.8px;margin:0 0 36px;color:var(--ink);">Find the perfect device for your business</h1>
       <div style="display:flex;gap:clamp(8px,1.6vw,22px);justify-content:center;flex-wrap:wrap;">
-        <sc-for list="{{ shopHeroDevices }}" as="t" hint-placeholder-count="7">
+        <sc-for list="{{ shopHeroDevices }}" as="t" hint-placeholder-count="5">
           <button onClick="{{ t.onClick }}" style="background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:10px;width:80px;padding:0;">
             <span style="width:68px;height:68px;border-radius:18px;background:#fff;box-shadow:0 10px 24px -12px rgba(15,7,0,.4);display:flex;align-items:center;justify-content:center;overflow:hidden;transition:transform .18s ease;" onMouseEnter="{{ __h30 }}" onMouseLeave="{{ __h31 }}">
               <img src="{{ t.img }}" alt="{{ t.name }}" style="width:74%;height:74%;object-fit:contain;object-position:center;">
@@ -982,7 +1081,7 @@
             </div>
             <div style="display:flex;align-items:baseline;gap:8px;margin:14px 0 4px;">
               <span style="font-family:var(--font-display);font-weight:700;font-size:24px;color:var(--ink);">{{ d.price }}</span>
-              <span style="font-size:12px;color:var(--slate);">incl. 12 months of software</span>
+              <span style="font-size:12px;color:var(--slate);">one-time · you own it</span>
             </div>
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 16px;">
               <sc-for list="{{ d.badges }}" as="bd" hint-placeholder-count="2">
@@ -1062,7 +1161,7 @@
   <section style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,88px) clamp(20px,5vw,48px);">
     <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Ecosystem & software integration</span>
     <h2 style="font-family:var(--font-display);font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.7px;margin:12px 0 14px;color:var(--ink);max-width:24ch;">Every device already knows your software.</h2>
-    <p style="font-size:15px;line-height:1.6;color:var(--slate);max-width:66ch;margin:0 0 32px;">Each device ships pre-integrated with YouPay, and pairs with YouShop, YouResto or YouQR depending on your business. Pick the device that fits your counter — the software is already matched to it, so there's no separate setup.</p>
+    <p style="font-size:15px;line-height:1.6;color:var(--slate);max-width:66ch;margin:0 0 32px;">Each device ships pre-integrated with youPay, and pairs with youShop, youResto or Self-Service depending on your business. Pick the device that fits your counter — the software is already matched to it, so there's no separate setup.</p>
     <div style="overflow-x:auto;">
       <div style="min-width:560px;display:grid;grid-template-columns:1.4fr repeat(4,1fr);border:1px solid var(--hairline);border-radius:14px;overflow:hidden;">
         <div style="background:var(--navy-dark);--coral:var(--lime);color:#fff;font-family:var(--font-mono);font-size:12px;text-transform:uppercase;letter-spacing:.4px;padding:14px 16px;">Device</div>
@@ -1081,25 +1180,23 @@
 
   <!-- ===== HARDWARE BUNDLE PRICING ===== -->
   <section style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,48px) clamp(56px,8vw,88px);">
-    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Bundle pricing</span>
-    <h2 style="font-family:var(--font-display);font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.7px;margin:12px 0 8px;color:var(--ink);max-width:26ch;">Devices bundled with software, free for 12 months.</h2>
-    <p style="font-size:15px;color:var(--slate);margin:0 0 24px;max-width:70ch;">Every hardware bundle includes its matched software tier free for the first year. Year 2 renews at the standard list rate.</p>
+    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Hardware pricing</span>
+    <h2 style="font-family:var(--font-display);font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.7px;margin:12px 0 8px;color:var(--ink);max-width:26ch;">One-time, you own it.</h2>
+    <p style="font-size:15px;color:var(--slate);margin:0 0 24px;max-width:70ch;">Prices exclude 5% VAT · next-day UAE delivery · pre-activated · PCI PTS 5.x SRED · EMV L1+L2 · OTA fleet-managed.</p>
     <div style="border:1px solid var(--hairline);border-radius:14px;overflow:hidden;overflow-x:auto;">
       <div style="min-width:720px;">
-        <div style="display:grid;grid-template-columns:1.3fr 1.3fr 1fr 1fr 1.3fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;">
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);">Bundle</div>
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Form factor</div>
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">youShop price</div>
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">youResto price</div>
-          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Bundled software · 1yr free</div>
+        <div style="display:grid;grid-template-columns:1fr 1.4fr 1fr 1.6fr;background:var(--navy-dark);--coral:var(--lime);color:#fff;">
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);">Device</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Best for</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">Price · one-time</div>
+          <div style="padding:16px 18px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7);border-left:1px solid rgba(255,255,255,.1);">In the box</div>
         </div>
-        <sc-for list="{{ hwBundleRows }}" as="row" hint-placeholder-count="3">
-          <div style="display:grid;grid-template-columns:1.3fr 1.3fr 1fr 1fr 1.3fr;border-top:1px solid var(--hairline);background:{{ row.rowBg }};">
+        <sc-for list="{{ hwBundleRows }}" as="row" hint-placeholder-count="6">
+          <div style="display:grid;grid-template-columns:1fr 1.4fr 1fr 1.6fr;border-top:1px solid var(--hairline);background:{{ row.rowBg }};">
             <div style="padding:16px 18px;font-family:var(--font-display);font-size:16px;color:var(--ink);">{{ row.bundle }}</div>
             <div style="padding:16px 18px;font-size:13px;color:var(--slate);line-height:1.5;border-left:1px solid var(--hairline);">{{ row.form }}</div>
-            <div style="padding:16px 18px;font-size:14px;color:var(--ink);font-weight:600;border-left:1px solid var(--hairline);">{{ row.ysPrice }}</div>
-            <div style="padding:16px 18px;font-size:14px;color:var(--ink);font-weight:600;border-left:1px solid var(--hairline);">{{ row.yrPrice }}</div>
-            <div style="padding:16px 18px;font-size:13px;color:var(--navy-dark);line-height:1.5;border-left:1px solid var(--hairline);">{{ row.software }}</div>
+            <div style="padding:16px 18px;font-size:14px;color:var(--ink);font-weight:600;border-left:1px solid var(--hairline);">{{ row.price }}</div>
+            <div style="padding:16px 18px;font-size:13px;color:var(--navy-dark);line-height:1.5;border-left:1px solid var(--hairline);">{{ row.incl }}</div>
           </div>
         </sc-for>
       </div>
@@ -1180,7 +1277,7 @@
           </div>
           <div style="display:flex;align-items:baseline;gap:12px;margin-top:22px;">
             <span style="font-family:var(--font-display);font-weight:700;font-size:32px;">{{ hwDoc.price }}</span>
-            <span style="font-size:13px;color:rgba(255,255,255,.65);">incl. 12 months of matching software</span>
+            <span style="font-size:13px;color:rgba(255,255,255,.65);">one-time · you own it · excl. 5% VAT</span>
           </div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
             <sc-for list="{{ hwDoc.badges }}" as="bd" hint-placeholder-count="2">
@@ -1334,8 +1431,8 @@
           <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5vw,58px);line-height:1.05;letter-spacing:-1.4px;margin:18px 0 0;max-width:16ch;text-wrap:balance;">{{ bizDoc.title }}</h1>
           <p style="font-size:clamp(16px,1.9vw,19px);line-height:1.55;color:rgba(255,255,255,.78);max-width:48ch;margin:22px 0 0;">{{ bizDoc.intro }}</p>
           <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;">
-            <button onClick="{{ go_contact }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">{{ t.heroCtaStart }}</button>
-            <button onClick="{{ go_contact }}" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">Book a Demo</button>
+            <button onClick="{{ go_contact }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">Book a Demo</button>
+            <button onClick="{{ go_pricing }}" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">See Pricing</button>
           </div>
         </div>
         <div style="position:relative;">
@@ -1412,8 +1509,8 @@
     <div style="max-width:900px;margin:0 auto;padding:clamp(48px,7vw,96px) clamp(20px,5vw,48px);">
       <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(28px,4vw,48px);letter-spacing:-1px;margin:0 auto;max-width:20ch;text-wrap:balance;">{{ bizDoc.ctaTitle }}</h2>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px;">
-        <button onClick="{{ go_contact }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">{{ t.heroCtaStart }}</button>
-        <button onClick="{{ go_contact }}" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">Talk to Us</button>
+        <button onClick="{{ go_contact }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">Book a Demo</button>
+        <button onClick="{{ go_pricing }}" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">See Pricing</button>
       </div>
     </div>
   </section>
@@ -1427,13 +1524,13 @@
     <div style="position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--lime);"></div>
     <div style="max-width:1100px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,48px) clamp(48px,7vw,72px);">
       <span style="font-family:var(--font-mono);font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">FOR SMALL BUSINESSES</span>
-      <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1.05;letter-spacing:-1.6px;margin:20px 0 0;max-width:16ch;">Start free. No paperwork. No setup fee.</h1>
-      <p style="font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.78);max-width:62ch;margin:22px 0 0;">Transacty's Freemium plan gives your shop everything it needs from day one — billing, Aani QR payments, stock tracking, and VAT summaries. Pay nothing until you're ready to grow.</p>
+      <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1.05;letter-spacing:-1.6px;margin:20px 0 0;max-width:16ch;">One shop. One app. From AED 19 a month.</h1>
+      <p style="font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.78);max-width:62ch;margin:22px 0 0;">youShop Standard gives your shop POS, live stock, loyalty and VAT from day one — AED 19 a store, a month. Kits arrive pre-activated, and you are live in 60 minutes.</p>
     </div>
   </section>
   <section style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);">
-    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">What you get free</span>
-    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:12px 0 32px;color:var(--ink);">Everything to run one counter, at AED 0.</h2>
+    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">What you get on Standard</span>
+    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:12px 0 32px;color:var(--ink);">Everything to run one counter, at AED 19.</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;">
       <sc-for list="{{ smbFree }}" as="f" hint-placeholder-count="6">
         <div style="border:1px solid var(--hairline);border-radius:12px;padding:20px;display:flex;gap:12px;align-items:flex-start;"><span style="color:var(--coral);font-size:18px;flex-shrink:0;">✔</span><span style="font-size:15px;color:var(--ink);line-height:1.4;">{{ f }}</span></div>
@@ -1443,7 +1540,7 @@
   <!-- upgrade path -->
   <section style="background:var(--stone);">
     <div style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);">
-      <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Free → paid path</span>
+      <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Standard → Power → Enterprise</span>
       <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:12px 0 36px;color:var(--ink);">Grow when you're ready. Your data stays.</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-top:1px solid var(--hairline);">
         <sc-for list="{{ upgradePath }}" as="u" hint-placeholder-count="4">
@@ -1478,8 +1575,8 @@
     <div style="max-width:900px;margin:0 auto;padding:clamp(48px,7vw,88px) clamp(20px,5vw,48px);">
       <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(28px,4vw,48px);letter-spacing:-1px;margin:0;">Your shop deserves better than a notebook.</h2>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px;">
-        <button onClick="{{ go_contact }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">{{ t.heroCtaStart }}</button>
-        <button onClick="{{ go_contact }}" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">Talk to Us</button>
+        <button onClick="{{ go_contact }}" style="background:var(--lime);color:#fff;border:none;cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">Book a Demo</button>
+        <button onClick="{{ go_pricing }}" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);cursor:pointer;font-family:var(--font-body);font-weight:500;font-size:16px;padding:15px 28px;border-radius:32px;">See Pricing</button>
       </div>
     </div>
   </section>
@@ -1494,7 +1591,7 @@
     <div style="max-width:1100px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,48px) clamp(48px,7vw,72px);">
       <span style="font-family:var(--font-mono);font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">FOR ENTERPRISE & CHAINS</span>
       <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1.05;letter-spacing:-1.6px;margin:20px 0 0;max-width:14ch;">One platform. Every outlet. Full control.</h1>
-      <p style="font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.78);max-width:62ch;margin:22px 0 0;">From 9 locations to 500, Transacty gives franchise groups, enterprise retailers, and restaurant chains centralised command with local execution.</p>
+      <p style="font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.78);max-width:62ch;margin:22px 0 0;">Chains, franchises and multi-brand groups get the same platform with the full enterprise layer, plugged into the ERP they already run. One contract. One ledger. Zero reconciliation.</p>
     </div>
   </section>
   <section style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);">
@@ -1513,18 +1610,49 @@
       <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">Enterprise-only</span>
       <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:12px 0 30px;color:var(--ink);">Built for scale, security, and control.</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;">
-        <sc-for list="{{ entFeatures }}" as="f" hint-placeholder-count="6">
+        <sc-for list="{{ entFeatures }}" as="f" hint-placeholder-count="8">
           <div style="background:#fff;border:1px solid var(--hairline);border-radius:12px;padding:18px;display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--coral);flex-shrink:0;">✔</span><span style="font-size:15px;color:var(--ink);line-height:1.4;">{{ f }}</span></div>
         </sc-for>
       </div>
     </div>
   </section>
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px) 0;">
+    <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);">The business case</span>
+    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:12px 0 28px;color:var(--ink);">The business case, <span style="color:var(--slate);font-style:italic;">in one table.</span></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;align-items:start;">
+      <div style="border:1px solid var(--hairline);border-radius:14px;overflow:hidden;overflow-x:auto;">
+        <div style="min-width:440px;">
+          <div style="display:grid;grid-template-columns:1.3fr 1.1fr 1.1fr;background:var(--stone);">
+            <div style="padding:14px 16px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--slate);">Metric</div>
+            <div style="padding:14px 16px;font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--slate);">Stitched stack</div>
+            <div style="padding:14px 16px;font-family:var(--font-display);font-size:15px;background:var(--navy-dark);color:#fff;">Transacty</div>
+          </div>
+          <sc-for list="{{ entCase }}" as="ec" hint-placeholder-count="5">
+            <div style="display:grid;grid-template-columns:1.3fr 1.1fr 1.1fr;border-top:1px solid var(--hairline);background:{{ ec.rowBg }};">
+              <div style="padding:14px 16px;font-size:14px;color:var(--ink);font-weight:600;">{{ ec.m }}</div>
+              <div style="padding:14px 16px;font-size:14px;color:var(--slate);">{{ ec.a }}</div>
+              <div style="padding:14px 16px;font-size:14px;color:var(--ink);font-weight:600;background:rgba(243,232,214,.55);">{{ ec.b }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate);margin-bottom:12px;">Enterprise-grade</div>
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;">
+          <sc-for list="{{ entStats }}" as="es" hint-placeholder-count="4">
+            <div style="border:1px solid var(--hairline);border-radius:14px;padding:18px;background:#fff;"><div style="font-family:var(--font-display);font-size:clamp(24px,3vw,32px);letter-spacing:-.6px;color:var(--ink);">{{ es.big }}</div><div style="font-size:13px;color:var(--slate);margin-top:4px;">{{ es.sub }}</div></div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:16px;line-height:1.55;color:var(--slate);margin:24px 0 0;border:1px solid var(--hairline);border-radius:14px;padding:18px 22px;"><b style="color:var(--ink);font-weight:600;">One contract. One ledger.</b> One named team accountable for every outlet — 24/7 on Enterprise.</p>
+  </section>
   <section style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);">
-    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:0 0 36px;color:var(--ink);">How it works for chains.</h2>
+    <h2 style="font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.8px;margin:0 0 36px;color:var(--ink);">Phased rollout. Two flagships first.</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border-top:1px solid var(--hairline);">
       <sc-for list="{{ entSteps }}" as="s" hint-placeholder-count="4">
         <div style="padding:30px 24px 30px 0;border-top:3px solid var(--coral);margin-top:-1px;">
-          <div style="font-family:var(--font-mono);font-size:12px;color:var(--coral);letter-spacing:1px;">STEP {{ s.n }}</div>
+          <div style="font-family:var(--font-mono);font-size:12px;color:var(--coral);letter-spacing:1px;">{{ s.n }}</div>
           <p style="font-size:16px;line-height:1.55;color:var(--ink);margin:14px 0 0;font-weight:500;">{{ s.t }}</p>
         </div>
       </sc-for>
@@ -1806,7 +1934,7 @@
         <div style="display:flex;align-items:center;gap:9px;"><img src="assets/brand/transacty_logo_white.png" alt="Transacty" style="height:38px;width:auto;object-fit:contain;flex:none;"></div>
         <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.6);margin:18px 0 0;max-width:30ch;">{{ t.footTagline }}</p>
         <div style="display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;">
-          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.5px;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.16);padding:5px 10px;border-radius:6px;">3,000+ merchants</span>
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.5px;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.16);padding:5px 10px;border-radius:6px;">100+ merchants</span>
           <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.5px;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.16);padding:5px 10px;border-radius:6px;">VAT-ready</span>
         </div>
       </div>
@@ -1815,7 +1943,7 @@
         <div style="display:flex;flex-direction:column;gap:11px;">
           <a onClick="{{ go_youshop }}" style="cursor:pointer;font-size:14px;color:rgba(255,255,255,.8);text-decoration:none;">youShop</a>
           <a onClick="{{ go_youresto }}" style="cursor:pointer;font-size:14px;color:rgba(255,255,255,.8);text-decoration:none;">youResto</a>
-          <a onClick="{{ go_youqr }}" style="cursor:pointer;font-size:14px;color:rgba(255,255,255,.8);text-decoration:none;">youQR</a>
+          <a onClick="{{ go_youqr }}" style="cursor:pointer;font-size:14px;color:rgba(255,255,255,.8);text-decoration:none;">Self-Service</a>
           <a onClick="{{ go_youpay }}" style="cursor:pointer;font-size:14px;color:rgba(255,255,255,.8);text-decoration:none;">youPay</a>
           <a onClick="{{ go_addons }}" style="cursor:pointer;font-size:14px;color:rgba(255,255,255,.8);text-decoration:none;">Add-Ons</a>
         </div>
@@ -1864,7 +1992,7 @@
         <button onClick="{{ toggleChat }}" aria-label="Close chat" style="background:none;border:none;color:rgba(255,255,255,.75);font-size:22px;line-height:1;cursor:pointer;">✕</button>
       </div>
       <div id="txChatBody" style="flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px;background:var(--stone);">
-        <div style="align-self:flex-start;max-width:86%;background:#fff;border:1px solid var(--hairline);border-radius:14px 14px 14px 4px;padding:12px 14px;font-size:14px;line-height:1.5;color:var(--ink);">Hi! I'm the Transacty assistant. Ask me about youShop, youResto, youQR, youPay, pricing, hardware or add-ons.</div>
+        <div style="align-self:flex-start;max-width:86%;background:#fff;border:1px solid var(--hairline);border-radius:14px 14px 14px 4px;padding:12px 14px;font-size:14px;line-height:1.5;color:var(--ink);">Hi! I'm the Transacty assistant. Ask me about youShop, youResto, Self-Service, youPay, pricing, hardware or add-ons.</div>
         <sc-for list="{{ chatLog }}" as="m" hint-placeholder-count="0">
           <div style="align-self:{{ m.align }};max-width:86%;background:{{ m.bg }};color:{{ m.fg }};border:{{ m.border }};border-radius:{{ m.radius }};padding:12px 14px;font-size:14px;line-height:1.5;white-space:pre-wrap;">{{ m.text }}</div>
         </sc-for>
@@ -1978,57 +2106,55 @@ class Component extends DCLogic {
   _answer = (q) => {
     const s = ' '+q.toLowerCase().replace(/[^a-z0-9\s]/g,' ')+' ';
     const KB = [
-      {k:['price','pricing','cost','how much','plan','plans','tier','tiers','fee','fees','subscription'],
-       a:'Transacty starts free forever. youShop: Starter AED 7.5/POS/mo, Standard AED 18/POS/mo (most popular), Power AED 55/POS/mo, Enterprise on request. youResto: Starter AED 18 Standard AED 37 Power AED 92/POS/mo. youQR is free to start with a small per-order fee (from AED 0). Add-ons activate on any tier.'},
+      {k:['price','pricing','cost','how much','plan','plans','tier','tiers','fee','fees','subscription','package','packages'],
+       a:'Software is per store, per month, billed annually (excl. 5% VAT). youShop: Standard AED 19, Power AED 49, Enterprise custom. youResto: Standard AED 39, Power AED 99, Enterprise custom. Self-Service: Standard AED 0 + AED 1 per order, Power AED 99 (unlimited orders), Enterprise custom. Hardware is one-time.'},
       {k:['youshop','you shop','retail pos','shop pos','billing system'],
-       a:'youShop is our smart retail POS — billing, inventory, loyalty and VAT, all from one dashboard. Free on Freemium; Premium tiers from AED 7.5/POS/mo.'},
-      {k:['youresto','you resto','restaurant','kot','kitchen display','kds','cafe pos','qsr'],
-       a:'youResto runs restaurants front-to-back: digital KOT, KDS, Talabat & Deliveroo, table management and pay-at-table. From AED 18/POS/mo.'},
-      {k:['youqr','you qr','qr menu','qr code order','scan order','loyalty point','loyalty points','loyalty'],
-       a:'youQR turns one QR code into your whole menu — scan, order and pay in under 60 seconds, no app needed, and every paid order earns loyalty points automatically. Free to start; per-order pricing from AED 0.'},
+       a:'youShop is our retail POS — sell and get paid on one device, live stock across every outlet, loyalty, and VAT & FTA e-invoicing built in. Standard AED 19, Power AED 49 per store a month.'},
+      {k:['youresto','you resto','restaurant','kot','kitchen display','kds','cafe pos','qsr','talabat','deliveroo','careem','noon'],
+       a:'youResto runs restaurants front to back: order at the table straight to the KDS, Talabat, Deliveroo, Careem & Noon Food on one screen, recipe costing, split bills and tips. Standard AED 39, Power AED 99 per store a month.'},
+      {k:['self service','self-service','youqr','you qr','qr menu','qr code order','scan order','kiosk','self checkout','loyalty point','loyalty points','loyalty'],
+       a:'Self-Service lets customers order and pay themselves — QR order & pay, kiosk and self-checkout. Standard is AED 0 a month plus AED 1 per order; Power is AED 99 a month with unlimited orders. The y7000 kiosk is AED 2,999 one-time.'},
       {k:['youpay','you pay','payment method','payment methods','accept','tender','card','cards','wallet','wallets','unionpay','union pay','amex','settlement','reconcil'],
        a:'youPay accepts every method in one settlement — Aani QR, Aani, Visa, Mastercard, China UnionPay, Amex, mobile wallets, Pay-by-Link, gift cards and SVA — with automatic reconciliation.'},
-      {k:['y750','750'],
-       a:'The Y750 is a printer-free 285g smart Android POS: 8-core 12nm chip (~2x faster), dual 6.7" + 2.5" screens, angled scanner, dual-sided NFC and up to 18.2h battery. AED 400. Pairs with youShop, youQR and youPay.'},
       {k:['y10','sound box','soundbox'],
-       a:'Y10 is a smart sound box that announces every payment out loud and shows your QR — AED 60. Pairs with youPay and youQR. Add a QR Print Pack (AED 105) for zero-device commerce.'},
-      {k:['y7000','7000','kiosk','self-service','self service','self checkout'],
-       a:'Y7000 is a self-service kiosk — customers order and pay themselves with a built-in scanner and printer. AED 549. KDS & kitchen printer coming soon.'},
-      {k:['y1000 lite','y1000lite','lite'],
-       a:'Y1000 Lite is a drop-proof handheld POS for queue-busting on the shop floor. AED 169.'},
+       a:'The y10 QR SoundBox announces every payment out loud and shows your QR — AED 39 one-time. Pairs with youPay and Self-Service.'},
+      {k:['y7000','7000','kiosk device'],
+       a:'The y7000 self-service kiosk lets customers order and pay themselves — AED 2,999 one-time.'},
       {k:['y1000','1000','handheld'],
-       a:'Y1000 is our all-in-one handheld POS — billing, stock, payments, a built-in printer and scanner in one device. AED 194.'},
+       a:'The y1000 is our handheld POS for floor billing — billing, stock, payments, printer and scanner in one device. AED 189 one-time.'},
       {k:['y4000','4000','tablet'],
-       a:'Y4000 is an 11" smart tablet POS with a built-in printer and eSIM. AED 474.'},
-      {k:['y5000','5000','desktop','terminal','dual screen','dual-screen'],
-       a:'Y5000 is a dual-screen desktop terminal for fixed counters and supermarkets. AED 514.'},
-      {k:['device','devices','hardware','which pos','recommend','machine','terminal'],
-       a:'Our devices: Y10 sound box (AED 60), Y50 mPOS (AED 72), Y750 smart Android POS (AED 400), Y1000 handheld (AED 194), Y1000 Lite (AED 169), Y4000 tablet (AED 474), Y5000 desktop terminal (AED 514), Y7000 self-service kiosk (AED 549). Tell me your business type and I can suggest one.'},
+       a:'The y4000 is a tablet POS built for F&B tableside service. AED 1,099 one-time.'},
+      {k:['y5000','5000','desktop','dual screen','dual-screen','counter terminal'],
+       a:'The y5000 is a dual-screen counter terminal for fixed counters and supermarkets. AED 1,499 one-time.'},
+      {k:['device','devices','hardware','which pos','recommend','machine','terminal','starter kit'],
+       a:'Hardware is one-time and you own it: y1000 handheld AED 189, y4000 tablet AED 1,099, y5000 dual-screen counter AED 1,499, y7000 kiosk AED 2,999, y10 QR SoundBox AED 39. A starter kit (Bluetooth printer + your own phone) starts at AED 219. Prices excl. 5% VAT, next-day UAE delivery.'},
       {k:['cafe','café','coffee','restaurant device','food'],
-       a:'For a café or restaurant, the Y1000 handheld or Y4000 tablet POS work well, with a Y7000 kiosk for self-order — all tied together by youResto.'},
-      {k:['shop','retail','store','supermarket','grocery','baqala'],
-       a:'For retail, the Y1000 handheld or the Y5000 dual-screen desktop terminal are the go-to, paired with youShop.'},
+       a:'For a café or QSR, most merchants pick youResto Standard (AED 39) with a y5000 counter and a y7000 kiosk. Restaurant groups usually add y4000 tablets per outlet on Power.'},
+      {k:['shop','retail','store','supermarket','grocery','baqala','pharmacy','salon'],
+       a:'For a single shop, youShop Standard (AED 19) with a y1000 handheld and a y10 SoundBox is the usual setup. Retail chains go Power with a y5000 counter plus y1000s on the floor.'},
       {k:['free','freemium','trial','no cost'],
-       a:'Yes — Freemium is free forever, no card needed. You only upgrade when you hit a limit.'},
-      {k:['add-on','add on','addon','addons','youmarketing','youinsight','youlend','youworkflows','youaccounts','fraud','network token'],
-       a:'Add-ons plug into your existing data: youMarketing (AED 33/mo + msg), youInsight (AED 26/mo), youWorkflows (AED 44/mo), youLend (rev-share), youAccounts (AED 29/mo), plus 3DS2, network tokens and advanced fraud rules on Power.'},
-      {k:['qr print','print pack','table stand','shelf label','counter card','zero device','zero-device'],
-       a:'The QR Print Pack is zero-device commerce for AED 105 one-time — table stands, counter cards and shelf labels pre-printed with your branded QR. No device, no counter space.'},
-      {k:['bluetooth printer','bt printer','mobile printer','dongle','stall','pop-up','pop up'],
-       a:'The Mobile + BT Printer package is AED 215 — a Bluetooth 58mm printer and card-reader dongle that runs on your own Android/iOS phone. Perfect for micro shops, stalls and pop-ups.'},
+       a:'Self-Service Standard is AED 0 a month — you pay AED 1 per order. youShop starts at AED 19 and youResto at AED 39 per store a month.'},
+      {k:['add-on','add on','addon','addons','youmarketing','youinsight','youlend','youworkflows','youaccounts','youhr','youlens','webshop'],
+       a:'Add-ons: youMarketing (WABA) AED 30/mo + per message, youInsight AED 25/mo per store, youLens AED 65/mo + AED 25/camera, youWorkflows AED 50/mo, youAccounts AED 30/mo, youHR AED 15/staff, WebShop & Social AED 15/mo (youAccounts, youHR and WebShop are included in Power), youLend on revenue share.'},
+      {k:['mdr','rate','rates','commission','transaction fee','card fee'],
+       a:'Payment rates per transaction: card MDR 2–3% (Visa, Mastercard, Amex), domestic wallets 0.9–1.5%, QR rails 0.5–1.2% — on top of software. Volume discounts on Enterprise.'},
+      {k:['settle','settlement','payout','iban','bank','t+2'],
+       a:'Money settles T+2 to any UAE IBAN — Emirates NBD, FAB, ADCB, Mashreq, RAKBANK, DIB and more. No change to your operating account.'},
+      {k:['licensed','license','licence','pci','secure','security'],
+       a:'We operate under a CB UAE-licensed acquiring partner with PCI DSS Level 1. Card data is tokenised at the terminal.'},
       {k:['vat','tax','invoice','filing'],
-       a:'Every bill is VAT-ready. youShop and youResto generate filing-ready VAT summaries automatically.'},
-      {k:['setup','set up','install','onboard','48','how long','get started','activation'],
-       a:'We set you up in about 48 hours — we configure the device, import your products or menu, and train your staff.'},
+       a:'Every sale issues a compliant tax invoice. FTA e-invoicing is supported, and VAT returns export for your accountant.'},
+      {k:['setup','set up','install','onboard','60 minutes','how long','get started','activation'],
+       a:'Live in 60 minutes. Kits ship next day across the UAE, charged and pre-activated — plug in, log in, sell.'},
       {k:['language','arabic','english','عربي'],
-       a:'The site works in English and Arabic — switch anytime from the language toggle at the top right.'},
+       a:'The app is in English and Arabic. Receipts, WhatsApp and support are available in English, Arabic, Hindi and Tagalog.'},
       {k:['contact','call','phone','email','talk','sales','demo','reach'],
        a:'Reach our team from the Contact page — we respond within 24 hours. Our office: Level 1, Reef Tower, Cluster O, JLT, Dubai.'},
     ];
     let best=null, bestScore=0;
     for(const e of KB){ let sc=0; for(const kw of e.k){ if(s.indexOf(' '+kw.toLowerCase())>=0 || s.indexOf(kw.toLowerCase()+' ')>=0 || s.indexOf(kw.toLowerCase())>=0) sc+=kw.length; } if(sc>bestScore){bestScore=sc;best=e;} }
     if(best && bestScore>0) return best.a;
-    return "I can help with Transacty products (youShop, youResto, youQR, youPay), pricing, hardware, payments and add-ons. Try “What does youShop cost?” or “Which device suits a café?”";
+    return "I can help with Transacty products (youShop, youResto, Self-Service, youPay), pricing, hardware, payments and add-ons. Try “What does youShop cost?” or “Which device suits a café?”";
   };
 
   renderVals(){
@@ -2041,10 +2167,10 @@ class Component extends DCLogic {
       navHardware:{en:'Hardware',ar:'الأجهزة'},
       navContact:{en:'Contact',ar:'تواصل معنا'},
       navDemo:{en:'Book a Demo',ar:'احجز عرضًا توضيحيًا'},
-      heroEyebrow:{en:'For shops & restaurants',ar:'للمتاجر والمطاعم'},
-      heroHeadline:{en:'Run your shop. Not your paperwork.',ar:'أدِر متجرك، لا أوراقك.'},
-      heroSub:{en:'Transacty gives UAE retail shops and restaurants everything they need to sell, manage, and grow — on one platform. Start free. No setup fee. VAT-ready from day one.',ar:'تمنح Transacty متاجر التجزئة والمطاعم كل ما تحتاجه للبيع والإدارة والنمو — على منصة واحدة. ابدأ مجانًا. بدون رسوم إعداد. جاهز لضريبة القيمة المضافة من اليوم الأول.'},
-      heroCtaStart:{en:'Start Free — AED 0',ar:'ابدأ مجانًا — 0 درهم'},
+      heroEyebrow:{en:'Transacty · UAE',ar:'ترانزاكتي · الإمارات'},
+      heroHeadline:{en:'One app for all your business headache.',ar:'تطبيق واحد لكل هموم أعمالك.'},
+      heroSub:{en:'POS, payments, HR, books, marketing and AI — one app for UAE retailers, restaurants and chains. One login, one monthly bill, live in 60 minutes.',ar:'نقاط البيع والمدفوعات والموارد البشرية والحسابات والتسويق والذكاء الاصطناعي — تطبيق واحد لتجار التجزئة والمطاعم والسلاسل في الإمارات. تسجيل دخول واحد، فاتورة شهرية واحدة، وجاهز خلال 60 دقيقة.'},
+      heroCtaStart:{en:'Book a Demo',ar:'احجز عرضًا توضيحيًا'},
       heroCtaHow:{en:'See How It Works',ar:'شاهد كيف يعمل'},
       secBuiltFor:{en:'Built for your business',ar:'مصمم لنشاطك التجاري'},
       secOperate:{en:'Built for how you want to operate.',ar:'مصمم للطريقة التي تريد أن تعمل بها.'},
@@ -2053,12 +2179,14 @@ class Component extends DCLogic {
       secAddons:{en:'Six add-ons. Activate any time.',ar:'ست إضافات. فعّلها في أي وقت.'},
       secHwHeadline:{en:'The right device for every counter.',ar:'الجهاز المناسب لكل نقطة بيع.'},
       opCaptionDefault:{en:'Quick checkouts, VAT billing, and live stock — all from one screen.',ar:'دفع سريع، فواتير ضريبية، ومخزون مباشر — كلها من شاشة واحدة.'},
-      step1t:{en:'Pick your plan',ar:'اختر خطتك'},
-      step1b:{en:'Choose freemium or a premium tier. No credit card needed to start.',ar:'اختر الخطة المجانية أو إحدى الخطط المميزة. لا حاجة لبطاقة ائتمان للبدء.'},
-      step2t:{en:'Get set up in 48 hours',ar:'جاهز خلال 48 ساعة'},
-      step2b:{en:'We configure your device, import your products, and train your staff.',ar:'نقوم بإعداد جهازك، واستيراد منتجاتك، وتدريب فريقك.'},
-      step3t:{en:'Sell. Manage. Grow.',ar:'بِع. أدِر. انمُ.'},
-      step3b:{en:'Bill customers, track stock, run loyalty, read reports — all from one screen.',ar:'أصدر الفواتير، تابع المخزون، شغّل برامج الولاء، واقرأ التقارير — كلها من شاشة واحدة.'},
+      step1t:{en:'See it on your data',ar:'شاهده على بياناتك'},
+      step1b:{en:'A 15-minute demo with your own menu, SKUs or outlet list.',ar:'عرض لمدة 15 دقيقة على قائمتك أو أصنافك أو قائمة فروعك.'},
+      step2t:{en:'Pick your package',ar:'اختر باقتك'},
+      step2b:{en:'Package, hardware and add-ons that fit your business — priced per store, in AED.',ar:'الباقة والأجهزة والإضافات المناسبة لنشاطك — بسعر لكل متجر وبالدرهم.'},
+      step3t:{en:'Get your kit',ar:'استلم أجهزتك'},
+      step3b:{en:'Ships next day across the UAE — charged and pre-activated.',ar:'يُشحن في اليوم التالي داخل الإمارات — مشحونًا ومفعّلًا مسبقًا.'},
+      step4t:{en:'Live in 60 minutes',ar:'جاهز خلال 60 دقيقة'},
+      step4b:{en:'Plug in, log in, sell. Your first sale settles T+2 to your UAE IBAN.',ar:'وصّل، سجّل الدخول، وابدأ البيع. تُسوّى أول عملية بيع خلال يومي عمل إلى حسابك المصرفي في الإمارات.'},
       footTagline:{en:'Sell smarter, manage better, grow faster. For every shop and restaurant in the UAE.',ar:'نصنع مشهد التكنولوجيا بالشراكة مع علامات عالمية لتقديم أفضل الحلول.'},
       tq1:{en:'I used to write bills by hand. Now I bill 3x faster and my VAT report is ready in one click.',ar:'كنت أكتب الفواتير بيدي. الآن أُصدرها أسرع بثلاث مرات، وتقرير الضريبة جاهز بنقرة واحدة.'},
       tq2:{en:'We connected Talabat and our own counter on one screen. Our kitchen errors dropped by half.',ar:'ربطنا تطبيقات التوصيل ونقطة البيع على شاشة واحدة. انخفضت أخطاء المطبخ إلى النصف.'},
@@ -2091,7 +2219,7 @@ class Component extends DCLogic {
         links:[{t:'Features',p:'youshop',tab:'features'},{t:'Pricing',p:'youshop',tab:'pricing'},{t:'Hardware for retail',p:'youshop',tab:'hardware'}] },
       { cat:'Restaurant', name:'youResto', sub:'Restaurant management, front to back', page:'youresto',
         links:[{t:'Features',p:'youresto',tab:'features'},{t:'Pricing',p:'youresto',tab:'pricing'},{t:'Hardware for F&B',p:'youresto',tab:'hardware'}] },
-      { cat:'QR Commerce', name:'youQR', sub:'Scan. Order. Pay. No app needed.', page:'youqr',
+      { cat:'Self-Service', name:'Self-Service', sub:'Kiosk, QR order & pay, self-checkout', page:'youqr',
         links:[{t:'Features',p:'youqr',tab:'features'},{t:'Pricing',p:'youqr',tab:'pricing'},{t:'How it works',p:'youqr',tab:'overview'}] },
       { cat:'Payments', name:'youPay', sub:'All payment methods, one settlement', page:'youpay',
         links:[{t:'Channels & methods',p:'youpay'},{t:'For acquirers / PSPs',p:'youpay'}] },
@@ -2143,12 +2271,11 @@ class Component extends DCLogic {
       return { name:s.name, sub:s.sub, iconEl: ICO[s.key](t.st), tileBg:t.bg, onClick:()=>this.go('addons') };
     });
     const megaDevices = [
-      {name:'Y1000', type:'All-in-One Handheld POS',    img:__IMG['assets/hw/y1000.png']},
-      {name:'Y4000', type:'Smart Tablet POS',  img:__IMG['assets/hw/y4000.png']},
-      {name:'Y5000', type:'Desktop Terminal',  img:__IMG['assets/hw/y5000.png']},
-      {name:'Y50',   type:'Handheld POS',       img:__IMG['assets/hw/y50.png']},
-      {name:'Y750',  type:'Smart Android POS',  img:__IMG['assets/hw/y750.png']},
-      {name:'Y7000', type:'Self-Checkout',      img:__IMG['assets/hw/y7000.png']},
+      {name:'Y1000', type:'Handheld · floor billing', img:__IMG['assets/hw/y1000.png']},
+      {name:'Y4000', type:'Tablet · F&B tableside', img:__IMG['assets/hw/y4000.png']},
+      {name:'Y5000', type:'Dual-screen counter', img:__IMG['assets/hw/y5000.png']},
+      {name:'Y7000', type:'Self-service kiosk', img:__IMG['assets/hw/y7000.png']},
+      {name:'Y10',   type:'QR SoundBox', img:__IMG['assets/hw/y10.png']},
     ].map(d=>({...d, onClick:()=>this.go('shop')}));
 
     // ---- Business Type mega menu (lens rail + 2-col grid) ----
@@ -2179,6 +2306,15 @@ class Component extends DCLogic {
         {label:'Multi-outlet Management', ico:'enterprise', slug:'multioutlet'},
         {label:'Reports & Analytics', ico:'insight', slug:'reports'},
       ]},
+      { key:'solution', name:'By Solution', ico:'workflows', items:[
+        {label:'Digital Café', ico:'cafe', slug:'solcafe'},
+        {label:'FMCG Distribution', ico:'inventory', slug:'solfmcg'},
+        {label:'Taxi & Fleet', ico:'pay', slug:'solfleet'},
+        {label:'Production Enterprise', ico:'enterprise', slug:'solproduction'},
+        {label:'Micro-merchant', ico:'qr', slug:'solmicro'},
+        {label:'Multi-brand Chain', ico:'storefront', slug:'solmultibrand'},
+        {label:'Cloud Kitchen (delivery-only)', ico:'cloud', slug:'solcloudkitchen'},
+      ]},
     ];
     const _bizActiveIdx = (S.bizLens==null) ? 0 : S.bizLens;
     const businessLensList = businessLenses.map((g,i)=>{
@@ -2198,7 +2334,7 @@ class Component extends DCLogic {
     const bizFlatLinks = businessLenses.flatMap(g => g.items.map(it => ({ label:it.label, onClick:()=>this.go('bizdetail', it.slug) })));
 
     // ---- Per-item detail content (By Business Type / Industry / Use case) ----
-    const _prodPg = { youShop:'youshop', youResto:'youresto', youQR:'youqr', youPay:'youpay',
+    const _prodPg = { youShop:'youshop', youResto:'youresto', youQR:'youqr', 'Self-Service':'youqr', youPay:'youpay', youWorkflows:'addons', youHR:'addons',
       youInsight:'addons', youMarketing:'addons', youLend:'addons', youAccounts:'addons' };
     const _bd = (lens,name,title,intro,pains,solves,products,hardware,ctaTitle) =>
       ({ lens, name, title, intro, pains, solves, products, hardware, ctaTitle });
@@ -2213,7 +2349,7 @@ class Component extends DCLogic {
          {t:'Digital credit book',b:'Track credit customers, send WhatsApp reminders, and settle balances without the notebook.'},
          {t:'VAT on autopilot',b:'Every bill is VAT-ready; download filing-ready summaries in one tap.'}],
         [{name:'youShop',why:'Retail POS built for fast neighbourhood counters.'},{name:'youPay',why:'Aani QR, card and wallet in one clean settlement.'}],
-        ['Y1000','Y50 — Handheld POS'],
+        ['Y1000','Y10 — QR SoundBox'],
         'Turn your baqala into the smartest shop on the street.'),
       restaurant: _bd('Business Type','Restaurant & QSR',
         'From order to kitchen to payment — without the chaos.',
@@ -2221,7 +2357,7 @@ class Component extends DCLogic {
         ['Orders lost between table and kitchen','Talabat & Deliveroo menus out of sync','Slow table turnover at peak','Aggregator payouts never tally'],
         [{t:'Digital KOT',b:'Captains take orders on a tablet; tickets print in the kitchen instantly — no shouting, no missed items.'},
          {t:'Aggregators in one screen',b:'Talabat and Deliveroo orders land in the same dashboard with menu and stock synced.'},
-         {t:'Pay at the table',b:'Generate a Aani QR QR or tap a card at the table to turn tables faster.'},
+         {t:'Pay at the table',b:'Show an Aani QR code or tap a card at the table to turn tables faster.'},
          {t:'Payouts that tally',b:'Auto-reconcile aggregator settlements against orders, commissions and refunds.'}],
         [{name:'youResto',why:'Restaurant management, front to back.'},{name:'youPay',why:'Pay-at-table and instant settlement.'}],
         ['Y4000 — Smart Tablet POS','Y1000'],
@@ -2235,7 +2371,7 @@ class Component extends DCLogic {
          {t:'Know your bestsellers',b:'Hourly sales insights show what to bake more of, and when.'},
          {t:'Reward regulars',b:'Points and offers that bring your morning crowd back tomorrow.'}],
         [{name:'youResto',why:'Counter + kitchen built for F&B.'},{name:'youMarketing',why:'Loyalty and WhatsApp offers.'}],
-        ['Y1000','Y50 — Handheld POS'],
+        ['Y1000','Y10 — QR SoundBox'],
         'Keep the queue moving and the regulars coming.'),
       pharmacy: _bd('Business Type','Pharmacy',
         'Billing that respects batches, expiry and compliance.',
@@ -2257,7 +2393,7 @@ class Component extends DCLogic {
          {t:'Move seasonal stock',b:'Spot slow sellers early and run targeted markdowns.'},
          {t:'Know your shoppers',b:'Build profiles and send new-arrival alerts on WhatsApp.'}],
         [{name:'youShop',why:'Retail POS with a full variant matrix.'},{name:'youMarketing',why:'New-arrival and win-back campaigns.'}],
-        ['Y1000','Y50 — Handheld POS'],
+        ['Y1000','Y10 — QR SoundBox'],
         'Sell more of what your shoppers love.'),
       electronics: _bd('Business Type','Electronics',
         'Serial numbers, warranties and high-value billing.',
@@ -2279,7 +2415,7 @@ class Component extends DCLogic {
          {t:'Manage thousands of SKUs',b:'Bulk import, categories and barcodes keep the catalogue tidy.'},
          {t:'Price in one place',b:'Update prices and offers centrally; every lane reflects it instantly.'}],
         [{name:'youShop',why:'Multi-lane retail POS.'},{name:'youInsight',why:'Category and basket analytics.'}],
-        ['Y5000 — Desktop Terminal','Y7000 — Self-Checkout'],
+        ['Y5000 — Desktop Terminal','Y7000 — Self-Service Kiosk'],
         'Shorter queues, fuller shelves, tighter control.'),
       cloudkitchen: _bd('Business Type','Cloud Kitchen',
         'One kitchen, every brand, all your aggregators.',
@@ -2312,7 +2448,7 @@ class Component extends DCLogic {
          {t:'Kitchen in sync',b:'Digital KOTs and kitchen displays cut errors and delays.'},
          {t:'Control food cost',b:'Recipe-level inventory shows true cost and wastage.'},
          {t:'Payouts that tally',b:'Auto-reconcile aggregator settlements to the last fils.'}],
-        [{name:'youResto',why:'End-to-end restaurant operations.'},{name:'youQR',why:'Scan-order-pay at the table.'}],
+        [{name:'youResto',why:'End-to-end restaurant operations.'},{name:'Self-Service',why:'Scan-order-pay at the table.'}],
         ['Y4000 — Smart Tablet POS','Y1000'],
         'A calmer kitchen and a fuller till.'),
       hospitality: _bd('Industry','Hospitality',
@@ -2335,7 +2471,7 @@ class Component extends DCLogic {
          {t:'Remember every customer',b:'Visit and purchase history at your fingertips.'},
          {t:'Audit-ready',b:'Keep compliance and tax records inspection-ready.'}],
         [{name:'youShop',why:'Retail with batch and expiry control.'},{name:'youMarketing',why:'Reminders and re-engagement.'}],
-        ['Y1000','Y50 — Handheld POS'],
+        ['Y1000','Y10 — QR SoundBox'],
         'Spend time on care, not paperwork.'),
       services: _bd('Industry','Services',
         'Service businesses, billed without friction.',
@@ -2346,7 +2482,7 @@ class Component extends DCLogic {
          {t:'Loyal customers, recognised',b:'History, packages and memberships in one place.'},
          {t:'Get paid, then follow up',b:'Aani QR/card payments with WhatsApp reminders.'}],
         [{name:'youShop',why:'Flexible billing for services.'},{name:'youMarketing',why:'Bookings and reminders.'}],
-        ['Y50 — Handheld POS','Y1000'],
+        ['Y10 — QR SoundBox','Y1000'],
         'Less admin, more booked slots.'),
       chains: _bd('Industry','Enterprise & Chains',
         'Centralised control across every outlet.',
@@ -2357,7 +2493,7 @@ class Component extends DCLogic {
          {t:'Role-based control',b:'Decide who sees and does what — by outlet, region and role.'},
          {t:'Integrations that hold',b:'APIs and ERP connectors maintained for you.'}],
         [{name:'youShop',why:'Multi-outlet retail at scale.'},{name:'youInsight',why:'Enterprise-wide analytics.'}],
-        ['Y5000 — Desktop Terminal','Y7000 — Self-Checkout'],
+        ['Y5000 — Desktop Terminal','Y7000 — Self-Service Kiosk'],
         'Run the whole network from one screen.'),
       // ===== By Use case =====
       billing: _bd('Use case','Billing & VAT',
@@ -2380,7 +2516,7 @@ class Component extends DCLogic {
          {t:'Buy just enough',b:'Demand trends prevent overstocking and dead stock.'},
          {t:'True landed cost',b:'Track cost, tax and margin per item.'}],
         [{name:'youShop',why:'Inventory built into billing.'},{name:'youInsight',why:'Demand forecasting.'}],
-        ['Y50 — Handheld POS','Y1000'],
+        ['Y10 — QR SoundBox','Y1000'],
         'Stop guessing your stock.'),
       loyalty: _bd('Use case','Loyalty & CRM',
         'Turn one-time buyers into regulars.',
@@ -2402,7 +2538,7 @@ class Component extends DCLogic {
          {t:'Track settlements',b:'See what hit the bank and when, in one place.'},
          {t:'Fast refunds',b:'Process refunds without breaking your books.'}],
         [{name:'youPay',why:'All methods, one settlement.'},{name:'youAccounts',why:'Reconciliation and books.'}],
-        ['Y1000','Y50 — Handheld POS'],
+        ['Y1000','Y10 — QR SoundBox'],
         'Get paid every way, reconciled every time.'),
       multioutlet: _bd('Use case','Multi-outlet Management',
         'Many outlets. One command centre.',
@@ -2426,6 +2562,84 @@ class Component extends DCLogic {
         [{name:'youInsight',why:'AI analytics and forecasting.'},{name:'youShop',why:'The data source at the counter.'}],
         ['Y5000 — Desktop Terminal'],
         'Let your data run the shop with you.'),
+      // ===== By Solution (deck: youcloudpay.com/solutions) =====
+      solcafe: _bd('Solution · Hospitality','Digital Café',
+        'Serve faster. Own the customer. Waste less.',
+        'Guests order and pay by QR or kiosk — no queues. The kitchen sees every order instantly, and your books update themselves.',
+        ['Long ordering & payment queues','High aggregator commissions','Overproduction & food waste','Manual bookkeeping'],
+        [{t:'Order',b:'Guests order by QR at the table or at a y7000 kiosk — no queue at the counter.'},
+         {t:'Kitchen',b:'Every order lands on the kitchen display the moment it is paid.'},
+         {t:'Pay',b:'Aani, cards and wallets in one settlement, T+2 to your UAE IBAN.'},
+         {t:'Books & insights',b:'Sales post to your books automatically, and insights show what to prep tomorrow.'}],
+        [{name:'youResto',why:'Orders, kitchen display and menu in one place.'},{name:'Self-Service',why:'QR order & pay and kiosk ordering.'},{name:'youPay',why:'Every payment method, one settlement.'}],
+        ['Y7000 — Self-Service Kiosk','Y5000 — Desktop Terminal'],
+        'Serve faster from tomorrow morning.'),
+      solfmcg: _bd('Solution · Distribution','FMCG Distribution',
+        'Sell the route. Settle the same day.',
+        'Your van team takes orders and collects on the route — who buys on credit, what is left in the van, and today\u2019s cash are all back at head office by evening.',
+        ['Paper order books on the route','Uncontrolled outlet credit','Stock leakage between van and depot','Slow cash reconciliation'],
+        [{t:'Route & order',b:'Reps take orders on a y1000 handheld at every outlet on the route.'},
+         {t:'Deliver & collect',b:'Collect by card, QR or cash at the door, with outlet credit tracked live.'},
+         {t:'Van stock',b:'See exactly what is left in each van against what left the depot.'},
+         {t:'Settle',b:'The day\u2019s cash and credit are reconciled at head office by evening.'}],
+        [{name:'youShop',why:'Orders, van stock and outlet credit.'},{name:'youPay',why:'Collect on the route, settle centrally.'},{name:'youInsight',why:'Route and outlet performance.'}],
+        ['Y1000','Y10 — QR SoundBox'],
+        'Put your whole route on one screen.'),
+      solfleet: _bd('Solution · Mobility','Taxi & Fleet',
+        'Accept in the vehicle. Pay the driver daily.',
+        'Every fare is tapped or scanned with a loud \u201cpaid\u201d confirmation — drivers get paid out automatically each day, and every ride\u2019s money shows in one place.',
+        ['Cash handling and driver float','No proof of fare payment','Manual daily payouts','No fleet-level visibility'],
+        [{t:'Tap or scan',b:'Passengers tap a card or scan a QR in the vehicle.'},
+         {t:'Confirm out loud',b:'The y10 SoundBox announces every paid fare — no disputes.'},
+         {t:'Daily payouts',b:'Driver earnings are paid out automatically each day.'},
+         {t:'Fleet view',b:'Every ride\u2019s money in one report, across the whole fleet.'}],
+        [{name:'youPay',why:'In-vehicle card and QR acceptance.'},{name:'youWorkflows',why:'Automatic daily driver payouts.'}],
+        ['Y10 — QR SoundBox','Y1000'],
+        'Take cash out of the car.'),
+      solproduction: _bd('Solution · Manufacturing','Production Enterprise',
+        'Cost the recipe. Track every batch.',
+        'Plan one big batch at your central kitchen, send stock out to each outlet, and know exactly what every unit really costs you.',
+        ['Unknown true cost per unit','Untracked batches and wastage','Manual transfer paperwork','Disconnected outlet demand'],
+        [{t:'Plan & produce',b:'Plan batches at the central kitchen from real outlet demand.'},
+         {t:'Transfer',b:'Send stock to each outlet with digital transfer notes — no paperwork.'},
+         {t:'Sell',b:'Outlets sell from the same recipe and stock records.'},
+         {t:'Cost',b:'See the true cost of every unit, including wastage.'}],
+        [{name:'youResto',why:'Recipes, central kitchen and commissary.'},{name:'youInsight',why:'True cost and demand forecasting.'}],
+        ['Y5000 — Desktop Terminal','Y4000 — Smart Tablet POS'],
+        'Know what every unit really costs.'),
+      solmicro: _bd('Solution · Ultra-SMB','Micro-merchant',
+        'Start at zero. Grow into the stack.',
+        'Start with just a QR code and a small speaker that announces every sale — add billing and stock tracking when your business is ready.',
+        ['No affordable POS','No proof of payment','No credit history','No digital records'],
+        [{t:'Scan & pay',b:'Customers scan your QR; the y10 SoundBox announces every payment.'},
+         {t:'Proof of payment',b:'Every sale is confirmed out loud and recorded.'},
+         {t:'Bill when ready',b:'Add billing and stock tracking when you need them.'},
+         {t:'Borrow',b:'Your sales history unlocks working-capital offers through youLend.'}],
+        [{name:'Self-Service',why:'QR order & pay from AED 0 a month.'},{name:'youPay',why:'Every payment, one settlement.'},{name:'youLend',why:'Working capital from your sales history.'}],
+        ['Y10 — QR SoundBox'],
+        'Start with a QR code and a speaker.'),
+      solmultibrand: _bd('Solution · Enterprise Retail','Multi-brand Chain',
+        'Several brands. One back office.',
+        'Set menus and prices once at head office, give each brand only the access it needs, and see one clear profit picture for the whole group.',
+        ['Divergent pricing across outlets','No consolidated reporting','Uncontrolled user access','Fragmented supplier terms'],
+        [{t:'Central',b:'Set catalogues, menus and prices once at head office.'},
+         {t:'Push',b:'Push changes to every brand and outlet at once.'},
+         {t:'Govern',b:'Role-based access gives each brand only what it needs.'},
+         {t:'Consolidate',b:'One profit picture for the whole group in youAccounts.'}],
+        [{name:'youShop',why:'Enterprise retail with multi-brand control.'},{name:'youAccounts',why:'Consolidated books for the group.'}],
+        ['Y5000 — Desktop Terminal','Y1000'],
+        'Run every brand from one back office.'),
+      solcloudkitchen: _bd('Solution · Cloud Kitchen','Cloud Kitchen (delivery-only)',
+        'Delivery only. Every channel in one queue.',
+        'Talabat, Deliveroo and your own channels all land in one kitchen queue — sold-out items disappear everywhere at once, and you see what each brand truly earns.',
+        ['A tablet farm per aggregator','Menu drift between channels','Items sold after running out','No prime-cost visibility'],
+        [{t:'Channels',b:'Talabat, Deliveroo, Careem, Noon Food and your own ordering in one queue.'},
+         {t:'KDS & dispatch',b:'One kitchen display from prep to dispatch.'},
+         {t:'Sync',b:'86 an item once — it disappears from every channel.'},
+         {t:'Prime cost',b:'See what each brand truly earns after food and aggregator costs.'}],
+        [{name:'youResto',why:'All aggregators on one kitchen screen.'},{name:'youWorkflows',why:'Menu sync and sold-out automation.'}],
+        ['Y4000 — Smart Tablet POS','Y5000 — Desktop Terminal'],
+        'One queue for every channel.'),
     };
     const _bi = (n) => 'assets/img/'+n;
     const bizImg = {
@@ -2433,6 +2647,7 @@ class Component extends DCLogic {
       fashion:_bi('boutique_pos.jpg'), electronics:_bi('biz_electronics.jpg'), supermarket:_bi('uae_supermarket.jpg'), cloudkitchen:_bi('biz_kitchen.jpg'),
       retail:_bi('biz_retail.jpg'), fnb:_bi('biz_fnb.jpg'), hospitality:_bi('biz_hotel.jpg'), health:_bi('biz_spa.jpg'), services:_bi('biz_barber.jpg'), chains:_bi('biz_chain.jpg'),
       billing:_bi('biz_billing.jpg'), inventory:_bi('biz_inventory.jpg'), loyalty:_bi('biz_loyalty.jpg'), payments:_bi('biz_payments.jpg'), multioutlet:_bi('biz_mall.jpg'), reports:_bi('biz_reports.jpg'),
+      solcafe:_bi('cafe_counter.jpg'), solfmcg:_bi('biz_inventory.jpg'), solfleet:_bi('qr_soundbox.jpg'), solproduction:_bi('biz_fnb.jpg'), solmicro:_bi('shop_counter.jpg'), solmultibrand:_bi('biz_chain.jpg'), solcloudkitchen:_bi('biz_kitchen.jpg'),
     };
     const _bizSlug = (S.page==='bizdetail' && bizDetailData[S.productTab]) ? S.productTab : 'grocery';
     const _bizDocRaw = bizDetailData[_bizSlug];
@@ -2450,24 +2665,48 @@ class Component extends DCLogic {
     // home data
     const proofStats = [
       { big:'100+', label:'merchants across the UAE' },
-      { big:'AED 0', label:'to start — free forever' },
-      { big:'VAT-ready', label:'from day one' },
-      { big:'48 hrs', label:'setup time' },
+      { big:'AED 19', label:'per store / month to start' },
+      { big:'T+2', label:'settlement to any UAE IBAN' },
+      { big:'60 min', label:'from box to first sale' },
     ];
     const homeProducts = [
-      { name:'youShop', tag:'Retail POS', img:__IMG['assets/img/boutique_pos.jpg'], headline:'Your shop, fully under control. In one dashboard.', cta:'Explore youShop',
-        benefits:['Bill faster with any payment','Track every item in stock','VAT invoices, automatically'], onClick:()=>this.go('youshop') },
-      { name:'youResto', tag:'Restaurant', img:__IMG['assets/img/restaurant_order.jpg'], headline:'Order to kitchen to payment, seamlessly.', cta:'Explore youResto',
-        benefits:['Digital KOT to kitchen display','Talabat & Deliveroo integrated','Pay-at-table with Aani QR'], onClick:()=>this.go('youresto') },
-      { name:'youQR', tag:'QR Commerce', img:__IMG['assets/img/qr_scan.jpg'], headline:'One QR code. Your menu. Under 60 seconds.', cta:'Explore youQR',
-        benefits:['No app needed','Auto-fires to kitchen','Aani QR, wallet, card accepted'], onClick:()=>this.go('youqr') },
-      { name:'youPay', tag:'Payments', img:__IMG['assets/img/card_tap_counter.jpg'], headline:'Aani QR, card, wallet. One dashboard.', cta:'Explore youPay',
-        benefits:['Aani, Apple Pay, Google Pay & Samsung Pay','Instant settlement reports','Auto-reconciliation'], onClick:()=>this.go('youpay') },
+      { name:'youShop', tag:'Retail POS', img:__IMG['assets/img/boutique_pos.jpg'], headline:'Stock that stays right across every outlet.', cta:'Explore youShop',
+        benefits:['Sell and get paid on one device','Live stock, variants, batch & expiry','VAT & FTA e-invoicing built in'], onClick:()=>this.go('youshop') },
+      { name:'youResto', tag:'Restaurant', img:__IMG['assets/img/restaurant_order.jpg'], headline:'Order. Kitchen. Cash. One app.', cta:'Explore youResto',
+        benefits:['Table to kitchen display in a second','Talabat, Deliveroo, Careem & Noon Food on one screen','Recipe costing on every dish'], onClick:()=>this.go('youresto') },
+      { name:'Self-Service', tag:'Kiosk & QR', img:__IMG['assets/img/qr_scan.jpg'], headline:'Let customers order and pay.', cta:'Explore Self-Service',
+        benefits:['QR order & pay — no app needed','Kiosk and self-checkout','From AED 0 a month · AED 1 per order'], onClick:()=>this.go('youqr') },
+      { name:'youPay', tag:'Payments', img:__IMG['assets/img/card_tap_counter.jpg'], headline:'Get paid every way. Settle T+2.', cta:'Explore youPay',
+        benefits:['Aani, Apple Pay, Google Pay & Samsung Pay','T+2 settlement to any UAE IBAN','One settlement, one dashboard'], onClick:()=>this.go('youpay') },
     ];
     const steps = [
       { n:'1', title:t.step1t, body:t.step1b },
       { n:'2', title:t.step2t, body:t.step2b },
       { n:'3', title:t.step3t, body:t.step3b },
+      { n:'4', title:t.step4t, body:t.step4b },
+    ];
+    // deck: the problem we solve
+    const stackCosts = [
+      {n:'POS vendor',p:'AED 90'},{n:'Payment terminal rent',p:'AED 65'},
+      {n:'Inventory app',p:'AED 75'},{n:'WhatsApp CRM',p:'AED 55'},
+      {n:'Accounting software',p:'AED 79'},{n:'HR & payroll',p:'AED 85'},
+      {n:'Loyalty stamps app',p:'AED 45'},{n:'BI & reports',p:'AED 60'},
+    ];
+    const stackModules = ['POS','Payment','Books','HR','Marketing','AI Lens','AI Flow','Insights'];
+    // deck: head to head, UAE
+    const compareRows = [
+      {f:'Payment terminal',d:'Card · QR · NFC',t:'Yes',g:'Yes',n:'Yes'},
+      {f:'Full POS & inventory',d:'Not just checkout',t:'Native',g:'Partner app',n:'No'},
+      {f:'Restaurant KDS + aggregators',d:'Talabat · Careem · Deliveroo',t:'Native',g:'No',n:'No'},
+      {f:'Integrated HR & payroll',d:'WPS-ready, tips pooled',t:'Included',g:'No',n:'No'},
+      {f:'Integrated bookkeeping',d:'FTA e-invoicing built in',t:'Included',g:'No',n:'No'},
+      {f:'WhatsApp marketing on WABA',d:'Segments from live sales',t:'Included',g:'No',n:'No'},
+      {f:'AI Lens · Workflows · Insights',d:'',t:'Included',g:'No',n:'No'},
+    ].map((r,i)=>({ ...r, rowBg: i%2?'#fcf9f4':'#ffffff' }));
+    const objections = [
+      {q:'\u201cWe already have Geidea / Network for card payments.\u201d', lead:'Your terminal takes the card.', b:'But what runs your stock, staff, books and WhatsApp? Usually 6–8 other vendors. Transacty replaces the terminal and all of them, on one bill.'},
+      {q:'\u201cSwitching is a big project.\u201d', lead:'60 minutes, not 60 days.', b:'Kits arrive charged and pre-activated. Money settles to the IBAN you already use — no bank change. Chains start with two flagship outlets, then roll out in phases.'},
+      {q:'\u201cOur acquirer rate is lower.\u201d', lead:'Compare the total, not the rate.', b:'Add terminal rent, POS, inventory, HR, books, loyalty and reports — about AED 554 a month. Transacty software starts at AED 19 per store, and your money lands T+2.'},
     ];
     const bizStripSlugs = { 'Grocery & Baqala':'grocery', 'Restaurant':'restaurant', 'Café & Bakery':'cafe', 'Pharmacy':'pharmacy', 'Fashion Retail':'fashion', 'Electronics':'electronics', 'Supermarket':'supermarket', 'Cloud Kitchen':'cloudkitchen', 'Rice & Curry':'restaurant', 'Hotel':'hospitality' };
     // per-industry background image + caption for the "Built for how you want to operate" band
@@ -2495,9 +2734,9 @@ class Component extends DCLogic {
       style:{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover'} });
     const opCaption = opCur.cap;
     const hwTeaser = [
-      { name:'Y1000', type:'All-in-One Handheld POS', img:__IMG['assets/hw/y1000.png'], specs:['6.5" HD+ touch · 2" thermal printer','Barcode scanner · 5000 mAh'], badge:'youShop · youResto' },
-      { name:'Y4000', type:'Smart Tablet POS', img:__IMG['assets/hw/y4000.png'], specs:['11" FHD IPS · 8000 mAh','58 mm printer · eSIM · scanner'], badge:'youShop · youResto' },
-      { name:'Y5000', type:'Desktop Terminal', img:__IMG['assets/hw/y5000.png'], specs:['Dual 15.6" FHD displays','Customer-facing screen · multi-port'], badge:'youShop · youPay' },
+      { name:'Y1000', type:'Handheld · floor billing', img:__IMG['assets/hw/y1000.png'], specs:['6.5" HD+ touch · 2" thermal printer','Barcode scanner · 5000 mAh'], badge:'youShop · youResto' },
+      { name:'Y4000', type:'Tablet · F&B tableside', img:__IMG['assets/hw/y4000.png'], specs:['11" FHD IPS · 8000 mAh','58 mm printer · eSIM · scanner'], badge:'youShop · youResto' },
+      { name:'Y5000', type:'Dual-screen counter', img:__IMG['assets/hw/y5000.png'], specs:['Dual 15.6" FHD displays','Customer-facing screen · multi-port'], badge:'youShop · youResto' },
     ].map(d => ({ ...d, noImg: !d.img }));
     const homeAddons = [
       { name:'youMarketing', desc:'WhatsApp confirmations, promos, abandoned-cart recovery.' },
@@ -2513,9 +2752,9 @@ class Component extends DCLogic {
       { quote:t.tq3, name:'Omar Khalid', role:'Fashion Retailer, Sharjah', initial:'O' },
       { quote:t.tq4, name:'Aisha Rahman', role:'Supermarket Owner, Ajman', initial:'A' },
       { quote:t.tq5, name:'Rashid Al Nuaimi', role:'Café Owner, Al Ain', initial:'R' },
-      { quote:t.tq6, name:'Ishara Wickrama', role:'Pharmacy Chain, Kurunegala', initial:'I' },
-      { quote:t.tq7, name:'Ahamed Rizvi', role:'Electronics Store, Matara', initial:'A' },
-      { quote:t.tq8, name:'Sanduni Gunawardena', role:'Bakery Owner, Batticaloa', initial:'S' },
+      { quote:t.tq6, name:'Layla Haddad', role:'Pharmacy Chain, Dubai', initial:'L' },
+      { quote:t.tq7, name:'Karim Nasser', role:'Electronics Store, Sharjah', initial:'K' },
+      { quote:t.tq8, name:'Noura Al Suwaidi', role:'Bakery Owner, Ras Al Khaimah', initial:'N' },
     ];
 
     // ===== icons =====
@@ -2569,7 +2808,7 @@ class Component extends DCLogic {
 
     // ===== matrix builders =====
     const MC = (v) => ({ v, color: v==='✔'?'var(--coral)':(v==='—'?'#9aa0a6':'var(--ink)') });
-    const MR = (feat,desc,a,b,c,d) => ({ feat, desc, cells:[MC(a),MC(b),MC(c),MC(d)] });
+    const MR = (feat,desc,...vals) => ({ feat, desc, cells: vals.filter(v=>v!==undefined).map(MC) });
     const MS = (cat,rows) => ({ cat, rows: rows.map((r,i)=>({ ...r, rowBg: i%2?'#fcf9f4':'#ffffff' })) });
 
     // ===== pricing card builder =====
@@ -2580,82 +2819,63 @@ class Component extends DCLogic {
     const PC=(name,tier,price,popular,features,cta,btn,onClick)=>({name,tier,price,popular,features,cta,...(popular?bC:bO),onClick,borderW:popular?'2px':'1px',border:popular?'var(--lime)':'var(--hairline)'});
 
     const pricingNotes = [
-      'All add-ons sold modularly — activate on any tier including Freemium. Activation in 24–48 hours.',
-      'Bank charges apply per transaction on card and wallet payments — confirm rates with our Sales team.',
-      'VAT applies to all software subscriptions.',
+      'Software is priced per store, per month, billed annually. All prices exclude 5% VAT.',
+      'One licence covers every till in the store. Move up any time — no re-integration.',
+      'Hardware is a one-time purchase — you own it. Payment rates (MDR) are charged per transaction on top of software.',
     ];
 
     // ===== youShop =====
     const youshopPricing = [
-      PC('Freemium','Free · forever','AED 0 forever',false,['1 store · 1 user','100 SKUs · 50 invoices/mo','Basic checkout & billing','Cash + wallet / QR','Offline billing + sync','Daily sales summary'],'Start Free →',bC,goStart),
-      PC('Starter','Premium','AED 7.5 / POS / mo',false,['1–2 stores · 2 users','500 SKUs · 500 invoices/mo','+ Barcode scanning','+ Variants (size, colour)','+ Card payments','+ Auto-reconciliation','+ Customer capture (50 records)'],'Get Starter →',bO,goSales),
-      PC('Standard','Premium','AED 18 / POS / mo',true,['3–8 stores · 5 users','5,000 SKUs · 5,000 invoices/mo','+ Batches, expiry & serial tracking','+ Supplier management + auto-reorder','+ Loyalty (points / rewards)','+ Customer segments (500 records)','+ 1 marketplace connector'],'Get Standard →',bC,goSales),
-      PC('Power','Premium','AED 55 / POS / mo',false,['Unlimited stores · users','10,000 SKUs','+ Bulk import / export','+ Inter-store transfers + shrinkage','+ Gift cards & store credit','+ WebShop + Social Selling','+ youAccounts & youHR'],'Get Power →',bD,goSales),
-      PC('Enterprise','Custom · on request','Contact Sales',false,['Franchise / chain governance','+ Franchise / chain management','+ White-label storefront','+ 3PL logistics integrations','+ SSO (corporate IdP) + API keys','+ REST API & webhook access','+ 24/7 phone support · 1hr SLA'],'See Enterprise →',bD,goSales),
+      PC('Standard','Per store · billed annually','AED 19 / store / mo',false,['1 user · one licence covers every till','Point of sale — scan, split tender, returns, offline','Live stock — variants, batch & expiry','Loyalty — points & gift cards','VAT & FTA e-invoicing built in','Card, wallet & QR · T+2 settlement'],'Get Standard →',bO,goSales),
+      PC('Power','Per store · billed annually','AED 49 / store / mo',true,['3 users','Everything in Standard','+ HR & payroll — rosters, commission, WPS','+ Books — auto-posted, FTA ready','+ WebShop, social selling, click & collect','+ Purchasing — POs, auto-reorder'],'Get Power →',bC,goSales),
+      PC('Enterprise','Custom · on request','Custom',false,['Chains · franchise · multi-brand','SSO · SAML / OIDC','REST API & webhooks','ERP: SAP, NetSuite, Dynamics, Tally, Zoho','99.999% uptime SLA','24/7 · 1-hr P1 · named CSM'],'Talk to Sales →',bO,goSales),
     ];
     const youshopMatrix = [
-      MS('Core service & ordering',[
-        MR('Billing & Invoicing','Checkout, multi-tender, VAT receipts','100 SKUs / 50 inv','500 SKUs / 500 inv','5,000 SKUs / 5,000 inv','10,000 SKUs / 10,000 inv'),
-        MR('Number of Stores','Outlets per account','1','1–2','3–8','9+ / Unlimited'),
-        MR('Staff User Accounts','Concurrent users','1','Up to 2','Up to 5','Unlimited'),
-        MR('Offline Billing','Bill offline, sync on reconnect','✔','✔','✔','✔'),
+      MS('Users & licence',[
+        MR('Staff users','Logins per store','1','3','Unlimited'),
+        MR('Tills per store','One licence covers every till','Every till','Every till','Every till'),
       ]),
-      MS('Counter & floor',[
-        MR('Counter & Queue','Multi-counter, queue display','—','—','Multi-counter + queue + reporting','+ Customer display + handoff'),
-        MR('Returns & Exchanges','Reason codes, approval','—','Basic refunds','+ Reason codes + workflow + partials','+ Manager audit + analytics'),
+      MS('Sell & get paid',[
+        MR('Point of sale','Scan, split tender, returns, offline','✔','✔','✔'),
+        MR('Payments','Cards, wallets, QR · T+2 to any UAE IBAN','✔','✔','✔'),
       ]),
-      MS('Inventory & catalog',[
-        MR('SKU Management','Catalog, variants, barcode, batches','Basic catalog','Barcode + variants','+ Matrices + batches + serial + bulk','+ Image & SEO sync'),
-        MR('Stock Tracking & Alerts','Live stock, low-stock, reorder','—','Basic + low-stock alerts','+ Price push + supplier + auto-reorder','+ Transfers + shrinkage'),
+      MS('Stock & purchasing',[
+        MR('Inventory','Live stock, variants, batch & expiry','✔','✔','✔'),
+        MR('Purchasing','POs, auto-reorder, landed cost','—','✔','✔'),
       ]),
-      MS('Payments (youPay)',[
-        MR('Payment Methods','Accepted tender types','Cash + Aani QR','+ Cards (Aani/Visa/MC)','+ Wallets + split + pay-at-counter','+ Gift cards + store credit'),
-        MR('Auto-Reconciliation','Match settlements to billing','—','✔','✔','✔'),
+      MS('Customers & channels',[
+        MR('Loyalty','Points, gift cards, WhatsApp','✔','✔','✔'),
+        MR('Online store','WebShop, social, click & collect','Add-on · AED 15/mo','Included','Included'),
       ]),
-      MS('E-commerce & channels',[
-        MR('WebShop & Social Selling','Storefront + IG/FB/WhatsApp','—','—','Add-on','Included + unified inventory'),
-        MR('Marketplaces','Region-specific connectors','—','—','1 connector','2 connectors + channel reporting'),
+      MS('Staff & books',[
+        MR('Staff & payroll (youHR)','Rosters, commission, WPS','Add-on · AED 15/staff','Included','Included'),
+        MR('Books (youAccounts)','Auto-posted, FTA ready','Add-on · AED 30/mo','Included','Included'),
+        MR('VAT & FTA e-invoicing','Compliant tax invoice on every sale','✔','✔','✔'),
       ]),
-      MS('Customer database & loyalty',[
-        MR('Customer Database / CRM','Profiles and purchase history','0 records','50 records','500 records','Unlimited records'),
-        MR('Loyalty Program','Points, rewards, tiers','—','Basic capture','+ Points + birthday + segments','Full CRM + tiers + VIP'),
+      MS('Reports & AI',[
+        MR('Reports','Sales, stock and payment reports','✔','✔','✔'),
+        MR('AI insights (youInsight)','Forecasts, dead stock, AI report','Add-on · AED 25/mo','Add-on · AED 25/mo','Included'),
       ]),
-      MS('Analytics & reporting',[
-        MR('Sales Analytics','Native dashboards and reports','Daily summary','+ Top SKUs + payment + shift','+ Customer KPIs + VAT + hourly','+ Benchmarking + anomaly + margin'),
+      MS('Enterprise layer',[
+        MR('Franchise & multi-brand','Governance, multi-entity','—','—','✔'),
+        MR('SSO & API','SAML / OIDC, REST API & webhooks','—','—','✔'),
+        MR('ERP integration','SAP, Oracle NetSuite, MS Dynamics, Tally, Zoho','—','—','✔'),
       ]),
-      MS('Multi-outlet & franchise',[
-        MR('Multi-Store Dashboard','Centralised view across stores','—','Basic (1–2)','Full + RBAC + price push','+ Audit logs + franchise (Ent)'),
-      ]),
-      MS('Accounting & finance',[
-        MR('Basic Auto-Ledger','Auto entries, VAT, AI OCR','—','—','+ VAT reports + AI OCR','Bundled (youAccounts)'),
-        MR('youAccounts (Full)','Advanced accounting module','—','—','Add-on','Bundled + recon + P&L'),
-      ]),
-      MS('HR & payroll',[
-        MR('HR & Payroll (youHR)','Attendance, scheduling, payroll','—','Basic attendance','+ Shift scheduling','Bundled + payroll + statutory'),
-      ]),
-      MS('Hardware',[
-        MR('Retail Hardware','POS, scanners, printers, tablets','BYO only','Starter Mobile Kit','Retail Kit + scanners + display','+ Multi-counter + custom'),
-      ]),
-      MS('Security & access',[
-        MR('Authentication & Access','MFA, RBAC, audit logs','Standard','+ MFA','+ RBAC','+ Audit logs + SSO (Ent)'),
-      ]),
-      MS('Support & success',[
-        MR('Customer Support','Channels, response times, SLA','Self-service','Email + chat / 24hr','Phone / 4hr','Named agent / 24-7 / 1hr SLA'),
+      MS('Support',[
+        MR('Support','Channels and SLA','24/7 · EN · AR · HI · TL','24/7 · EN · AR · HI · TL','24/7 phone · 1-hr P1 · named CSM'),
+        MR('Uptime SLA','Platform availability','—','—','99.999%'),
       ]),
     ];
     const dMeta = {
-      Y10:{type:'Sound Box',icon:I.soundbox(),specShort:'≥110dB speaker · optional QR display · 2600mAh · 4G + Wi-Fi'},
-      Y50:{type:'Handheld mPOS',icon:I.handheld(),specShort:'Bluetooth 5.0 + BLE · NFC · 80g · iOS/Android/Windows'},
-      Y750:{type:'Smart Android POS',icon:I.handheld(),specShort:'8-core 12nm · dual 6.7"+2.5" · 285g · dual NFC · 18.2h'},
-      Y1000:{type:'All-in-One Handheld POS',icon:I.monitor(),specShort:'Android 13 · 6.5" HD+ touch · 2" printer · 5000mAh · scanner'},
-      'Y1000 Lite':{type:'Handheld POS',icon:I.handheld(),specShort:'Android 14 · 5" touch · 5000mAh · 2" printer · drop-proof'},
-      Y4000:{type:'Tablet POS',icon:I.tablet(),specShort:'Android 13 · 11" FHD IPS · 8000mAh · 58mm printer · eSIM'},
-      Y5000:{type:'Desktop Terminal',icon:I.desktop2(),specShort:'Android 14 · dual 15.6" FHD · quad-core · multi-port I/O'},
-      Y7000:{type:'Self-Service Kiosk',icon:I.kiosk(),specShort:'Android 13 · 10.1" touch · 1D/2D scanner · thermal printer'},
+      Y10:{type:'QR SoundBox',price:'AED 39',icon:I.soundbox(),specShort:'≥110dB speaker · optional QR display · 2600mAh · 4G + Wi-Fi'},
+      Y1000:{type:'Handheld · floor billing',price:'AED 189',icon:I.monitor(),specShort:'Android 13 · 6.5" HD+ touch · 2" printer · 5000mAh · scanner'},
+      Y4000:{type:'Tablet · F&B tableside',price:'AED 1,099',icon:I.tablet(),specShort:'Android 13 · 11" FHD IPS · 8000mAh · 58mm printer · eSIM'},
+      Y5000:{type:'Dual-screen counter',price:'AED 1,499',icon:I.desktop2(),specShort:'Android 14 · dual 15.6" FHD · quad-core · multi-port I/O'},
+      Y7000:{type:'Self-service kiosk',price:'AED 2,999',icon:I.kiosk(),specShort:'Android 13 · 10.1" touch · 1D/2D scanner · thermal printer'},
     };
     const hwImgs = {Y10:__IMG['assets/hw/y10.png'],Y50:__IMG['assets/hw/y50.png'],Y750:__IMG['assets/hw/y750.png'],Y1000:__IMG['assets/hw/y1000.png'],'Y1000 Lite':__IMG['assets/hw/y1000_lite.png'],Y4000:__IMG['assets/hw/y4000.png'],Y5000:__IMG['assets/hw/y5000.png'],Y7000:__IMG['assets/hw/y7000.png']};
     const hwDispName = {Y1000:'Y1000'};
-    const hwFor = (names) => names.map(n=>({ name:hwDispName[n]||n, type:dMeta[n].type, icon:dMeta[n].icon, specShort:dMeta[n].specShort, img:hwImgs[n]||'', noImg:!hwImgs[n] }));
+    const hwFor = (names) => names.map(n=>({ name:hwDispName[n]||n, type:dMeta[n].type, price:dMeta[n].price||'', icon:dMeta[n].icon, specShort:dMeta[n].specShort, img:hwImgs[n]||'', noImg:!hwImgs[n] }));
     const ov = (kicker,headline,body,icon,g1,g2,stat) => ({kicker,headline,body,icon,g1,g2,stat});
     const ovList = (arr) => arr.map((b,i)=>({ ...b, revClass: i%2?'rev':'' }));
     const youshopAddons = [
@@ -2664,195 +2884,162 @@ class Component extends DCLogic {
       {name:'youWorkflows',desc:'No-code automations: low-stock alerts, supplier escalations.'},
       {name:'youLens',desc:'AI camera: shrinkage alerts, footfall heatmaps, queue tracking.'},
       {name:'youLend',desc:'Pre-approved working capital scored on live transaction data.'},
-      {name:'youAccounts',desc:'Bank reconciliation, P&L, balance sheet, audit records.'},
-      {name:'WebShop + Social Selling',desc:'Branded storefront with unified inventory across channels.'},
+      {name:'youAccounts',desc:'Auto-posted books, FTA ready. Included in Power.'},
+      {name:'youHR',desc:'Rosters, commission and WPS payroll. Included in Power.'},
+      {name:'WebShop & Social',desc:'Branded storefront and social selling, unified inventory. Included in Power.'},
       {name:'3rd-Party Logistics',desc:'Smart dispatch to UAE delivery networks with auto-fallback.'},
     ];
 
     // ===== youResto =====
     const yourestoPricing = [
-      PC('Freemium','Free · forever','AED 0 forever',false,['1 outlet · 1 POS','Basic POS + KDS','Cash + wallet / QR','1 aggregator sync','Offline billing + sync','Daily sales summary'],'Start Free →',bC,goStart),
-      PC('Starter','Premium','AED 18 / POS / mo',false,['1 outlet · 2 POS','+ Full KDS + prep timers','+ 86-sync + recipe deduction','+ 2 aggregators unified','+ Card payments','+ Direct delivery app','+ Basic loyalty'],'Get Starter →',bO,goSales),
-      PC('Standard','Premium','AED 37 / POS / mo',true,['3–8 outlets · 5 users','+ 3 aggregators unified','+ Central menu push','+ Cross-outlet analytics','+ Guest app + loyalty','+ Reservations + table plan','+ API access'],'Get Standard →',bC,goSales),
-      PC('Power','Premium','AED 92 / POS / mo',false,['Unlimited outlets · users','+ Course firing · expo · throttling','+ All aggregators unified','+ Central menu / recipe / price','+ Social ordering (FB / IG / WA)','+ youAccounts & youHR','+ Dedicated success manager'],'Get Power →',bD,goSales),
-      PC('Enterprise','Quote · on request','Contact Sales',false,['Multi-brand · central kitchen','+ Multi-brand / franchise','+ Central kitchen & commissary','+ White-label guest app','+ SSO + API keys','+ Right-to-audit + DR','+ 24/7 phone support · 1hr SLA'],'See Enterprise →',bD,goSales),
+      PC('Standard','Per store · billed annually','AED 39 / store / mo',false,['1 user','Orders & POS — dine-in, takeaway, tables, courses','Full kitchen display (KDS)','3 aggregators on one screen','QR menu & pay at table','VAT & FTA e-invoicing built in'],'Get Standard →',bO,goSales),
+      PC('Power','Per store · billed annually','AED 99 / store / mo',true,['2 users','Everything in Standard','+ All aggregators — Talabat, Deliveroo, Careem & Noon Food','+ HR & payroll — FOH/BOH rosters, tip pooling, WPS','+ Books — aggregator fees booked, food-cost %'],'Get Power →',bC,goSales),
+      PC('Enterprise','Custom · on request','Custom',false,['Chains · franchise · multi-brand','Central kitchen & commissary','SSO · REST API & webhooks','ERP: SAP, NetSuite, Dynamics, Tally, Zoho','99.999% uptime SLA','24/7 · 1-hr P1 · named CSM'],'Talk to Sales →',bO,goSales),
     ];
     const yourestoMatrix = [
-      MS('Core service & ordering',[
-        MR('Billing & Invoicing','Order taking, split bills, VAT receipts','25 items / 250 bills','50 items / 1,000 bills','250 items / 2,500 bills','Unlimited items / bills'),
-        MR('Number of Outlets','Restaurants per account','1','1–2','3–8','9+ / Unlimited'),
-        MR('Staff User Accounts','FOH + kitchen users','1','Up to 2','Up to 10','Unlimited'),
+      MS('Users & licence',[
+        MR('Staff users','Logins per store','1','2','Unlimited'),
+        MR('Tills per store','One licence covers every till','Every till','Every till','Every till'),
       ]),
-      MS('Front-of-house',[
-        MR('Floor Plan & Waitlist','Live table map, waitlist, walk-ins','—','—','Floor plan + waitlist + reservations','+ VIP flags + course sequencing + allergens'),
+      MS('Orders & kitchen',[
+        MR('Orders & POS','Dine-in, takeaway, tables, courses','✔','✔','✔'),
+        MR('Kitchen display (KDS)','Stations, timers, allergen flags','✔','✔','✔'),
+        MR('Menu & recipes','Recipe cost, wastage','✔','✔','✔'),
+        MR('Central kitchen','Commissary and transfers','—','—','✔'),
       ]),
-      MS('Kitchen display (KDS)',[
-        MR('KDS','Kitchen order routing & display','—','Add-on','Add-on + prep timers + 86-sync','2 stations + course firing + expo + throttling'),
+      MS('Delivery & online',[
+        MR('Aggregators','Talabat, Deliveroo, Careem & Noon Food','3','All','All'),
+        MR('QR menu & own ordering','Order and pay at the table','✔','✔','✔'),
       ]),
-      MS('Digital ordering & pay-at-table',[
-        MR('Table Ordering & Payment','Guest self-order and pay','—','—','Web ordering + Tap-to-Pay + loyalty','+ Transacty branded guest app'),
+      MS('Payments',[
+        MR('Pay at table, tips','Split by seat or item · T+2 settlement','✔','✔','✔'),
       ]),
-      MS('Payments (youPay)',[
-        MR('Payment Methods','Accepted tender types','Cash + Aani QR/Wallet','—','+ Cards (Visa/MC/Aani) + split','+ Gift cards'),
-        MR('Auto-Reconciliation','Match settlements to billing','—','✔','✔','✔'),
+      MS('Guests & loyalty',[
+        MR('Guests & loyalty','Reservations, stamps, WhatsApp','✔','✔','✔'),
       ]),
-      MS('Delivery ecosystem',[
-        MR('Aggregators','Talabat, Deliveroo, local','—','1 connector','2 + menu sync','3 + unified KDS + commission'),
-        MR('Own Branded Delivery App','Branded guest ordering app','—','—','Add-on','Included'),
-        MR('Social Ordering','Facebook, Instagram, WhatsApp','—','—','Add-on','Included'),
+      MS('Staff & books',[
+        MR('Staff & payroll (youHR)','FOH/BOH rosters, tip pooling, WPS','Add-on · AED 15/staff','Included','Included'),
+        MR('Books (youAccounts)','Aggregator fees booked, food-cost %','Add-on · AED 30/mo','Included','Included'),
+        MR('VAT & FTA e-invoicing','Compliant tax invoice on every sale','✔','✔','✔'),
       ]),
-      MS('Inventory & menu',[
-        MR('Ingredient & Stock Tracking','Counts, low-stock alerts','—','—','Basic + recipe costing','+ Menu engineering + central kitchen'),
+      MS('Reports & AI',[
+        MR('AI insights (youInsight)','Menu engineering, prep forecast','Add-on · AED 25/mo','Add-on · AED 25/mo','Included'),
       ]),
-      MS('Guest database & loyalty',[
-        MR('Guest Database / CRM','Guest profiles and preferences','0','50','500','Unlimited'),
-        MR('Loyalty Program','Rewards, tiers, campaigns','—','Basic capture','+ Points + birthday','Full CRM + tiers + VIP'),
+      MS('Enterprise layer',[
+        MR('Multi-brand & franchise','Governance, multi-entity','—','—','✔'),
+        MR('SSO, API & ERP','SAML / OIDC, REST API, SAP, NetSuite, Dynamics, Tally, Zoho','—','—','✔'),
       ]),
-      MS('Analytics & reporting',[
-        MR('Sales Analytics','Dashboards and reports','Daily summary','+ Top items + payment + shift','+ VAT + category + hourly','+ Benchmarking + margin by dish'),
-      ]),
-      MS('Multi-outlet & franchise',[
-        MR('Multi-Outlet Dashboard','Centralised view across outlets','—','Basic (1–2)','Full + RBAC + menu push','+ Franchise mgmt + policy controls'),
-      ]),
-      MS('Accounting & finance',[
-        MR('Basic Auto-Ledger','Auto entries, VAT, AI OCR','—','—','+ VAT + AI OCR + aggregator recon','Bundled (YouAccounts)'),
-        MR('YouAccounts (Full)','Advanced accounting module','—','—','Add-on','Bundled + recon + P&L'),
-      ]),
-      MS('HR & payroll',[
-        MR('HR & Payroll (YouHR)','Attendance, scheduling, payroll','—','Basic attendance','+ Shift scheduling','Bundled + payroll + service-charge pooling'),
-      ]),
-      MS('Hardware',[
-        MR('Restaurant Hardware','POS, KDS, printers, tablets','BYO only','POS + receipt printer','+ KDS + kitchen printer','+ Handhelds + pay-at-table'),
-      ]),
-      MS('Security & support',[
-        MR('Authentication & Access','MFA, RBAC, audit logs','Standard','+ MFA','+ RBAC','+ Audit logs'),
-        MR('Customer Support','Channels, response times, SLA','Self-service','Email + chat / 24hr','Phone / 4hr','Named agent / 24-7 / 1hr SLA'),
+      MS('Support',[
+        MR('Support','Channels and SLA','24/7 · EN · AR · HI · TL','24/7 · EN · AR · HI · TL','24/7 phone · 1-hr P1 · named CSM'),
+        MR('Uptime SLA','Platform availability','—','—','99.999%'),
       ]),
     ];
     const yourestoAddons = [
       {name:'youMarketing (WABA)',desc:'WhatsApp order confirmations, promos, 2-way support.'},
-      {name:'youInsights',desc:'AI demand forecasting, menu-mix analysis, staffing.'},
+      {name:'youInsight',desc:'Menu engineering and prep forecasts. AED 25/mo per store.'},
       {name:'KDS Stations',desc:'Additional kitchen display screen licences.'},
-      {name:'QR Guest Ordering',desc:'Scan-order-pay at the table, fires to KDS.'},
-      {name:'youLens',desc:'Kitchen hygiene flags, queue tracking, footfall.'},
+      {name:'youLens',desc:'AI camera: kitchen hygiene flags, queue tracking, footfall. AED 65/mo + AED 25/camera.'},
       {name:'Own Branded Delivery App',desc:'Branded ordering app, zone delivery, zero commission.'},
       {name:'3rd-Party Delivery Fleets',desc:'On-demand fleet dispatch with auto-fallback.'},
-      {name:'youAccounts',desc:'Bank reconciliation, P&L, supplier mgmt, audit records.'},
+      {name:'youAccounts',desc:'Aggregator fees booked, food-cost %. Included in Power.'},
     ];
 
     // ===== youQR =====
     const youqrPricing = [
-      PC('Freemium','Free','AED 0 / month',false,['One merchant page · unlimited orders','1 branded merchant page','Unlimited menu items','All payment methods','Basic loyalty (points)','AED 0.5 flat / paid order'],'Get my QR →',bC,goStart),
-      PC('Starter','Premium','AED 0 / month',false,['Custom branding + tiered loyalty','1 branch','Custom colors + logo','Tiered loyalty (Silver → Gold)','Birthday campaigns','Live menu + modifiers','Order analytics','AED 0.5 flat / paid order'],'Get Starter →',bO,goSales),
-      PC('Standard','Premium','AED 0 / month',true,['Custom domain · multi-branch · SVA','Up to 8 branches','Custom domain (your.brand)','Platinum tier + gamified streaks','Stored Value wallet','Multi-branch dashboard','API + webhooks','AED 0 flat / paid order'],'Get Standard →',bC,goSales),
-      PC('Power','Premium','AED 92 / month',false,['Enterprise QR-led commerce','Unlimited branches','White-label (your brand only)','Custom loyalty engine','youLend working capital','Priority integration support','Dedicated success manager','Custom per-order pricing'],'Talk to sales →',bD,goSales),
+      PC('Standard','Per store · billed annually','AED 0 / store / mo',false,['1 user','AED 1 per order','QR order & pay — no app needed','Kiosk & self-checkout ready','Card, wallet & QR · T+2 settlement','VAT & FTA e-invoicing built in'],'Get Standard →',bO,goSales),
+      PC('Power','Per store · billed annually','AED 99 / store / mo',true,['1 user','Unlimited orders — no per-order fee','Everything in Standard'],'Get Power →',bC,goSales),
+      PC('Enterprise','Custom · on request','Custom',false,['Fleets & franchises','Multi-site rollout','SLA-backed support','24/7 · 1-hr P1 · named CSM'],'Talk to Sales →',bO,goSales),
     ];
     const youqrMatrix = [
-      MS('Core service & ordering',[
-        MR('Menu & Orders','Items and orders per month','25 items / 100 orders','100 items / 500 orders','500 items / 2,500 orders','Unlimited items / orders'),
-        MR('Number of Outlets','Outlets per account','1','1–2','3–8','9+ / Unlimited'),
-        MR('Order Modes','Dine-in, takeaway, delivery','1 order mode','1 order mode','All order modes','All modes + custom'),
+      MS('Users & orders',[
+        MR('Staff users','Logins per store','1','1','Custom'),
+        MR('Orders','Per-order fee','AED 1 per order','Unlimited','Unlimited'),
       ]),
-      MS('Branding',[
-        MR('Storefront Branding','Theme and domain control','Transacty-branded','Transacty-branded','Transacty-branded','White-labelled + custom domain + theme'),
+      MS('Ordering',[
+        MR('QR order & pay','Scan, order and pay — no app','✔','✔','✔'),
+        MR('Kiosk','y7000 self-service kiosk (AED 2,999 one-time)','✔','✔','✔'),
+        MR('Self-checkout','Customers scan and pay themselves','✔','✔','✔'),
       ]),
-      MS('Payments (youPay)',[
-        MR('Payment Methods','Accepted tender types','QR + Pay-by-Link','QR + Pay-by-Link','+ Mobile wallets','+ Cards + split + gift cards'),
-        MR('Stored Value (SVA)','Top-up, spend, cashback','—','—','—','SVA wallet + cashback + tiers'),
-        MR('Auto-Reconciliation','Match settlements','—','✔','✔','✔'),
+      MS('Payments',[
+        MR('Payment methods','Card, wallet, QR · T+2 settlement','✔','✔','✔'),
       ]),
-      MS('Loyalty engine',[
-        MR('Loyalty','Programme-wide and merchant-specific','Programme-wide','+ Merchant-specific (add-on)','+ Tiers + gamification (add-on)','All bundled'),
+      MS('Enterprise layer',[
+        MR('Fleets & franchises','Multi-site rollout and governance','—','—','✔'),
       ]),
-      MS('Customer & data',[
-        MR('Customer Records','Profiles and segmentation','0','50','500 + segments','Unlimited + full segmentation'),
-      ]),
-      MS('Dashboard & operations',[
-        MR('KDS Stations','Kitchen routing','—','—','1 station','2 stations + course firing'),
-        MR('Reporting','Dashboards and exports','Daily summary','Daily + weekly + top items','Cross-outlet + hourly','+ Cohort + custom + exports'),
-        MR('Inventory','Stock thresholds','—','—','Threshold alerts','+ Auto-reorder triggers'),
-      ]),
-      MS('Multi-outlet & integration',[
-        MR('Multi-Dashboard','Centralised view','—','Basic (1–2)','Full + RBAC','Group reporting + policy controls'),
-        MR('API & Webhooks','Developer access','—','—','—','Full REST API + webhooks'),
-      ]),
-      MS('Security & support',[
-        MR('Authentication & Access','MFA, RBAC, audit logs','Standard','+ MFA','+ RBAC','+ RBAC + audit logs'),
-        MR('Customer Support','Channels and SLA','Self-service','Standard','Priority','Named agent / 24-7 / 1hr SLA'),
+      MS('Support',[
+        MR('Support','Channels and SLA','24/7 · EN · AR · HI · TL','24/7 · EN · AR · HI · TL','SLA-backed · named CSM'),
       ]),
     ];
     const youqrAddons = [
-      {name:'QR Guest Ordering',desc:'Scan, order, and pay with no app download.'},
-      {name:'Self-Ordering Kiosk Mode',desc:'Turn youQR into a full-screen QSR kiosk.'},
-      {name:'youMarketing (WABA)',desc:'WhatsApp confirmations and promos.'},
+      {name:'youMarketing (WABA)',desc:'WhatsApp confirmations and promos. AED 30/mo + per message.'},
+      {name:'youInsight',desc:'AI report on orders and peak hours. AED 25/mo per store.'},
       {name:'KDS Stations',desc:'Additional kitchen display licences.'},
       {name:'Merchant Loyalty + Gamification',desc:'Tiered programmes and rewards.'},
-      {name:'API & Webhook Access',desc:'Full REST API + webhooks (Power).'},
+      {name:'youLend',desc:'Working capital from your sales. Revenue share, no monthly fee.'},
     ];
 
-    const tierSummaryFor = (a,b,c,d) => ([
-      {name:'Freemium',tag:'Free',scope:a,border:'var(--hairline)',bg:'#fff',fg:'var(--ink)',tagColor:'var(--coral)',subColor:'var(--slate)'},
-      {name:'Starter',tag:'Premium',scope:b,border:'var(--hairline)',bg:'#fff',fg:'var(--ink)',tagColor:'var(--slate)',subColor:'var(--slate)'},
-      {name:'Standard',tag:'Premium',scope:c,border:'var(--lime)',bg:'var(--stone)',fg:'var(--ink)',tagColor:'var(--coral)',subColor:'var(--slate)'},
-      {name:'Power',tag:'Premium',scope:d,border:'var(--hairline)',bg:'#fff',fg:'var(--ink)',tagColor:'var(--slate)',subColor:'var(--slate)'},
+    const tierSummaryFor = (a,b,c) => ([
+      {name:'Standard',tag:'Per store',scope:a,border:'var(--hairline)',bg:'#fff',fg:'var(--ink)',tagColor:'var(--slate)',subColor:'var(--slate)'},
+      {name:'Power',tag:'Most popular',scope:b,border:'var(--lime)',bg:'var(--stone)',fg:'var(--ink)',tagColor:'var(--coral)',subColor:'var(--slate)'},
+      {name:'Enterprise',tag:'Custom',scope:c,border:'var(--hairline)',bg:'#fff',fg:'var(--ink)',tagColor:'var(--slate)',subColor:'var(--slate)'},
     ]);
-    const tierNames4 = ['Freemium','Starter','Standard','Power'];
+    const tierNames3 = ['Standard','Power','Enterprise'];
 
     const productData = {
       youshop:{
         name:'youShop', eyebrow:'youShop · RETAIL POS', demoCta:'Book a Demo',
-        title:'The smartest billing system your shop has ever had.',
-        sub:'Bill any customer in seconds. Track every item in stock. Run loyalty. File VAT. All from one screen — whether you have one shop or fifty.',
+        title:'Stock that stays right across every outlet.',
+        sub:'Sell and get paid on one device, settle T+2 to any UAE IBAN, and issue a compliant tax invoice on every sale — whether you have one shop or fifty.',
         overview: ovList([
           ov('Billing','Bill faster. Make zero errors.','Scan a barcode, tap an item, accept Aani QR or cash. youShop handles multi-tender, split bills, VAT invoices, and digital receipts — automatically.',I.receipt(),'#0F0700','#566167','Merchants save 3 hours/week on billing alone.'),
           ov('Inventory','Always know what is on your shelf.','Set reorder alerts. Track expiry dates. Transfer stock between branches. Get low-stock notifications before you run out.',I.box(),'#464644','#464644'),
           ov('Loyalty','Turn one-time buyers into regulars.','Points at checkout, birthday offers, milestone rewards. Your customers come back because they are earning something.',I.gift(),'#0F0700','#566167'),
-          ov('Accounting','VAT reports that take minutes, not days.','youShop generates VAT-ready sales entries automatically. Export to your accountant in one click.',I.ledger(),'#0F0700','#464644'),
+          ov('Accounting','VAT and FTA e-invoicing, built in.','Every sale posts a compliant tax invoice automatically. VAT returns export for your accountant in one click.',I.ledger(),'#0F0700','#464644'),
           ov('Multi-store','One dashboard. All your branches.','See sales across every outlet from one screen. Push price changes and product updates to all locations at once.',I.stack(),'#464644','#566167'),
         ]),
-        featTitle:'Everything youShop includes — at every tier.',
-        featSub:'Starter, Standard, and Power are cumulative — each tier includes everything below it, plus more. Start on Freemium free, forever.',
-        tierSummary: tierSummaryFor('1 store · 100 SKUs · 50 invoices/mo','1–2 stores · 500 SKUs · 500 invoices/mo','3–8 stores · 5,000 SKUs · 5,000 invoices/mo','9+ stores · 10,000 SKUs · 10,000 invoices/mo'),
-        tierNames: tierNames4, matrix: youshopMatrix,
-        pricingTitle:'Simple pricing. Start free. Pay as you grow.', pricing: youshopPricing,
-        hwTitle:'Hardware built for retail.', hardware: hwFor(['Y1000','Y1000 Lite','Y4000','Y5000']),
+        featTitle:'Everything youShop includes, package by package.',
+        featSub:'Packages are cumulative — Power includes everything in Standard, and Enterprise adds the full enterprise layer. One licence covers every till in the store.',
+        tierSummary: tierSummaryFor('AED 19 · 1 user · POS, stock, loyalty, VAT','AED 49 · 3 users · + HR, books, WebShop','Custom · chains, franchise, SSO, 24/7 SLA'),
+        tierNames: tierNames3, matrix: youshopMatrix,
+        pricingTitle:'From AED 19 a store, a month.', pricing: youshopPricing,
+        hwTitle:'Hardware built for retail.', hardware: hwFor(['Y1000','Y5000','Y4000','Y10']),
         addons: youshopAddons, ctaTitle:'Run your shop the smart way.',
       },
       youresto:{
         name:'youResto', eyebrow:'youResto · RESTAURANT MANAGEMENT', demoCta:'Book a Restaurant Demo',
-        title:'Your restaurant, table to kitchen to payment, all connected.',
-        sub:'youResto handles your KOT, KDS, Talabat and Deliveroo orders, table management, and VAT billing — so your team focuses on the food, not the paperwork.',
+        title:'Every aggregator. One kitchen.',
+        sub:'Order at the table, straight to the kitchen. Talabat, Deliveroo, Careem and Noon Food on one screen, recipe costing on every dish, split bills, tips and T+2 settlement.',
         overview: ovList([
           ov('Ordering','Digital KOT. Zero paper. Zero errors.','Customer orders, staff enters on tablet or QR, KOT fires instantly to the kitchen display. No shouting across the kitchen.',I.chef(),'#0F0700','#566167'),
-          ov('Delivery','Talabat, Deliveroo, and your counter — one screen.','Aggregate all delivery orders in one place. Menu syncs automatically. Commission reports included.',I.truck(),'#464644','#464644'),
+          ov('Delivery','Talabat, Deliveroo, Careem & Noon Food — one screen.','No tablet farm at the pass. Every aggregator lands in one queue, and you 86 an item everywhere at once.',I.truck(),'#464644','#464644'),
           ov('Table management','Know which table needs what, at a glance.','Live floor plan, waitlist, walk-in management. VIP flags and allergen notes for repeat guests.',I.table(),'#0F0700','#566167'),
-          ov('Pay-at-table','Customers pay at their seat. Aani QR, card, split.','Responsive web ordering and Tap-to-Pay at Standard and above. Loyalty points earned at checkout.',I.wallet(),'#0F0700','#464644'),
+          ov('Pay-at-table','Customers pay at their seat. Aani QR, card, split.','Split by seat or item. Tips pooled into payroll. Loyalty points earned at checkout.',I.wallet(),'#0F0700','#464644'),
           ov('Accounting','VAT entries and aggregator recon — automatic.','youResto auto-posts sales entries, generates VAT reports, and reconciles Talabat and Deliveroo settlements.',I.ledger(),'#464644','#566167'),
         ]),
-        featTitle:'Everything youResto includes — at every tier.',
-        featSub:'Cumulative tiers — each includes everything below it. Freemium is free, forever.',
-        tierSummary: tierSummaryFor('1 outlet · 25 items · 250 bills/mo','1–2 outlets · 50 items · 1,000 bills/mo','3–8 outlets · 250 items · 2,500 bills/mo','9+ outlets · unlimited items & bills'),
-        tierNames: tierNames4, matrix: yourestoMatrix,
-        pricingTitle:'Restaurant pricing. Start free. Scale by outlet.', pricing: yourestoPricing,
-        hwTitle:'Hardware built for F&B.', hardware: hwFor(['Y1000','Y4000','Y7000','Y10']),
+        featTitle:'Everything youResto includes, package by package.',
+        featSub:'Packages are cumulative — Power includes everything in Standard, and Enterprise adds the full enterprise layer. One licence covers every till in the store.',
+        tierSummary: tierSummaryFor('AED 39 · 1 user · full KDS, 3 aggregators, QR','AED 99 · 2 users · all aggregators, HR & books','Custom · chains, franchise, SSO, 24/7 SLA'),
+        tierNames: tierNames3, matrix: yourestoMatrix,
+        pricingTitle:'From AED 39 a store, a month.', pricing: yourestoPricing,
+        hwTitle:'Hardware built for F&B.', hardware: hwFor(['Y5000','Y4000','Y1000','Y7000']),
         addons: yourestoAddons, ctaTitle:'Give your kitchen one connected screen.',
       },
       youqr:{
-        name:'youQR', eyebrow:'youQR · QR-LED COMMERCE', demoCta:'Book a Demo',
-        title:'One QR code. Your whole menu. Under 60 seconds.',
-        sub:'No app download. No terminal. Customers scan, order, and pay — Aani QR, card, or wallet. The order fires to your kitchen instantly.',
+        name:'Self-Service', eyebrow:'Self-Service · KIOSK & QR ORDERING', demoCta:'Book a Demo',
+        title:'Let customers order and pay.',
+        sub:'Kiosk, QR order & pay and self-checkout for QSRs, food courts, supermarkets and convenience stores. No app download, no queue — the order fires to your kitchen and settles T+2.',
         overview: ovList([
-          ov('Step 1','Place your youQR code.','Put a youQR code at your table, counter, or wall. Set up your menu once in the dashboard.',I.qr(),'#0F0700','#566167'),
+          ov('Step 1','Place your QR code — or a kiosk.','Put a QR code at your table, counter or wall, or stand a y7000 kiosk by the door. Set up your menu once in the dashboard.',I.qr(),'#0F0700','#566167'),
           ov('Step 2','Customer scans and pays.','Your customer scans on their phone, browses your menu, adds items, and pays via Aani QR, card, or wallet — no app needed.',I.phone(),'#464644','#464644'),
           ov('Step 3','Order fires to your kitchen.','The order lands on your kitchen display instantly. Settlement reconciles automatically in the background.',I.chef(),'#0F0700','#566167'),
           ov('Step 4','Customer earns loyalty points.','Every paid order automatically credits loyalty points — points, tiers and streaks that bring your customers back tomorrow, with no card and no extra step.',I.gift(),'#0F0700','#464644'),
         ]),
-        featTitle:'Everything youQR includes — at every tier.',
-        featSub:'Cumulative tiers. Start free, white-label and scale on Power.',
-        tierSummary: tierSummaryFor('1 outlet · 25 items · 100 orders/mo','1–2 outlets · 100 items · 500 orders/mo','3–8 outlets · 500 items · 2,500 orders/mo','9+ outlets · unlimited items & orders'),
-        tierNames: tierNames4, matrix: youqrMatrix,
-        pricingTitle:'QR pricing. Free to start. White-label to scale.', pricing: youqrPricing,
-        hwTitle:'Hardware built for QR commerce.', hardware: hwFor(['Y10','Y750','Y7000']),
+        featTitle:'Everything Self-Service includes, package by package.',
+        featSub:'Start at AED 0 and pay AED 1 per order, or move to Power for unlimited orders. Enterprise covers fleets and franchises.',
+        tierSummary: tierSummaryFor('AED 0 · 1 user · AED 1 per order','AED 99 · 1 user · unlimited orders','Custom · fleets, franchises, SLA'),
+        tierNames: tierNames3, matrix: youqrMatrix,
+        pricingTitle:'AED 0 to start. AED 1 per order.', pricing: youqrPricing,
+        hwTitle:'Hardware built for self-service.', hardware: hwFor(['Y7000','Y10','Y4000']),
         addons: youqrAddons, ctaTitle:'Put a QR code to work at every table.',
       },
     };
@@ -2872,82 +3059,85 @@ class Component extends DCLogic {
       {name:'Gift Cards',sub:'Issue and redeem',icon:I.gift()},
       {name:'Cash',sub:'Tracked in your books',icon:I.cash()},
     ];
-    const payTierNames = tierNames4;
+    const payTierNames = tierNames3;
     const payMatrix = [
-      MS('Core payment acceptance',[
-        MR('Tender Types','Methods accepted at checkout','Cash + Aani QR','+ Cards','+ Wallets + split','+ Gift cards + SVA'),
-        MR('Pay-by-Link','Remote payment links','✔','✔','✔','✔'),
+      MS('Payment rates · per transaction',[
+        MR('Card MDR','Visa / Mastercard / Amex','2–3%','2–3%','Volume discounts'),
+        MR('Domestic wallets','Apple Pay, Google Pay & Samsung Pay','0.9–1.5%','0.9–1.5%','Volume discounts'),
+        MR('QR rails','Aani and QR payments','0.5–1.2%','0.5–1.2%','Volume discounts'),
       ]),
-      MS('Payment methods & channels',[
-        MR('In-store','Counter, QR, tap','Aani QR','+ Cards','+ Wallets','+ UnionPay + Amex'),
-        MR('Online','Web and link payments','Pay-by-Link','✔','✔','+ Hosted checkout'),
+      MS('Settlement',[
+        MR('Settlement','To any UAE IBAN — Emirates NBD, FAB, ADCB, Mashreq, RAKBANK, DIB','T+2','T+2','T+2'),
+        MR('One dashboard','Every method in one settlement and report','✔','✔','✔'),
       ]),
-      MS('Settlement & reconciliation',[
-        MR('Auto-Reconciliation','Match settlements to sales','—','✔','✔','✔'),
-        MR('Settlement Reports','Payout visibility','Daily','Daily','+ Per-method','+ Per-outlet + exports'),
+      MS('Methods',[
+        MR('Card, wallet & QR','In-store, at the table, in the vehicle','✔','✔','✔'),
+        MR('Pay-by-Link & stored value','Remote links and top-up balances','✔','✔','✔'),
       ]),
-      MS('Reporting & analytics',[
-        MR('Payment Analytics','Method mix, success rates','Basic','+ Method breakdown','+ Hourly + outlet','+ Benchmarking + anomaly'),
-      ]),
-      MS('Compliance & security',[
-        MR('Security','PCI scope, tokenisation','Standard','+ MFA','+ RBAC','+ Audit logs + SSO (Ent)'),
-      ]),
-      MS('Hardware & support',[
-        MR('Device Integration','Sound box, mPOS, terminals','Sound box','+ mPOS','+ Terminals','+ Custom configs'),
-        MR('Support','Channels and SLA','Self-service','24hr','4hr','1hr SLA + named agent'),
+      MS('Security & reliability',[
+        MR('Licensed & secure','CB UAE-licensed acquiring partner · PCI DSS Level 1 · card data tokenised at the terminal','✔','✔','✔'),
+        MR('Card authorisation','Median card auth time','<200 ms','<200 ms','<200 ms'),
+        MR('Uptime SLA','Platform availability','—','—','99.999%'),
       ]),
     ];
 
     // ===== PRICING master add-ons table =====
     const addonRows = [
-      ['youMarketing (WABA)','WhatsApp order confirmations, promo campaigns, abandoned-cart recovery, 2-way support','Any tier · Per outlet · AED 9 / mo + per-message'],
-      ['youInsight','AI queries on your data, demand forecasting, SKU mix, peak-hour staffing, anomaly detection','Any tier · AED 7 / mo'],
-      ['youLend','Pre-approved working capital scored on live transaction data. Revenue-based repayment. No separate application.','Any tier · Flat interest rate · Terms per merchant'],
-      ['youWorkflows','No-code automations: low-stock alerts, supplier escalations, customer journeys, end-of-day rules','Standard & Power · AED 12 / mo'],
-      ['youLens (AI Camera)','Shrinkage alerts, footfall heatmaps, queue tracking, staff productivity, kitchen hygiene','Any tier · Per outlet · AED 17 / mo + AED 7 / camera'],
-      ['youAccounts','Bank reconciliation, P&L, balance sheet, supplier mgmt, audit records','AED 17 / mo · Add-on for Starter & Standard · Bundled in Power'],
-      ['youHR (Full Payroll)','Attendance, scheduling, payroll, statutory compliance','AED 14 / mo · Bundled in Power'],
-      ['Own Branded App','Fully branded ordering app on your own domain','AED 40 / mo · Bundled in Power'],
-      ['WebShop','Branded online storefront with unified inventory across channels','Add-on for Standard · Bundled in Power'],
-      ['Social Selling / Social Ordering','Sell on Facebook Shop, Instagram Shopping, WhatsApp Catalog','AED 14 / mo · Add-on for Standard · Bundled in Power'],
-      ['3rd-Party Logistics','Smart dispatch to UAE delivery networks, auto-fallback','Add-on for Standard & Power · Contact Sales'],
-      ['Customer / Guest Base Pack','+500 CRM records per pack, stackable','Any tier · AED 3 / mo per pack'],
-      ['Own Branded Delivery App','Branded guest app, zone delivery, real-time tracking, zero commission','Add-on for Standard · Bundled in Power'],
-      ['KDS Stations','Additional kitchen display screen licences','Any tier · AED 3 / mo per station'],
-      ['API & Webhook Access','Full REST API + webhooks + OpenAPI sandbox','AED 50 / mo · Enterprise (youShop) / Power (youResto)'],
-      ['Self-Ordering Kiosk Mode','Convert youQR into a full-screen self-service kiosk','Add-on for Standard & Power (youQR)'],
-      ['QR Guest Ordering','Guest self-order and pay via QR, no app download','AED 12 / mo'],
+      ['youMarketing (WABA)','WhatsApp campaigns, loyalty and promotions on your own customer data','AED 30 / mo + per-message'],
+      ['youInsight · AI report','AI insights on sales, stock and staff, without spreadsheets','AED 25 / mo per store'],
+      ['youLens · AI camera','Shrinkage alerts, footfall heatmaps, queue tracking, kitchen hygiene','AED 65 / mo + AED 25 / camera'],
+      ['youWorkflows','No-code automations: low-stock alerts, payouts, end-of-day rules','AED 50 / mo'],
+      ['youAccounts · full','Books fed straight from your sales. FTA ready','AED 30 / mo · included in Power'],
+      ['youHR · full','Rosters, commission, tip pooling, WPS payroll','AED 15 / staff · included in Power'],
+      ['WebShop & Social','Branded storefront, social selling, click & collect','AED 15 / mo · included in Power'],
+      ['youLend · working capital','Working-capital offers sized from your sales, stock and footfall','Rev-share · no monthly fee'],
+      ['KDS Stations','Additional kitchen display licences','Ask our Sales team'],
+      ['3rd-Party Logistics','Smart dispatch to UAE delivery networks, auto-fallback','Ask our Sales team'],
+      ['API & Webhook Access','Full REST API + webhooks','Included in Enterprise'],
     ].map((a,i)=>({ name:a[0], does:a[1], avail:a[2], rowBg: i%2?'#fcf9f4':'#ffffff' }));
     const hwBundleRows = [
-      {bundle:'Mobile + BT Printer Package', form:'Bluetooth 58mm printer + card reader dongle', ysPrice:'AED 215', yrPrice:'AED 215', software:'Runs on your Android / iOS phone · one-time'},
-      {bundle:'QR Print Pack', form:'Table stands + counter cards + shelf labels', ysPrice:'AED 105', yrPrice:'AED 105', software:'Zero-device commerce · branded QR · one-time'},
-      {bundle:'Handheld POS Kit', form:'Y1000', ysPrice:'AED 189', yrPrice:'AED 304', software:'Standard tier · renews at list rate yr 2'},
-      {bundle:'Counter / Restaurant POS Kit', form:'Y5000 15" counter POS', ysPrice:'AED 469', yrPrice:'AED 629', software:'Standard tier · renews at list rate yr 2'},
-      {bundle:'KDS & Kitchen Printer', form:'Kitchen display + thermal kitchen printer', ysPrice:'Coming soon', yrPrice:'Coming soon', software:'For youResto kitchens'},
+      {bundle:'Y1000', form:'Handheld · floor billing', price:'AED 189', incl:'Printer + scanner · pre-activated'},
+      {bundle:'Y4000', form:'Tablet · F&B tableside', price:'AED 1,099', incl:'Printer · eSIM · pre-activated'},
+      {bundle:'Y5000', form:'Dual-screen counter', price:'AED 1,499', incl:'Customer-facing screen · pre-activated'},
+      {bundle:'Y7000', form:'Self-service kiosk', price:'AED 2,999', incl:'Scanner + printer · pre-activated'},
+      {bundle:'Y10', form:'QR SoundBox', price:'AED 39', incl:'Voice payment confirmation'},
+      {bundle:'Starter kit', form:'Bluetooth printer + your own phone', price:'From AED 219', incl:'Runs on your Android / iOS phone'},
     ].map((r,i)=>({ ...r, rowBg: i%2?'#fcf9f4':'#ffffff' }));
+    const fitRows = [
+      {biz:'Single shop',sub:'grocery · salon · pharmacy',pkg:'youShop Standard · AED 19',hw:'Y1000 + Y10',add:'Bookkeeping · Marketing'},
+      {biz:'Café / QSR',sub:'1–3 outlets',pkg:'youResto Standard · AED 39',hw:'Y5000 + Y7000',add:'HR · AI Insights'},
+      {biz:'Restaurant group',sub:'4–8 outlets, aggregators',pkg:'youResto Power · AED 99',hw:'Y5000 + Y4000 per outlet',add:'HR · Workflows · Lens'},
+      {biz:'Retail chain',sub:'9+ outlets',pkg:'youShop Power · AED 49',hw:'Y5000 + Y1000 floor',add:'Lens · Insights · WebShop'},
+      {biz:'Franchise / multi-brand',sub:'procurement, SSO',pkg:'Enterprise',hw:'Mixed fleet · kiosks',add:'All included'},
+    ].map((r,i)=>({ ...r, rowBg: i%2?'#fcf9f4':'#ffffff' }));
+    const payRates = [
+      {n:'Card MDR · Visa / Mastercard / Amex', r:'2–3%'},
+      {n:'Domestic wallets', r:'0.9–1.5%'},
+      {n:'QR rails', r:'0.5–1.2%'},
+    ];
     const masterNotes = [
-      'VAT applies to all software subscriptions.',
-      'Bank charges (wallet, card, Aani QR) are per-transaction and set by the payment network — confirm with our Sales team.',
-      'Hardware bundles include 12 months of matching software tier free. Year 2 renews at list rate.',
-      'Card payment availability is subject to country-level approval — confirm with our Sales team.',
-      'Pack sizes (Customer Base, Order Volume) are quoted commercially — contact our Sales team.',
+      'Software is priced per store, per month, billed annually. All prices exclude 5% VAT.',
+      'One licence covers every till in the store. Move up any time — no re-integration.',
+      'Hardware is a one-time purchase — you own it. Next-day UAE delivery, pre-activated, PCI PTS 5.x SRED, EMV L1+L2, OTA fleet-managed.',
+      'Payment rates (MDR) are charged per transaction on top of software. A card terminal is required for card payments. Volume discounts on Enterprise.',
+      'Money settles T+2 to any UAE IBAN.',
     ];
     const faqItem = (prefix,id,q,a) => ({ q,a, open: !!S.faq[prefix+id], rot: S.faq[prefix+id]?'45deg':'0deg', onClick: () => this.setState(s=>({ faq:{ ...s.faq, [prefix+id]: !s.faq[prefix+id] } })) });
     const pricingFaq = [
-      ['Is Freemium really free?','Yes. Permanently free, no credit card needed. You are prompted to upgrade when you hit a limit.'],
-      ['Who sets up my account?','We handle setup, training, and ongoing support — our Sales team is available whenever you need them.'],
-      ['Are tiers cumulative?','Yes. Every tier includes everything in the tier below it, plus more.'],
-      ['Can I buy add-ons on Freemium?','Yes. Any add-on can be activated on any tier, including Freemium.'],
-      ['How does hardware pricing work?','Hardware bundles include 12 months of matching software. Year 2 onwards renews at subscription rate. Confirm device pricing with our Sales team.'],
-      ['Does Transacty charge per transaction?','Transacty\u2019s software subscription is flat-rate. Bank and network charges on card, wallet, and Aani QR transactions are set by the payment network and apply per transaction.'],
+      ['How is software billed?','Per store, per month, billed annually. One licence covers every till in the store. All prices exclude 5% VAT.'],
+      ['Is there a free plan?','Self-Service Standard is AED 0 a month — you pay AED 1 per order. youShop starts at AED 19 and youResto at AED 39 per store a month.'],
+      ['Can I change package later?','Yes. Move up any time — no re-integration, and your data stays.'],
+      ['How does hardware pricing work?','Hardware is a one-time purchase and you own it — from AED 39 for the Y10 SoundBox to AED 2,999 for the Y7000 kiosk. A starter kit (Bluetooth printer + your own phone) starts at AED 219.'],
+      ['What are the payment rates?','Card MDR 2–3% (Visa, Mastercard, Amex), domestic wallets 0.9–1.5% and QR rails 0.5–1.2%, charged on top of software. Volume discounts on Enterprise.'],
+      ['When do I get paid?','T+2 to any UAE IBAN — Emirates NBD, FAB, ADCB, Mashreq, RAKBANK, DIB and more. No change to your operating account.'],
+      ['Are you licensed?','We operate under a CB UAE-licensed acquiring partner with PCI DSS Level 1. Card data is tokenised at the terminal.'],
+      ['Is it VAT and FTA ready?','Every sale issues a compliant tax invoice. FTA e-invoicing is supported, and VAT returns export for your accountant.'],
     ].map((x,i)=>faqItem('pr',i,x[0],x[1]));
 
     // ===== SHOP devices =====
     const devBase = [
-      {id:'Y10',name:'Y10',type:'Smart Sound Box',badge:'youPay · youQR',cats:['qr'],icon:I.soundbox(),img:__IMG['assets/hw/y10.png'],specs:['≥110 dB voice payment confirmations','Optional 3.5" QR display','2600 mAh · full-day battery','4G + Wi-Fi dual connectivity','Accepts Aani QR, QR & wallet','Instant settlement alerts']},
-      {id:'Y50',name:'Y50',type:'Handheld mPOS',badge:'youPay',cats:['qr'],icon:I.handheld(),img:__IMG['assets/hw/y50.png'],specs:['NFC tap-to-pay for cards & wallets','Bluetooth 5.0 + BLE pairing','Ultra-light 80 g · pocket-sized','Pairs with iOS, Android & Windows','Secure PIN entry keypad','EMV L1/L2 certified']},
+      {id:'Y10',name:'Y10',type:'QR SoundBox',badge:'youPay · Self-Service',cats:['qr'],icon:I.soundbox(),img:__IMG['assets/hw/y10.png'],specs:['≥110 dB voice payment confirmations','Optional 3.5" QR display','2600 mAh · full-day battery','4G + Wi-Fi dual connectivity','Accepts Aani QR, QR & wallet','Instant settlement alerts']},
       {id:'Y1000',name:'Y1000',type:'All-in-One Handheld POS',badge:'youPay · youShop · youResto',cats:['retail','fnb'],icon:I.monitor(),popular:true,img:__IMG['assets/hw/y1000.png'],specs:['Android 13 · AI sales assistant','6.5" HD+ touchscreen','Built-in 2" thermal receipt printer','1D / 2D barcode scanner','5000 mAh · full-shift battery','Aani QR, card, wallet & QR in one device']},
-      {id:'Y1000L',name:'Y1000 Lite',type:'Handheld POS',badge:'youPay · youShop',cats:['retail','qr'],icon:I.handheld(),img:__IMG['assets/hw/y1000_lite.png'],specs:['Android 14 · 5" touchscreen','Built-in 2" thermal printer','5000 mAh battery','GPS / GLONASS for field sales','Dual camera for scan & KYC','1 m drop-proof, dust resistant']},
       {id:'Y4000',name:'Y4000',type:'Smart Tablet POS',badge:'youPay · youShop · youResto',cats:['retail','fnb'],icon:I.tablet(),img:__IMG['assets/hw/y4000.png'],specs:['Android 13 · 11" FHD IPS display','8000 mAh · counter-to-table battery','58 mm built-in thermal printer','Dual camera (5MP + 2MP)','eSIM + Wi-Fi connectivity','Barcode scan + customer-facing view']},
       {id:'Y5000',name:'Y5000',type:'Smart Desktop Terminal',badge:'youPay · youShop',cats:['retail'],icon:I.desktop2(),img:__IMG['assets/hw/y5000.png'],specs:['Dual 15.6" FHD displays','Customer-facing second screen','RK3568 quad-core · 4GB / 64GB','Bluetooth 5.2 + multi-port I/O','Connect printer, scanner & cash drawer','Android 14 · always-on counter POS']},
       {id:'Y7000',name:'Y7000',type:'Self-Service Kiosk',badge:'youPay · youShop',cats:['qr','fnb'],icon:I.kiosk(),img:__IMG['assets/hw/y7000.png'],specs:['Android 13 · 10.1" touchscreen','1D + 2D barcode scanner','Built-in thermal receipt printer','Wall / pole / counter mount','Self-order & self-checkout','Accepts Aani QR, card & wallet']},
@@ -2958,13 +3148,11 @@ class Component extends DCLogic {
     // ===== SHOP (hardware storefront) =====
     const scrollToFeatured = ()=>{ requestAnimationFrame(()=>{ const el=document.getElementById('hwFeatured'); if(el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 60, behavior:'smooth' }); }); };
     const shopHeroDevices = [
-      {name:'Y1000', img:__IMG['assets/hw/y1000.png'], slug:'y1000'},
-      {name:'Y1000 Lite', img:__IMG['assets/hw/y1000_lite.png'], slug:'y1000lite'},
-      {name:'Y50 mPOS', img:__IMG['assets/hw/y50.png'], slug:'y50'},
-      {name:'Y10 Sound Box', img:__IMG['assets/hw/y10.png'], slug:'y10'},
+      {name:'Y1000 Handheld', img:__IMG['assets/hw/y1000.png'], slug:'y1000'},
       {name:'Y4000 Tablet', img:__IMG['assets/hw/y4000.png'], slug:'y4000'},
       {name:'Y5000 Counter', img:__IMG['assets/hw/y5000.png'], slug:'y5000'},
       {name:'Y7000 Kiosk', img:__IMG['assets/hw/y7000.png'], slug:'y7000'},
+      {name:'Y10 SoundBox', img:__IMG['assets/hw/y10.png'], slug:'y10'},
     ].map(t=>({ ...t, onClick: scrollToFeatured }));
     const shopProductFinder = ()=> this.go('contact');
 
@@ -2972,68 +3160,43 @@ class Component extends DCLogic {
     const _hw = (id,name,type,img,price,badges,rating,reviewCount,benefits,pairing,reviews,popular) =>
       ({ id,name,type,img,price,badges,rating,reviewCount,benefits,pairing,reviews,popular:!!popular });
     const hwCatalog = [
-      _hw('y10','Y10','Smart Sound Box',__IMG['assets/hw/y10.png'],'AED 60',['youPay','youQR'],4.6,64,
+      _hw('y10','Y10','QR SoundBox',__IMG['assets/hw/y10.png'],'AED 39',['youPay','Self-Service'],4.6,64,
         [['Announces every payment out loud','Confirms Aani QR, card and wallet payments with a clear voice alert — no more asking "did it go through?"'],
          ['Shows your QR code, big and bright','A built-in display shows your payment QR clearly, even at a sunny street stall.'],
          ['Runs all day on one charge','Long-life battery gets you through a full day of trade without a charger nearby.'],
-         ['Works on its own connection','Has its own SIM slot as well as Wi-Fi, so it never depends on your shop\u2019s internet.'],
-         ['Add a QR Print Pack','Zero-device commerce for AED 105 one-time — table stands, counter cards and shelf labels, all pre-printed with your branded QR. No device, no counter space.'],
-         ['KDS & kitchen printer','Kitchen display and thermal kitchen printer — coming soon.']],
-        'Pairs with YouPay for instant payment acceptance, and works alongside YouQR for scan-and-pay counters.',
-        [{name:'Ramesh Iyer',biz:'Tea Stall Owner, Chennai',quote:'Customers hear the beep and know it\u2019s paid — no more waiting for my phone to load.'},
-         {name:'Salma Begum',biz:'Vegetable Vendor, Hyderabad',quote:'Battery lasts my whole market day. I charge it once every two days.'}]),
-      _hw('y50','Y50','Handheld mPOS',__IMG['assets/hw/y50.png'],'AED 72',['youPay'],4.5,41,
-        [['Turns any phone or tablet into a card machine','Connects over Bluetooth to a device you already own — no separate terminal to buy.'],
-         ['Tap to pay, in seconds','Accepts contactless cards, Aani QR and wallets with a single tap.'],
-         ['Light enough to carry anywhere','Fits in a pocket — perfect for table service, home delivery, or door-to-door billing.']],
-        'Pairs with YouPay and the Transacty app on any compatible phone or tablet.',
-        [{name:'Deepak Rao',biz:'Home Delivery Service, Mumbai',quote:'I carry it on my bike. Customers pay by card right at the door.'}]),
-      _hw('y750','Y750','Smart Android POS',__IMG['assets/hw/y750.png'],'AED 400',['youPay','youShop','youQR'],4.7,52,
-        [['Twice the speed, half the bulk','An 8-core 12nm chip runs checkout about 2× faster than the previous generation — in a printer-free 285g body.'],
-         ['Two screens, one flow','A 6.7" staff screen and a matched 2.5" customer-facing display keep billing and payment on one device.'],
-         ['Scan without lifting','An angled professional scanner reads barcodes and QR for scan-free inventory checks.'],
-         ['Tap any card, both sides','Dual-sided HCE NFC accepts contactless cards, QR and every major method — GMS certified.'],
-         ['All day on one charge','A 3000mAh high-density battery is rated for up to 18.2 hours of trade.']],
-        'Pairs with YouShop for retail and YouQR for scan-and-pay counters; YouPay handles every payment method.',
-        [{name:'Mariam Saeed',biz:'Boutique Owner, Dubai',quote:'It is light enough to carry around the shop and fast enough that the queue never builds up.'}]),
-      _hw('y1000','Y1000','All-in-One Handheld POS',__IMG['assets/hw/y1000.png'],'AED 194',['youPay','youShop','youResto'],4.8,188,
+         ['Works on its own connection','Has its own SIM slot as well as Wi-Fi, so it never depends on your shop\u2019s internet.']],
+        'Pairs with youPay for payment acceptance, and with Self-Service for scan-and-pay counters.',
+        [{name:'Hassan Ali',biz:'Karak Stall Owner, Sharjah',quote:'Customers hear the beep and know it\u2019s paid — no more waiting for my phone to load.'},
+         {name:'Mona Fathy',biz:'Fresh Produce Vendor, Dubai',quote:'Battery lasts my whole market day. I charge it once every two days.'}]),
+      _hw('y1000','Y1000','Handheld · floor billing',__IMG['assets/hw/y1000.png'],'AED 189',['youPay','youShop','youResto'],4.8,188,
         [['Everything on one screen','Billing, stock and payments in a single device — no juggling between apps.'],
          ['Prints receipts instantly','A built-in printer means one less cable and one less gadget on your counter.'],
          ['Scans barcodes without extra hardware','A built-in scanner speeds up billing at a busy counter.'],
          ['Runs a full shift on one charge']],
-        'Pairs with YouShop for retail or YouResto for restaurants — works out of the box from Starter tier upward.',
-        [{name:'Rajan Mehta',biz:'General Store Owner, Pune',quote:'I bill 3x faster than before, and my VAT report is ready in one click.'},
-         {name:'Priya Sharma',biz:'Restaurant Owner, Bangalore',quote:'One device for billing, printing and payments. My counter is so much less cluttered.'}], true),
-      _hw('y1000lite','Y1000 Lite','Handheld POS',__IMG['assets/hw/y1000_lite.png'],'AED 169',['youPay','youShop'],4.4,96,
-        [['Built to survive a busy counter','Drop-tested from a metre up, so a dropped device doesn\u2019t mean a lost sale.'],
-         ['Bring billing to the customer','Take the till to the queue instead of making people wait at one spot.'],
-         ['Track every device you own','Built-in location tracking helps you keep tabs on hardware across outlets.'],
-         ['A full shift on one charge']],
-        'Pairs with YouShop; ideal for queue-busting and mobile billing on the shop floor.',
-        [{name:'Vikram Nair',biz:'Electronics Retailer, Kochi',quote:'I walk the floor with it during rush hour instead of making customers queue at a till.'}]),
-      _hw('y4000','Y4000','Smart Tablet POS',__IMG['assets/hw/y4000.png'],'AED 474',['youPay','youShop','youResto'],4.6,72,
+        'Pairs with youShop for retail or youResto for restaurants — works out of the box on every package.',
+        [{name:'Yousef Al Marzouqi',biz:'General Store Owner, Dubai',quote:'I bill 3x faster than before, and my VAT report is ready in one click.'},
+         {name:'Rania Saleh',biz:'Restaurant Owner, Abu Dhabi',quote:'One device for billing, printing and payments. My counter is so much less cluttered.'}], true),
+      _hw('y4000','Y4000','Tablet · F&B tableside',__IMG['assets/hw/y4000.png'],'AED 1,099',['youPay','youShop','youResto'],4.6,72,
         [['A screen big enough for everyone to see','Staff and customers both read the bill clearly, with no squinting.'],
          ['Prints receipts and order slips on the spot','A built-in printer means no separate box to plug in.'],
          ['Stays online even when your Wi-Fi drops','A built-in eSIM keeps you selling through an internet outage.'],
          ['All-day battery for the busiest shift']],
-        'Pairs with YouShop or YouResto — a strong fit for growing counters that need a bigger display.',
-        [{name:'Ayesha Khan',biz:'Café Owner, Delhi',quote:'The bigger screen means my baristas ring up orders without mistakes during the morning rush.'}]),
-      _hw('y5000','Y5000','Smart Desktop Terminal',__IMG['assets/hw/y5000.png'],'AED 514',['youPay','youShop'],4.7,58,
+        'Pairs with youResto for tableside ordering, or youShop for counters that need a bigger display.',
+        [{name:'Dana Khoury',biz:'Café Owner, Dubai',quote:'The bigger screen means my baristas ring up orders without mistakes during the morning rush.'}]),
+      _hw('y5000','Y5000','Dual-screen counter',__IMG['assets/hw/y5000.png'],'AED 1,499',['youPay','youShop','youResto'],4.7,58,
         [['One screen for you, one for your customer','Dual displays mean no more turning the till around to show the bill.'],
          ['Fast enough to never lag at checkout, even during your busiest hour'],
          ['Connects everything at once','Your scanner, printer and cash drawer all plug into one terminal.'],
          ['Built for a counter that runs all day, every day']],
-        'Pairs with YouShop — the standard fixed-counter setup for supermarkets and multi-lane stores.',
-        [{name:'Suresh Patil',biz:'Supermarket Owner, Nashik',quote:'The customer-facing screen alone cut our billing disputes to almost zero.'}]),
-      _hw('y7000','Y7000','Self-Service Kiosk',__IMG['assets/hw/y7000.png'],'AED 549',['youPay','youResto'],4.3,29,
+        'Pairs with youShop or youResto — the standard fixed-counter setup for supermarkets, cafés and multi-lane stores.',
+        [{name:'Tariq Mansour',biz:'Supermarket Owner, Ajman',quote:'The customer-facing screen alone cut our billing disputes to almost zero.'}]),
+      _hw('y7000','Y7000','Self-service kiosk',__IMG['assets/hw/y7000.png'],'AED 2,999',['youPay','Self-Service','youResto'],4.3,29,
         [['Customers order and pay themselves','No queue, no waiting on staff during peak hours.'],
          ['Mount it anywhere','Wall, pole or counter — wherever fits your floor.'],
          ['Works standalone','Built-in scanner and printer, so no extra devices are needed.'],
-         ['Frees your staff for service, not billing'],
-         ['Add a QR Print Pack','Zero-device commerce for AED 105 one-time — table stands, counter cards and shelf labels, all pre-printed with your branded QR. No device, no counter space.'],
-         ['KDS & kitchen printer','Kitchen display and thermal kitchen printer — coming soon.']],
-        'Pairs with YouResto in self-order mode, with YouPay handling checkout.',
-        [{name:'Anil Kumar',biz:'QSR Owner, Chennai',quote:'Peak-hour queues are gone. Customers order at the kiosk and we focus on the kitchen.'}]),
+         ['Frees your staff for service, not billing']],
+        'Pairs with Self-Service and youResto for self-order, with youPay handling checkout.',
+        [{name:'Omar Haddad',biz:'QSR Owner, Al Ain',quote:'Peak-hour queues are gone. Customers order at the kiosk and we focus on the kitchen.'}]),
     ];
     const hwById = Object.fromEntries(hwCatalog.map(d=>[d.id,d]));
     const benefitBlocksOf = (d) => d.benefits.map(b => ({ t:b[0], b:b[1]||'' }));
@@ -3061,30 +3224,30 @@ class Component extends DCLogic {
     const hwTabHardwareColor = isHwTabHardware?'var(--ink)':'var(--slate)', hwTabHardwareWeight = isHwTabHardware?600:400, hwTabHardwareBorder = isHwTabHardware?'var(--coral)':'transparent';
     const hwTabCompareColor = isHwTabCompare?'var(--ink)':'var(--slate)', hwTabCompareWeight = isHwTabCompare?600:400, hwTabCompareBorder = isHwTabCompare?'var(--coral)':'transparent';
     // ---- Software pairing matrix (shared: hub page + detail pages) ----
-    const pairCols = ['youShop','youResto','youQR','youPay'];
-    const pairHas = { y10:['youPay','youQR'], y50:['youPay'], y750:['youShop','youQR','youPay'], y1000:['youShop','youResto','youPay'],
-      y1000lite:['youShop','youPay'], y4000:['youShop','youResto','youPay'], y5000:['youShop','youPay'],
-      y7000:['youResto','youQR','youPay'] };
+    const pairCols = ['youShop','youResto','Self-Service','youPay'];
+    const pairHas = { y10:['youPay','Self-Service'], y1000:['youShop','youResto','youPay'],
+      y4000:['youShop','youResto','youPay'], y5000:['youShop','youResto','youPay'],
+      y7000:['youResto','Self-Service','youPay'] };
     const pairingMatrix = hwCatalog.map(d => ({ id:d.id, name:d.name, cells: pairCols.map(c => ({ mark: pairHas[d.id].includes(c)?'✓':'—', color: pairHas[d.id].includes(c)?'var(--coral)':'var(--slate)' })) }));
     // ---- Procurement & activation terms (shared) ----
     const procurementTerms = [
-      {t:'Bundling', b:'Every device ships with its matched software tier already active, free for the first 12 months. Year 2 renews at the standard subscription rate.'},
-      {t:'Activation', b:'We configure your device, load your catalogue or menu, and train your team \u2014 live on your counter within 48 hours.'},
-      {t:'Certification', b:'Every device is PCI-certified. Card-capable models carry EMV L1/L2 certification where applicable.'},
+      {t:'One-time, you own it', b:'Hardware is a one-time purchase. No rental, no lock-in — the device is yours. Prices exclude 5% VAT.'},
+      {t:'Next-day, pre-activated', b:'Kits ship next day across the UAE, charged and pre-activated. Plug in, log in and sell — live in 60 minutes.'},
+      {t:'Certified & managed', b:'PCI PTS 5.x SRED and EMV L1+L2 certified, with OTA fleet management keeping every device up to date.'},
       {t:'Warranty & support', b:'A 1-year manufacturer warranty covers hardware faults. We manage repair or replacement end to end.'},
     ];
     // ---- Aggregate hardware reviews for the hub page ----
     const _starGlyphs = (n) => '★★★★★'.slice(0,n) + '☆☆☆☆☆'.slice(0,5-n);
     const hwHubReviews = [
-      {name:'Rajan Mehta', biz:'General Store Owner, Pune', device:'Y1000', quote:'I bill 3x faster than before, and my VAT report is ready in one click.'},
-      {name:'Ayesha Khan', biz:'Café Owner, Delhi', device:'Y4000', quote:'The bigger screen means my baristas ring up orders without mistakes during the morning rush.'},
-      {name:'Suresh Patil', biz:'Supermarket Owner, Nashik', device:'Y5000', quote:'The customer-facing screen alone cut our billing disputes to almost zero.'},
-      {name:'Anil Kumar', biz:'QSR Owner, Chennai', device:'Y7000', quote:'Peak-hour queues are gone. Customers order at the kiosk and we focus on the kitchen.'},
+      {name:'Yousef Al Marzouqi', biz:'General Store Owner, Dubai', device:'Y1000', quote:'I bill 3x faster than before, and my VAT report is ready in one click.'},
+      {name:'Dana Khoury', biz:'Café Owner, Dubai', device:'Y4000', quote:'The bigger screen means my baristas ring up orders without mistakes during the morning rush.'},
+      {name:'Tariq Mansour', biz:'Supermarket Owner, Ajman', device:'Y5000', quote:'The customer-facing screen alone cut our billing disputes to almost zero.'},
+      {name:'Omar Haddad', biz:'QSR Owner, Al Ain', device:'Y7000', quote:'Peak-hour queues are gone. Customers order at the kiosk and we focus on the kitchen.'},
     ].map(r => ({ ...r, starGlyphs: _starGlyphs(r.device==='Y7000'?4:5) }));
     const joinFeatures = [
-      {t:'Clear, flexible pricing', b:'No hidden fees, no surprises. Start free and pay as you grow.'},
-      {t:'Fast, secure payments', b:'PCI-certified devices with instant settlement alerts on every sale.'},
-      {t:'Activation in 48 hours', b:'We configure, load your catalogue, and train your team before you open.'},
+      {t:'Clear pricing in AED', b:'Software from AED 19 per store a month. Hardware is one-time — you own it. No surprises.'},
+      {t:'Fast, secure payments', b:'PCI-certified devices and T+2 settlement to any UAE IBAN.'},
+      {t:'Live in 60 minutes', b:'Kits arrive charged and pre-activated. Plug in, log in, sell.'},
     ];
     // ---- Hardware detail page (single device) ----
     const _hwSlug = (S.page==='hwdetail' && hwById[S.productTab]) ? S.productTab : 'y1000';
@@ -3101,28 +3264,28 @@ class Component extends DCLogic {
     const businessTypes = [
       bt(I.store(),'Grocery & Baqala',['Slow billing at peak hours','Stock goes missing without warning','No way to track regulars'],['youShop','youPay'],'See youShop for Baqala','youshop'),
       bt(I.chef(),'Restaurant & QSR',['Orders lost between table and kitchen','Talabat and Deliveroo not synced','VAT filing takes hours'],['youResto','youPay'],'See youResto','youresto'),
-      bt(I.cart(),'Café & Bakery',['QR ordering queues at counter','Loyalty not tracked','Daily reconciliation is manual'],['youResto','youQR','youPay'],'See QR + Resto','youqr'),
+      bt(I.cart(),'Café & Bakery',['QR ordering queues at counter','Loyalty not tracked','Daily reconciliation is manual'],['youResto','Self-Service','youPay'],'See Self-Service','youqr'),
       bt(I.shield(),'Pharmacy',['Expiry date tracking is manual','Multiple suppliers, no central stock','Controlled item audit trail'],['youShop','youPay'],'See youShop for Pharmacy','youshop'),
       bt(I.shirt(),'Fashion & Apparel',['Size/colour variants lost in Excel','WhatsApp orders not tracked','No loyalty programme'],['youShop','youPay'],'See youShop for Fashion','youshop'),
       bt(I.chip(),'Electronics & Mobile',['Serial number tracking is manual','Returns with no audit trail','Staff commissions not tracked'],['youShop Power','youPay'],'See youShop Power','youshop'),
       bt(I.stack(),'Supermarket & Hypermarket',['10,000+ SKUs, one screen','Inter-store stock transfers are slow','Multi-counter settlement mismatch'],['youShop Enterprise','youPay'],'See youShop Enterprise','enterprise'),
-      bt(I.truck(),'Cloud Kitchen',['3 aggregators, 3 tablets, 3 menus','Kitchen display not unified','No profitability per dish'],['youResto','youQR','youPay'],'See youResto for Cloud Kitchens','youresto'),
-      bt(I.table(),'Rice & Curry Shops',['No billing system — just paper KOTs','Aani QR payments not tracked in books','Cannot see which dish makes money'],['youResto','youPay'],'Start Free for Your Rice & Curry','smb'),
+      bt(I.truck(),'Cloud Kitchen',['3 aggregators, 3 tablets, 3 menus','Kitchen display not unified','No profitability per dish'],['youResto','Self-Service','youPay'],'See youResto for Cloud Kitchens','youresto'),
+      bt(I.table(),'Rice & Curry Shops',['No billing system — just paper KOTs','Aani QR payments not tracked in books','Cannot see which dish makes money'],['youResto','youPay'],'See youResto','youresto'),
       bt(I.hotel(),'Hotel & Hospitality',['Restaurant, bar, room service on different systems','No central guest profile','Settlement per outlet doesn\u2019t match books'],['youResto','youPay'],'See youResto for Hotels','youresto'),
     ];
 
     // ===== SMB =====
-    const smbFree = ['Billing & VAT invoices','Cash + Aani QR payments','Basic stock tracking','Daily sales summary','1 store, 1 user','Offline billing (syncs when reconnected)'];
+    const smbFree = ['Point of sale — scan, split tender, returns, offline','Live stock — variants, batch & expiry','Loyalty — points & gift cards','VAT & FTA e-invoicing built in','Card, wallet & QR · T+2 settlement','1 user · one licence covers every till'];
     const upgradePath = [
-      {tier:'Starter',who:'1–2 stores',accent:'var(--hairline)',unlocks:['500 SKUs · 500 invoices/mo','Barcode + variants','Cards + auto-reconciliation']},
-      {tier:'Standard',who:'3–8 stores',accent:'var(--coral)',unlocks:['Multi-store dashboard + RBAC','Loyalty + VAT reports','Wallets + split payment']},
-      {tier:'Power',who:'9+ stores',accent:'var(--navy-dark)',unlocks:['Unlimited everything','Full CRM + youAccounts','Named support + 1hr SLA']},
+      {tier:'Standard · AED 19',who:'Per store / month',accent:'var(--hairline)',unlocks:['1 user','POS, stock, loyalty, VAT','T+2 settlement']},
+      {tier:'Power · AED 49',who:'Per store / month',accent:'var(--coral)',unlocks:['3 users','HR & payroll, books','WebShop & social selling']},
+      {tier:'Enterprise · Custom',who:'Chains & franchises',accent:'var(--navy-dark)',unlocks:['SSO, API & ERP integration','99.999% uptime SLA','24/7 · 1-hr P1 · named CSM']},
     ];
     const smbFaq = [
-      ['Do I need a card machine?','No — Aani QR and QR payments work from your mobile.'],
+      ['Do I need a card machine?','Not to start — QR payments work with a Y10 SoundBox (AED 39), or a starter kit that runs on your own phone from AED 219.'],
       ['Do I need internet?','youShop and youResto work offline and sync when reconnected.'],
-      ['How long does setup take?','We set you up within 48 hours.'],
-      ['Can I start free and upgrade later?','Yes — your data stays. You just unlock more features.'],
+      ['How long does setup take?','Live in 60 minutes. Kits arrive charged and pre-activated.'],
+      ['Can I start small and upgrade later?','Yes — move up any time. No re-integration, and your data stays.'],
     ].map((x,i)=>faqItem('smb',i,x[0],x[1]));
 
     // ===== ENTERPRISE =====
@@ -3130,56 +3293,65 @@ class Component extends DCLogic {
       {icon:I.sliders(),t:'Centralised command. Local operation.',b:'Push price changes, menu updates, and product catalogs from HQ to every outlet instantly. Each outlet still runs independently if connectivity drops.'},
       {icon:I.gift(),t:'Brand-level loyalty. Outlet-level reporting.',b:'Programme-wide loyalty runs across every location. Each outlet gets its own reporting. Headquarters gets the full picture.'},
       {icon:I.ledger(),t:'Full accounting stack, built in.',b:'youAccounts gives you bank reconciliation, P&L, balance sheet, and audit-ready records — across every outlet, consolidated.'},
-      {icon:I.flow(),t:'Custom integrations. Full API access.',b:'Full REST API + webhooks + OpenAPI sandbox. Connect Transacty to your ERP, hotel PMS, or proprietary systems. Enterprise SLA backed.'},
+      {icon:I.flow(),t:'Plugged into the ERP you already run.',b:'SAP, Oracle NetSuite, MS Dynamics, Tally and Zoho — plus a full REST API and webhooks for your PMS or proprietary systems.'},
     ];
-    const entFeatures = ['SSO (corporate IdP)','API key rotation','Franchise/chain management + policy controls','White-label storefront','Custom hardware configurations','Named dedicated support + quarterly reviews'];
+    const entFeatures = ['SSO · SAML / OIDC','REST API & webhooks','Franchise governance','Multi-brand & multi-entity','99.999% uptime SLA','1-hr P1 · named CSM','PCI DSS L1 · EMV','3PL & white-label'];
     const entSteps = [
-      {n:'1',t:'Enterprise onboarding call with our sales team.'},
-      {n:'2',t:'Custom configuration — your catalog, branding, loyalty tiers, integrations.'},
-      {n:'3',t:'Rollout outlet by outlet, fully managed, on your timeline.'},
-      {n:'4',t:'Centralised training, dedicated named support, quarterly reviews.'},
+      {n:'WEEK 0–2',t:'Scoping & commercial.'},
+      {n:'WEEK 2–4',t:'Two flagship outlets live.'},
+      {n:'WEEK 4–8',t:'8–12 outlets per week.'},
+      {n:'WEEK 8–12',t:'Hypercare & handover.'},
+    ];
+    const entCase = [
+      {m:'Vendors & contracts',a:'6–8 vendors',b:'1 contract'},
+      {m:'Ledgers to reconcile',a:'3+ systems, CSV bridges',b:'1 shared ledger'},
+      {m:'Month-end reconciliation',a:'Days of manual matching',b:'−73% median time'},
+      {m:'Settlement to IBAN',a:'T+2 to T+3',b:'T+2'},
+      {m:'Support & accountability',a:'One desk per vendor',b:'1 named CSM · 24/7 SLA'},
+    ].map((r,i)=>({ ...r, rowBg: i%2?'#fcf9f4':'#ffffff' }));
+    const entStats = [
+      {big:'99.999%',sub:'Uptime SLA'},{big:'1 hr',sub:'P1 response'},
+      {big:'<200 ms',sub:'Card authorisation'},{big:'SSO',sub:'SAML · OIDC · API'},
     ];
 
     // ===== ADD-ONS page =====
     const mainAddons = [
-      {icon:I.mega(),name:'youMarketing',tagline:'Payment-triggered campaigns',desc:'Dead-basket recovery, receipt-based upsell, and targeted promos — all fired from your live payment data.',avail:'AED 33 / mo + per-msg'},
-      {icon:I.brain(),name:'youInsight',tagline:'AI-powered reporting',desc:'Payment mix analytics, settlement lead-time, refund and chargeback trends — in plain English.',avail:'AED 26 / mo'},
-      {icon:I.flow(),name:'youWorkflows',tagline:'Automation engine',desc:'Automated reconciliation, dispute routing, and exception queues. No code required.',avail:'AED 44 / mo'},
-      {icon:I.coins(),name:'youLend',tagline:'Working capital',desc:'Pre-approved from your payment-processing history. Revenue-based repayment, no separate application.',avail:'Rev-share · no monthly fee'},
-      {icon:I.ledger(),name:'youAccounts',tagline:'Auto-bookkeeping',desc:'Sales, MDR, refunds and settlements posted automatically for your merchant account.',avail:'AED 29 / mo'},
-      {icon:I.brain(),name:'3DS2 & SCA compliance',tagline:'Frictionless authentication',desc:'3-D Secure 2, SCA exemption logic, and step-up authentication built in.',avail:'Included on Power'},
-      {icon:I.coins(),name:'Network tokens (VTS · MDES)',tagline:'PCI-scoped vault',desc:'Token portability for one-click and MIT flows, safe from card rotation.',avail:'Included on Power'},
-      {icon:I.flow(),name:'Advanced fraud rules',tagline:'Custom risk engine',desc:'Custom velocity, geo, BIN and behaviour rules layered on top of the ML engine.',avail:'Custom · on request'},
+      {icon:I.mega(),name:'youMarketing',tagline:'WhatsApp on WABA',desc:'Campaigns, loyalty and promotions — including on WhatsApp — built on your own customer data from live sales.',avail:'AED 30 / mo + per-message'},
+      {icon:I.brain(),name:'youInsight',tagline:'AI report',desc:'AI insights on sales, stock and staff, without spreadsheets. Forecasts, dead stock and menu engineering.',avail:'AED 25 / mo per store'},
+      {icon:I.cam(),name:'youLens',tagline:'AI camera',desc:'Shrinkage alerts, footfall heatmaps, queue tracking and kitchen hygiene flags from your store cameras.',avail:'AED 65 / mo + AED 25 / camera'},
+      {icon:I.flow(),name:'youWorkflows',tagline:'Automation engine',desc:'No-code automations: low-stock alerts, driver payouts, end-of-day rules and exception queues.',avail:'AED 50 / mo'},
+      {icon:I.ledger(),name:'youAccounts',tagline:'Books, FTA ready',desc:'Staff, payroll and accounts fed straight from your sales. No re-keying.',avail:'AED 30 / mo · in Power'},
+      {icon:I.store(),name:'youHR',tagline:'Staff & payroll',desc:'Rosters, commission, tip pooling and WPS payroll — fed from the same sales data.',avail:'AED 15 / staff · in Power'},
+      {icon:I.web(),name:'WebShop & Social',tagline:'Sell online',desc:'Branded storefront, social selling and click & collect with one stock count.',avail:'AED 15 / mo · in Power'},
+      {icon:I.coins(),name:'youLend',tagline:'Working capital',desc:'Working-capital offers sized from your sales, stock and footfall. No separate application.',avail:'Rev-share · no monthly fee'},
     ];
     const moreModules = [
       {name:'WebShop',sub:'Branded online storefront'},
       {name:'Social Selling',sub:'Facebook / Instagram / WhatsApp'},
       {name:'3rd-Party Logistics',sub:'Smart dispatch + fallback'},
-      {name:'QR Guest Ordering',sub:'Scan, order, pay'},
       {name:'KDS Stations',sub:'Kitchen display licences'},
       {name:'Customer Base Pack',sub:'+500 records, stackable'},
       {name:'Guest Base Pack',sub:'+500 records, stackable'},
       {name:'Own Branded Delivery App',sub:'Zero-commission ordering'},
-      {name:'Self-Ordering Kiosk Mode',sub:'Full-screen QSR kiosk'},
-      {name:'API & Webhook Access',sub:'Enterprise / Power'},
+      {name:'API & Webhook Access',sub:'Included in Enterprise'},
     ];
 
     // ===== ABOUT =====
     const aboutStats = [
-      {big:'4 products',sub:'youShop · youResto · youQR · youPay'},
-      {big:'48 hrs',sub:'VAT-ready setup across the UAE'},
+      {big:'4 products',sub:'youShop · youResto · Self-Service · youPay'},
+      {big:'60 min',sub:'From box to first settled sale'},
       {big:'24/7',sub:'Customer support and technical coverage'},
     ];
     const aboutProducts = [
       {name:'youShop',sub:'Smart retail POS',onClick:()=>this.go('youshop')},
       {name:'youResto',sub:'Restaurant management',onClick:()=>this.go('youresto')},
-      {name:'youQR',sub:'QR-led commerce',onClick:()=>this.go('youqr')},
+      {name:'Self-Service',sub:'Kiosk & QR ordering',onClick:()=>this.go('youqr')},
       {name:'youPay',sub:'Payment orchestration',onClick:()=>this.go('youpay')},
     ];
 
     // ===== CONTACT =====
     const bizTypeOptions = ['Baqala / General Store','Restaurant & QSR','Café & Bakery','Pharmacy','Fashion & Apparel','Electronics','Supermarket','Cloud Kitchen','Rice & Curry','Hotel & Hospitality','Chain or Franchise','Other'];
-    const productInterest = ['youShop','youResto','youQR','youPay','Add-Ons','Hardware','Not sure yet'];
+    const productInterest = ['youShop','youResto','Self-Service','youPay','Add-Ons','Hardware','Not sure yet'];
     const contactCards = [
       {label:'Head office',value:'Level 1, Reef Tower, Cluster O, JLT, Dubai'},
     ];
@@ -3206,7 +3378,7 @@ class Component extends DCLogic {
     const pdView = { ...pd, overview: (pd.overview||[]).map((b,i)=>({ ...b, slotId: S.page+'-ov-'+(i+1), img: b.img || _ovPool[i % (_ovPool.length||1)] || '', slotRef: (el)=>{ const u = b.img || _ovPool[i % (_ovPool.length||1)] || ''; if(el && u) el.setAttribute('src', u); } })), heroImages: (heroCollages[S.page]||[]).map(s=>({img:s})) || [], heroSlotId: S.page+'-hero', heroImg: heroImgMap[S.page]||'', primaryCta: _isShopProd?openYoushopApp:(()=>this.go('contact')), primaryLabel: _isShopProd?'Download the App':'Request a Demo' };
     const tabDefs = [['overview','Overview'],['features','Features'],['pricing','Pricing'],['hardware','Hardware'],['addons','Add-Ons']];
     const productTabs = tabDefs.map(([k,label])=>({ label, onClick:()=>this.setState({productTab:k}), color: S.productTab===k?'var(--ink)':'var(--slate)', border: S.productTab===k?'var(--coral)':'transparent' }));
-    const pdefs = [['youshop','youShop'],['youresto','youResto'],['youqr','youQR'],['addons','Add-Ons']];
+    const pdefs = [['youshop','youShop'],['youresto','youResto'],['youqr','Self-Service'],['addons','Add-Ons']];
     const pricingTabs = pdefs.map(([k,label])=>({ label, onClick:()=>this.setState({pricingProduct:k}), bg: S.pricingProduct===k?'var(--navy-dark)':'#fff', fg: S.pricingProduct===k?'#fff':'var(--ink)', border: S.pricingProduct===k?'var(--navy-dark)':'var(--hairline)' }));
     const fdefs = [['all','All Devices'],['retail','Retail POS'],['fnb','Restaurant & F&B'],['qr','QR & Payments'],['acc','Accessories']];
     const shopFilters = fdefs.map(([k,label])=>({ label, onClick:()=>this.setState({hwFilter:k}), bg: S.hwFilter===k?'var(--navy-dark)':'#fff', fg: S.hwFilter===k?'#fff':'var(--ink)', border: S.hwFilter===k?'var(--navy-dark)':'var(--hairline)' }));
@@ -3291,6 +3463,7 @@ class Component extends DCLogic {
       productsRef: (el) => { if (el) el.setAttribute('data-products-anchor','1'); },
       // home content
       proofStats, homeProducts, steps, bizStrip, opImgEl, opCaption, hwTeaser, homeAddons, testimonials,
+      stackCosts, stackModules, compareRows, objections, fitRows, payRates, entCase, entStats,
       t, langOptions, setLang, lang: L,
       // page flags
       isProduct, isYoupay: S.page==='youpay', isPricing: S.page==='pricing', isShop: S.page==='shop',
@@ -3303,7 +3476,7 @@ class Component extends DCLogic {
       chatLog: (S.chatLog||[]).map(m => m.role==='user'
         ? {text:m.text, align:'flex-end', bg:'var(--navy-dark)', fg:'#fff', border:'none', radius:'14px 14px 4px 14px'}
         : {text:m.text, align:'flex-start', bg:'#fff', fg:'var(--ink)', border:'1px solid var(--hairline)', radius:'14px 14px 14px 4px'}),
-      chatSuggestions: ['What does youShop cost?','Which device suits a café?','What payment methods do you accept?','Tell me about the Y750'].map(q=>({ q, onClick:()=>this.askSuggested(q) })),
+      chatSuggestions: ['What does youShop cost?','Which device suits a café?','What are the payment rates?','When do I get paid?'].map(q=>({ q, onClick:()=>this.askSuggested(q) })),
       toggleChat: this.toggleChat, sendChat: this.sendChat,
       // product page
       pd: pdView, productTabs,
