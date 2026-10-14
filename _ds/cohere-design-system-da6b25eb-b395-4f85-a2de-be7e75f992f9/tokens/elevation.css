@@ -1,0 +1,13 @@
+/* Cohere — elevation tokens.
+   Mostly flat. Depth comes from surface alternation, media contrast, rounded
+   corners and thin borders — not drop shadows. Use shadows sparingly. */
+:root {
+  --elevation-flat: none;
+  --border-hairline: 1px solid var(--hairline);
+  --border-utility-rule: 1px solid var(--border-light);
+  --border-dark-translucent: 1px solid rgba(255, 255, 255, 0.14); /* @kind other */
+
+  /* Reserved soft lift for floating UI only (dialogs, menus) — never on cards. */
+  --shadow-overlay: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --shadow-popover: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
